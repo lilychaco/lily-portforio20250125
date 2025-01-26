@@ -124,3 +124,11 @@
 	</div>
 
 </div>
+
+
+
+<!--inner幅を超えて、右余白を画面いっぱいにする
+-->
+<style>
+margin-right:calc(50%-50vw);
+</style>

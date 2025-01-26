@@ -27,22 +27,31 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   var campaignSlider = new Swiper(".js-campaign-swiper", {
     loop: true,
+    centeredSlides: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
     autoplay: {
       delay: 2000,
       disableOnInteraction: false
     },
     speed: 2000,
-    slidesPerView: "auto",
-    // スライドの数を自動調整
     // 前後の矢印
     navigation: {
       nextEl: ".custom-swiper-button-next",
       prevEl: ".custom-swiper-button-prev"
     },
     breakpoints: {
-      769: {
-        // 769px以上のデバイスでの設定
-        slidesPerView: "auto" // PCでは3枚半表示
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 50
+      },
+      768: {
+        slidesPerView: 2.5,
+        spaceBetween: 70
+      },
+      1080: {
+        slidesPerView: 2.5,
+        spaceBetween: 100
       }
     }
   });

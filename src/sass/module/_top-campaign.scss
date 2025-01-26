@@ -13,14 +13,13 @@
 .top-campaign__heading {}
 
 .top-campaign__cards-wrapper {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   margin-top: rem(28);
   padding-bottom: rem(4);
 
   @include mq(md) {
     margin-top: rem(40);
-    margin-right: calc(50% - 50vw);
     padding-bottom: rem(10);
   }
 }
@@ -35,8 +34,9 @@
 
 //swiper-wrapperの範囲を指定
 .top-campaign__cards {
-  width: 100vw;
+  width: 100%;
   height: 100%;
+	padding-top: rem(30);
 }
 
 .top-campaign__button {

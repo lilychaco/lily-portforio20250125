@@ -930,10 +930,10 @@ time {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	padding-bottom: 1.5rem;
+	padding-bottom: 1.25rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	padding-top: 1rem;
+	padding-top: 1.25rem;
 	width: 100%;
 }
 
@@ -962,7 +962,7 @@ time {
 	font-weight: 500;
 	letter-spacing: 0;
 	line-height: 1.5;
-	margin-top: 0.25rem;
+	margin-top: 0.5rem;
 }
 
 .campaign-card__text {
@@ -3582,14 +3582,14 @@ span.wpcf7-spinner {
 /* 各スライドのデフォルト状態 */
 
 .p-swiper__slide {
-	opacity: 0.4;
+	opacity: 0.6;
 	transition: 0.7s;
 }
 
 /* アクティブなスライドに対するスタイル */
 
 .swiper-slide-active .p-swiper__img {
-	transform: scale(1.2); /* アクティブなスライドの画像を拡大 */
+	transform: scale(1.1); /* アクティブなスライドの画像を拡大 */
 	transition: 0.5s;
 }
 
@@ -3597,18 +3597,6 @@ span.wpcf7-spinner {
 	opacity: 1; /* アクティブなスライドを強調表示 */
 	transition: 0.5s;
 	z-index: 1;
-}
-
-/* 非アクティブスライドの詳細を非表示 */
-
-.swiper-slide .p-swiper__body {
-	display: none;
-}
-
-/* アクティブスライドの詳細を表示 */
-
-.swiper-slide-active .p-swiper__body {
-	display: block;
 }
 
 .tab {
@@ -3796,7 +3784,7 @@ span.wpcf7-spinner {
 	height: 100%;
 	margin-top: 1.75rem;
 	padding-bottom: 0.25rem;
-	width: 100vw;
+	width: 100%;
 }
 
 .top-campaign__cards-wrapper.swiper {
@@ -3805,7 +3793,8 @@ span.wpcf7-spinner {
 
 .top-campaign__cards {
 	height: 100%;
-	width: 100vw;
+	padding-top: 1.875rem;
+	width: 100%;
 }
 
 .top-campaign__button {
@@ -4406,8 +4395,8 @@ html {
 }
 
 .campaign-card__body {
-	padding-bottom: 2.75rem;
-	padding-top: 1.5rem;
+	padding-bottom: 1.875rem;
+	padding-top: 1.875rem;
 }
 
 .campaign-card__top {
@@ -5408,7 +5397,6 @@ html {
 }
 
 .top-campaign__cards-wrapper {
-	margin-right: calc(50% - 50vw);
 	margin-top: 2.5rem;
 	padding-bottom: 0.625rem;
 }
