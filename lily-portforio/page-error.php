@@ -13,7 +13,7 @@
 
 <div class="page-error page-error-layout">
 	<div class="page-error__inner inner">
-		<div class="page-error__warning fish">
+		<div class="page-error__warning">
 			<p>
 				※必須項目が入力されていません。<br class="u-mobile" />入力してください。
 			</p>

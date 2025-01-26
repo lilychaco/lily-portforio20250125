@@ -13,7 +13,7 @@
 
 <div class="page-faq page-faq-layout">
 	<div class="page-faq__inner inner">
-		<div class="accordion fish">
+		<div class="accordion">
 			<?php
     // Smart Custom Fields (SCF) を使って、'faq' グループを取得します。
     $faq = SCF::get('faq');

@@ -16,7 +16,7 @@
 <div class="archive-campaign archive-campaign-layout">
 	<div class="archive-campaign__inner inner">
 		<!-- カテゴリリスト部分 -->
-		<ul class="archive-campaign__category-list category-list fish">
+		<ul class="archive-campaign__category-list category-list">
 			<li class="category-list__item">
 				<!-- ALLカテゴリへのリンク（archive-campaign.phpに戻る） -->
 				<a href="<?php echo esc_url(get_post_type_archive_link('campaign')); ?>"
@@ -47,43 +47,43 @@
 		<!-- 投稿リスト部分 -->
 		<ul class="archive-campaign__content archive-campaign-cards">
 
+			<?php if (have_posts()) : ?>
+			<?php while (have_posts()) : the_post(); ?>
 			<?php
-			// ループはそのまま利用可能
-			if (have_posts()) : while (have_posts()) : the_post();
-			?>
-			<?php
-                // カスタムフィールド 'link-url' の値を取得
-                $link_url = get_post_meta(get_the_ID(), 'link-url', true);
+            // 必要なカスタムフィールドの値をまとめて取得
+            $link_url = get_post_meta(get_the_ID(), 'link-url', true);
+            $thumbnail = get_the_post_thumbnail(
+                get_the_ID(),
+                'full',
+                array('alt' => esc_attr(get_the_title() . 'の画像'))
+            );
+            $default_thumbnail = get_theme_file_uri('assets/images/campaign1.jpg');
+            $terms = get_the_terms(get_the_ID(), 'campaign-category');
+            $content = strip_tags(get_the_content()); // HTMLタグを除去
+            $trimmed_content = mb_strlen($content, 'UTF-8') > 164
+                ? mb_substr($content, 0, 164, 'UTF-8')
+                : $content;
             ?>
 
-			<li class=" archive-campaign-cards__item archive-campaign-card">
+			<li class="archive-campaign-cards__item archive-campaign-card">
 				<?php if ($link_url) : ?>
-				<a href="<?php echo esc_url($link_url); ?>" class="campaign-card__link" target="_blank"
+				<a href="<?php echo esc_url($link_url); ?>" class="archive-campaign-card__link" target="_blank"
 					rel="noopener noreferrer">
 					<?php endif; ?>
+
 					<figure class="archive-campaign-card__img">
-						<?php
-							// アイキャッチ画像を取得し、変数に格納
-							$thumbnail = get_the_post_thumbnail(
-									get_the_ID(),
-									'full',
-									array('alt' => esc_attr(get_the_title() . 'の画像'))
-							);
-							?>
 						<?php if ($thumbnail) : ?>
-						<!-- サムネイル画像がある場合 -->
+						<!-- サムネイル画像を表示 -->
 						<?php echo $thumbnail; ?>
 						<?php else : ?>
-						<!-- サムネイル画像がない場合、デフォルト画像を表示 -->
-						<img src="<?php echo esc_url(get_theme_file_uri('assets/images/campaign1.jpg')); ?>" alt="デフォルト画像" />
+						<!-- サムネイル画像がない場合はデフォルト画像を表示 -->
+						<img src="<?php echo esc_url($default_thumbnail); ?>" alt="デフォルト画像" />
 						<?php endif; ?>
 					</figure>
+
 					<div class="archive-campaign-card__body">
 						<div class="archive-campaign-card__top">
-							<?php
-									$terms = get_the_terms(get_the_ID(), 'campaign-category');
-									if (!empty($terms) && !is_wp_error($terms)) :
-									?>
+							<?php if (!empty($terms) && !is_wp_error($terms)) : ?>
 							<div class="archive-campaign-card__category">
 								<?php foreach ($terms as $term) : ?>
 								<span><?php echo esc_html($term->name); ?></span>
@@ -92,16 +92,38 @@
 							<?php endif; ?>
 							<div class="archive-campaign-card__title"><?php the_title(); ?></div>
 						</div>
+
+						<div class="campaign-card__text">
+							<?php
+									// 現在表示中のページ（固定ページや投稿など）のIDを取得
+									$current_post_id = get_the_ID();
+
+									// 現在のページIDをもとにカスタムフィールドの値を取得
+									$link_url = get_post_meta($current_post_id, 'link-url', true);
+									$user_name = get_post_meta($current_post_id, 'user-name', true);
+									$password = get_post_meta($current_post_id, 'password', true);
+									?>
+
+							<?php if ($link_url) : ?>
+							<p class="campaign-card__price-info">クリックしたらサイトへ飛びます</p>
+							<?php endif; ?>
+
+							<?php if (!empty($user_name) || !empty($password)) : ?>
+							<p class="campaign-card__price-info">
+								<?php if (!empty($user_name)) : ?>
+								ユーザー名: <?php echo esc_html($user_name); ?><br>
+								<?php endif; ?>
+								<?php if (!empty($password)) : ?>
+								パスワード: <?php echo esc_html($password); ?>
+								<?php endif; ?>
+							</p>
+							<?php endif; ?>
+						</div>
+
+
 						<div class="archive-campaign-card__subbody">
 							<div class="archive-campaign-card__subtext">
-								<?php
-									// 本文を取得し、HTMLタグを除去、86文字に制限して表示
-									$content = strip_tags( get_the_content() ); // HTMLタグを除去
-									$trimmed_content = mb_strlen( $content, 'UTF-8' ) > 164
-									? mb_substr( $content, 0, 164, 'UTF-8' ) . ''
-									: $content; // 86文字に切り詰め、省略記号を追加
-									echo esc_html( $trimmed_content ); // エスケープして表示
-									?>
+								<?php echo esc_html($trimmed_content); ?>
 							</div>
 							<div class="archive-campaign-card__meta">
 								<div class="archive-campaign-card__microcopy">
@@ -113,12 +135,17 @@
 							</div>
 						</div>
 					</div>
+
 					<?php if ($link_url) : ?>
 				</a>
 				<?php endif; ?>
 			</li>
-			<?php  endwhile; endif; ?>
+
+			<?php endwhile; ?>
+			<?php endif; ?>
+
 		</ul>
+
 		<div class="archive-campaign__nav page-nav">
 			<ul class="page-nav__pager">
 				<?php wp_pagenavi(); ?>

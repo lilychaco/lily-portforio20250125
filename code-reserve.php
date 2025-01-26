@@ -132,3 +132,32 @@
 <style>
 margin-right:calc(50%-50vw);
 </style>
+
+
+
+<div class="campaign-card__text">
+	<?php
+									// 現在表示中のページ（固定ページや投稿など）のIDを取得
+									$current_post_id = get_the_ID();
+
+									// 現在のページIDをもとにカスタムフィールドの値を取得
+									$link_url = get_post_meta($current_post_id, 'link-url', true);
+									$user_name = get_post_meta($current_post_id, 'user-name', true);
+									$password = get_post_meta($current_post_id, 'password', true);
+									?>
+
+	<?php if ($link_url) : ?>
+	<p class="campaign-card__price-info">クリックしたらサイトへ飛びます</p>
+	<?php endif; ?>
+
+	<?php if (!empty($user_name) || !empty($password)) : ?>
+	<p class="campaign-card__price-info">
+		<?php if (!empty($user_name)) : ?>
+		ユーザー名: <?php echo esc_html($user_name); ?><br>
+		<?php endif; ?>
+		<?php if (!empty($password)) : ?>
+		パスワード: <?php echo esc_html($password); ?>
+		<?php endif; ?>
+	</p>
+	<?php endif; ?>
+</div>

@@ -13,7 +13,7 @@
 
 <div class="blog blog-layout">
 	<div class="blog__inner inner">
-		<div class="blog__container fish">
+		<div class="blog__container">
 			<div class="blog__main single-blog">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

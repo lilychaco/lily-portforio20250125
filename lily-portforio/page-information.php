@@ -13,7 +13,7 @@
 
 <div class="information information-layout">
 	<div class="information__inner inner">
-		<div class="information__tab tab fish-02">
+		<div class="information__tab tab">
 			<ul class="tab__list">
 				<li class="tab__menu js-tab" data-tab="license-training" current>
 					<p class="tab__text tab__text--01" id="license-training">

@@ -13,14 +13,14 @@
 <div class="page-aboutus page-aboutus-layout">
 	<div class="page-aboutus__inner inner">
 		<div class="page-aboutus__container">
-			<div class="page-aboutus__sp-image u-mobile fish">
+			<div class="page-aboutus__sp-image u-mobile">
 				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/page-aboutus-ocean2.jpg" alt="私たちについての画像" />
 				<div class="page-aboutus__title page-aboutus__title--sp u-mobile">
 					<span>d</span>ive&nbsp;into<br />
 					the&nbsp;<span>o</span>cean
 				</div>
 			</div>
-			<div class="page-aboutus__pc-image u-desktop fish">
+			<div class="page-aboutus__pc-image u-desktop">
 				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/aboutus-ocean1.jpg" alt="私たちについての画像" />
 				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/aboutus-ocean2.jpg" alt="私たちについての画像" />
 			</div>

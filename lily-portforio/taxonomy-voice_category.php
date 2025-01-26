@@ -12,7 +12,7 @@
 
 <div class="archive-voice archive-voice-layout">
 	<div class="archive-voice__inner inner">
-		<div class="archive-voice__container fish">
+		<div class="archive-voice__container">
 
 			<!-- カテゴリリスト部分 -->
 			<ul class="archive-voice__category-list category-list">

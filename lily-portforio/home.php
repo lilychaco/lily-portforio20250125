@@ -13,7 +13,7 @@
 
 <div class="blog blog-layout">
 	<div class="blog__inner inner">
-		<div class="blog__container fish">
+		<div class="blog__container">
 			<div class="blog__main">
 				<ul class="blog__items blog-cards blog-cards--2col">
 					<?php

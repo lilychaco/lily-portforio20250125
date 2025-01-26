@@ -18,7 +18,7 @@
 				※必須項目が入力されていません。<br class="u-mobile" />入力してください。
 			</p>
 		</div>
-		<div class="page-contact__content form-wrapper fish">
+		<div class="page-contact__content form-wrapper">
 			<?php the_content(); ?>
 		</div>
 	</div>

@@ -24,7 +24,7 @@
 			if (!empty($license_pricelist)) :
 				?>
 	<div class="page-price__inner inner">
-		<div class="page-price__item page-price-list fish">
+		<div class="page-price__item page-price-list">
 			<div class="page-price-list__title">
 				<div class="page-price-list__heading">
 					<div class="page-price-list__icon">

@@ -13,7 +13,7 @@
 
 <div class="page-sitemap page-sitemap-layout">
 	<div class="page-sitemap__inner inner">
-		<div class="fish u-mobile"></div>
+		<div class="u-mobile"></div>
 
 		<div class="page-sitemap__nav nav-menu">
 			<!--ブロック1 -->

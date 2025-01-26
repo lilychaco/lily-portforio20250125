@@ -27,13 +27,13 @@
 	<div class="inner">
 		<?php if (is_page('privacypolicy')) : ?>
 		<!-- プライバシーポリシーのコンテンツ -->
-		<h3 class="page-privacy__title fish">プライバシーポリシー</h3>
+		<h3 class="page-privacy__title">プライバシーポリシー</h3>
 		<div class="page-privacy__box">
 			<?php the_content(); ?>
 		</div>
 		<?php elseif (is_page('terms-of-service')) : ?>
 		<!-- 利用規約のコンテンツ -->
-		<h3 class="page-service__title fish">利用規約</h3>
+		<h3 class="page-service__title">利用規約</h3>
 		<div class="page-service__box">
 			<?php the_content(); ?>
 		</div>

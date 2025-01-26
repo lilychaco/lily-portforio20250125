@@ -13,7 +13,7 @@
 
 <div class="page-thanks page-thanks-layout">
 	<div class="page-thanks__inner inner">
-		<p class="page-thanks__title fish">
+		<p class="page-thanks__title">
 			お問い合わせ内容を送信完了しました。
 		</p>
 		<p class="page-thanks__text">
