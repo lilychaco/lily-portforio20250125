@@ -206,7 +206,7 @@
 }
 
 .archive-campaign-card__microcopy {
-  margin-top: rem(7);
+  margin-top: rem(20);
   font-size: rem(14);
   font-family: $base-font-family;
   font-weight: $regular;
@@ -215,10 +215,10 @@
 }
 
 .archive-campaign-card__button {
-  margin-top: rem(16);
+  margin-top: rem(10);
   text-align: center;
 
   @include mq(md) {
-    margin-top: rem(20);
+    margin-top: rem(10);
   }
 }

@@ -1,0 +1,29 @@
+@use "global"as *;
+
+/* 各スライドのデフォルト状態 */
+.p-swiper__slide {
+  opacity: 0.4;
+  transition: 0.7s;
+}
+
+/* アクティブなスライドに対するスタイル */
+.swiper-slide-active .p-swiper__img {
+  transform: scale(1.2); /* アクティブなスライドの画像を拡大 */
+  transition: 0.5s;
+}
+
+.swiper-slide-active {
+  opacity: 1; /* アクティブなスライドを強調表示 */
+  z-index: 1;
+  transition: 0.5s;
+}
+
+/* 非アクティブスライドの詳細を非表示 */
+.swiper-slide .p-swiper__body {
+  display: none;
+}
+
+/* アクティブスライドの詳細を表示 */
+.swiper-slide-active .p-swiper__body {
+  display: block;
+}

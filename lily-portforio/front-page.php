@@ -5,10 +5,10 @@
 			<source src="<?php echo get_template_directory_uri(); ?>/assets/images/manta.MP4" type="video/mp4">
 			お使いのブラウザは動画に対応していません。
 		</video>
-		<div class="fv-content">
+		<!-- <div class="fv-content">
 			<p>ようこそ！</p>
 			<p>GranLily<br>の世界へ</p>
-		</div>
+		</div> -->
 	</div>
 
 
@@ -32,8 +32,8 @@
 
 	<div class="top-campaign__inner inner">
 		<div class="top-campaign__heading section-heading">
-			<h3 class="section-heading__title">campaign</h3>
-			<h2 class="section-heading__subtitle">キャンペーン</h2>
+			<h3 class="section-heading__title">Works</h3>
+			<h2 class="section-heading__subtitle">制作物</h2>
 		</div>
 
 		<!-- 前後の矢印 -->
@@ -44,60 +44,45 @@
 			<ul class="top-campaign__cards campaign-cards swiper-wrapper">
 				<?php while ($campaign_query->have_posts()) : $campaign_query->the_post();
 				?>
+				<?php
+                // カスタムフィールド 'link-url' の値を取得
+                $link_url = get_post_meta(get_the_ID(), 'link-url', true);
+            ?>
 				<li class="campaign-cards__item campaign-card swiper-slide">
-					<figure class="campaign-card__img">
-						<?php if (has_post_thumbnail()) : ?>
-						<!-- サムネイル画像が設定されている場合 -->
-						<img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'full')); ?>"
-							alt="<?php echo esc_attr(get_the_title()); ?>" />
-						<?php else : ?>
-						<!-- サムネイルがない場合はデフォルト画像を表示 -->
-						<img src="<?php echo esc_url(get_theme_file_uri('assets/images/campaign1.jpg')); ?>" alt="デフォルト画像" />
+					<?php if ($link_url) : ?>
+					<a href="<?php echo esc_url($link_url); ?>" class="campaign-card__link" target="_blank"
+						rel="noopener noreferrer">
 						<?php endif; ?>
-					</figure>
+						<figure class="campaign-card__img">
+							<?php if (has_post_thumbnail()) : ?>
+							<!-- サムネイル画像が設定されている場合 -->
+							<img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'full')); ?>"
+								alt="<?php echo esc_attr(get_the_title()); ?>" />
+							<?php else : ?>
+							<!-- サムネイルがない場合はデフォルト画像を表示 -->
+							<img src="<?php echo esc_url(get_theme_file_uri('assets/images/campaign1.jpg')); ?>" alt="デフォルト画像" />
+							<?php endif; ?>
+						</figure>
 
-
-					<div class="campaign-card__body">
-						<div class="campaign-card__top">
-							<?php
+						<div class="campaign-card__body">
+							<div class="campaign-card__top">
+								<?php
 												$terms = get_the_terms(get_the_ID(), 'campaign-category');
 												if (!empty($terms) && !is_wp_error($terms)) :
 												?>
-							<div class="campaign-card__category">
-								<?php foreach ($terms as $term) : ?>
-								<span><?php echo esc_html($term->name); ?></span>
-								<?php endforeach; ?>
-							</div>
-							<?php endif; ?>
-							<div class="campaign-card__title"><?php the_title(); ?></div>
-						</div>
-						<div class="campaign-card__text">
-							<p class="campaign-card__price-info">
-								全部コミコミ(お一人様)
-							</p>
-							<?php
-							// グループフィールド「campaign-price」の値を取得
-							$priceInfo = get_field('campaign-price');
-
-							// サブフィールド「campaign-price_old」と「campaign-price_new」を取得
-							$price_old = $priceInfo['campaign-price_old'] ?? ''; // 値がない場合は空文字を設定
-							$price_new = $priceInfo['campaign-price_new'] ?? ''; // 値がない場合は空文字を設定
-							?>
-							<div class="campaign-card__price-text">
-								<?php if (!empty($price_old)) : ?>
-								<p class="campaign-card__price-old">
-									&yen;<?php echo esc_html(number_format($price_old)); ?>
-								</p>
+								<div class="campaign-card__category">
+									<?php foreach ($terms as $term) : ?>
+									<span><?php echo esc_html($term->name); ?></span>
+									<?php endforeach; ?>
+								</div>
 								<?php endif; ?>
-								<?php if (!empty($price_new)) : ?>
-								<p class="archive-campaign-card__price-new">
-									&yen;<?php echo esc_html(number_format($price_new)); ?>
-								</p>
-								<?php endif; ?>
+								<div class="campaign-card__title"><?php the_title(); ?></div>
 							</div>
 
 						</div>
-					</div>
+						<?php if ($link_url) : ?>
+					</a>
+					<?php endif; ?>
 				</li>
 				<?php endwhile; ?>
 			</ul>

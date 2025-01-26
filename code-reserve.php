@@ -95,3 +95,32 @@
 		</div>
 	</div>
 </div>
+
+
+
+<!--キャンペーンカードプライス-->
+<div class="campaign-card__text">
+	<!-- <p class="campaign-card__price-info">
+							</p> -->
+	<?php
+							// グループフィールド「campaign-price」の値を取得
+							$priceInfo = get_field('campaign-price');
+
+							// サブフィールド「campaign-price_old」と「campaign-price_new」を取得
+							$price_old = $priceInfo['campaign-price_old'] ?? ''; // 値がない場合は空文字を設定
+							$price_new = $priceInfo['campaign-price_new'] ?? ''; // 値がない場合は空文字を設定
+							?>
+	<div class="campaign-card__price-text">
+		<?php if (!empty($price_old)) : ?>
+		<p class="campaign-card__price-old">
+			&yen;<?php echo esc_html(number_format($price_old)); ?>
+		</p>
+		<?php endif; ?>
+		<?php if (!empty($price_new)) : ?>
+		<p class="archive-campaign-card__price-new">
+			&yen;<?php echo esc_html(number_format($price_new)); ?>
+		</p>
+		<?php endif; ?>
+	</div>
+
+</div>
