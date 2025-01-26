@@ -42,34 +42,27 @@
 
 		<div class="top-campaign__cards-wrapper swiper js-campaign-swiper">
 			<ul class="top-campaign__cards campaign-cards swiper-wrapper">
-				<?php while ($campaign_query->have_posts()) : $campaign_query->the_post();
-				?>
+				<?php while ($campaign_query->have_posts()) : $campaign_query->the_post(); ?>
 				<?php
-                // カスタムフィールド 'link-url' の値を取得
-                $link_url = get_post_meta(get_the_ID(), 'link-url', true);
-            ?>
+        // 必要なカスタムフィールドの値をまとめて取得
+        $link_url = get_post_meta(get_the_ID(), 'link-url', true);
+        $user_name = get_post_meta(get_the_ID(), 'user-name', true);
+        $password = get_post_meta(get_the_ID(), 'password', true);
+        $thumbnail_url = has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID(), 'full') : get_theme_file_uri('assets/images/campaign1.jpg');
+        $terms = get_the_terms(get_the_ID(), 'campaign-category');
+        ?>
 				<li class="campaign-cards__item campaign-card swiper-slide p-swiper__slide">
 					<?php if ($link_url) : ?>
 					<a href="<?php echo esc_url($link_url); ?>" class="campaign-card__link" target="_blank"
 						rel="noopener noreferrer">
 						<?php endif; ?>
 						<figure class="campaign-card__img p-swiper__img">
-							<?php if (has_post_thumbnail()) : ?>
-							<!-- サムネイル画像が設定されている場合 -->
-							<img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'full')); ?>"
-								alt="<?php echo esc_attr(get_the_title()); ?>" />
-							<?php else : ?>
-							<!-- サムネイルがない場合はデフォルト画像を表示 -->
-							<img src="<?php echo esc_url(get_theme_file_uri('assets/images/campaign1.jpg')); ?>" alt="デフォルト画像" />
-							<?php endif; ?>
+							<img src="<?php echo esc_url($thumbnail_url); ?>"
+								alt="<?php echo has_post_thumbnail() ? esc_attr(get_the_title()) : 'デフォルト画像'; ?>" />
 						</figure>
-
 						<div class="campaign-card__body p-swiper__body">
 							<div class="campaign-card__top">
-								<?php
-												$terms = get_the_terms(get_the_ID(), 'campaign-category');
-												if (!empty($terms) && !is_wp_error($terms)) :
-												?>
+								<?php if (!empty($terms) && !is_wp_error($terms)) : ?>
 								<div class="campaign-card__category">
 									<?php foreach ($terms as $term) : ?>
 									<span><?php echo esc_html($term->name); ?></span>
@@ -79,39 +72,20 @@
 								<div class="campaign-card__title"><?php the_title(); ?></div>
 							</div>
 							<div class="campaign-card__text">
-								<?php
-									// カスタムフィールド 'user-name' と 'password' を取得
-									$user_name = get_post_meta(get_the_ID(), 'user-name', true);
-									$password = get_post_meta(get_the_ID(), 'password', true);
-									?>
-
-								<?php
-                // カスタムフィールド 'link-url' の値を取得
-                $link_url = get_post_meta(get_the_ID(), 'link-url', true);
-            ?>
 								<?php if ($link_url) : ?>
-								<p class="campaign-card__price-info">
-									クリックしたらサイトへ飛びます</p>
+								<p class="campaign-card__price-info">クリックしたらサイトへ飛びます</p>
 								<?php endif; ?>
-								<?php
-// ユーザー名またはパスワードのどちらかに入力がある場合に表示する処理
-if (!empty($user_name) || !empty($password)): ?>
-
+								<?php if (!empty($user_name) || !empty($password)) : ?>
 								<p class="campaign-card__price-info">
-									<?php if (!empty($user_name)): // ユーザー名が入力されている場合 ?>
+									<?php if (!empty($user_name)) : ?>
 									ユーザー名: <?php echo esc_html($user_name); ?><br>
 									<?php endif; ?>
-
-									<?php if (!empty($password)): // パスワードが入力されている場合 ?>
+									<?php if (!empty($password)) : ?>
 									パスワード: <?php echo esc_html($password); ?>
 									<?php endif; ?>
 								</p>
-
 								<?php endif; ?>
-
 							</div>
-
-
 						</div>
 						<?php if ($link_url) : ?>
 					</a>
