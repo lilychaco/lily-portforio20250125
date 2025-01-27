@@ -13,28 +13,28 @@
 	position: relative;
 
   @include mq(md) {
-    padding-top: rem(80);
-    padding-bottom: rem(80);
-    padding-left: rem(50);
-    padding-right: rem(112);
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+    padding-left: rem(30);
+    padding-right: rem(30);
     box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
   }
 }
 
 .contact__inner::after {
-	display:none;
-	@include mq(md) {
-	content: '';
-  display: block;
-  width: rem(301); /* Width of the image */
-	height:rem(138);
-  background-image: url('../images/contact-fish.png');
-  background-size: cover;
-  position: absolute;
-  top: -40px;
-  right: calc(50% - min(48vw, 41.875rem));
-	z-index: 100;
-	}
+	// display:none;
+	// @include mq(md) {
+	// content: '';
+  // display: block;
+  // width: rem(301); /* Width of the image */
+	// height:rem(138);
+  // background-image: url('../images/contact-fish.png');
+  // background-size: cover;
+  // position: absolute;
+  // top: -40px;
+  // right: calc(50% - min(48vw, 41.875rem));
+	// z-index: 100;
+	// }
 
 }
 
@@ -44,6 +44,7 @@
   gap: rem(40);
   @include mq(md) {
 		width: 100%;
+		height:auto;
     display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -59,7 +60,7 @@
   display: flex;
   flex-direction: column;
   @include mq(md) {
-		max-width: rem(440);
+		// max-width: rem(440);
 		padding-left: 0;
   	padding-right: 0;
   }
@@ -166,8 +167,18 @@
 
 }
 .contact__cta {
+	padding-left: rem(10);
+  padding-right: rem(10);
+  text-align: center;
+  width: 100%;
+	height:100%;
+  display: flex;
+  flex-direction: column;
+  @include mq(md) {
+		padding-left: 0;
+  	padding-right: 0;
 
-}
+}}
 
 .contact__button {
   margin-top: rem(38);

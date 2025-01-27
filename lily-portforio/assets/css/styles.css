@@ -1154,10 +1154,6 @@ time {
 	width: 100%;
 }
 
-.contact__inner::after {
-	display: none;
-}
-
 .contact__container {
 	display: flex;
 	flex-direction: column;
@@ -1245,6 +1241,16 @@ time {
 
 .contact-verticalline {
 	display: none;
+}
+
+.contact__cta {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding-left: 0.625rem;
+	padding-right: 0.625rem;
+	text-align: center;
+	width: 100%;
 }
 
 .contact__button {
@@ -4030,6 +4036,22 @@ span.wpcf7-spinner {
 	grid-template-columns: 1fr;
 }
 
+#weather-app-container {
+	height: auto;
+	overflow: hidden;
+	width: 100%;
+}
+
+#weather-app-container img {
+	display: inline-block;
+	max-width: 3.125rem;
+	text-align: center;
+}
+
+.weather-wrapper {
+	background: url("../images/weather-background-image.jpg") center center no-repeat;
+}
+
 .archive-campaign-layout {
 	margin-top: 3.375rem;
 }
@@ -4473,35 +4495,22 @@ html {
 
 .contact__inner {
 	box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
-	padding-bottom: 5rem;
-	padding-left: 3.125rem;
-	padding-right: 7rem;
-	padding-top: 5rem;
-}
-
-.contact__inner::after {
-	background-image: url("../images/contact-fish.png");
-	background-size: cover;
-	content: "";
-	display: block;
-	height: 8.625rem;
-	position: absolute;
-	right: calc(50% - min(48vw, 41.875rem));
-	top: -40px;
-	width: 18.8125rem; /* Width of the image */
-	z-index: 100;
+	padding-bottom: 2.5rem;
+	padding-left: 1.875rem;
+	padding-right: 1.875rem;
+	padding-top: 2.5rem;
 }
 
 .contact__container {
 	align-items: center;
 	display: flex;
 	flex-direction: row;
+	height: auto;
 	justify-content: space-between;
 	width: 100%;
 }
 
 .contact-maparea {
-	max-width: 27.5rem;
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -4543,6 +4552,11 @@ html {
 	display: block;
 	height: 255px;
 	width: 1px;
+}
+
+.contact__cta {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .form__select {

@@ -161,3 +161,26 @@ margin-right:calc(50%-50vw);
 	</p>
 	<?php endif; ?>
 </div>
+
+
+<!--contact 右側の部分
+-->
+<div class="contact__item contact__cta">
+	<div class="contact__heading section-heading">
+		<h3 class="section-heading__title section-heading__title--contact">
+			Contact
+		</h3>
+		<h2 class="section-heading__subtitle section-heading__subtitle--contact u-desktop">
+			お問い合わせ
+		</h2>
+		<h2 class="section-heading__subtitle section-heading__subtitle--contact u-mobile">
+			お問合せ
+		</h2>
+		<p class="section-heading__text">
+			ご予約・お問い合わせはコチラ
+		</p>
+	</div>
+	<div class="contact__button">
+		<a href="<?php echo esc_url(home_url('/contact')); ?>" class="button">Contact us</a>
+	</div>
+</div>

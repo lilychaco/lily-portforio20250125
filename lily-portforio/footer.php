@@ -36,24 +36,14 @@
    					</div>
    				</div>
    				<div class="contact__item contact-verticalline"></div>
+
    				<div class="contact__item contact__cta">
-   					<div class="contact__heading section-heading">
-   						<h3 class="section-heading__title section-heading__title--contact">
-   							Contact
-   						</h3>
-   						<h2 class="section-heading__subtitle section-heading__subtitle--contact u-desktop">
-   							お問い合わせ
-   						</h2>
-   						<h2 class="section-heading__subtitle section-heading__subtitle--contact u-mobile">
-   							お問合せ
-   						</h2>
-   						<p class="section-heading__text">
-   							ご予約・お問い合わせはコチラ
-   						</p>
+   					<div id="weather-app-container">
+   						<div id="root"></div>
    					</div>
-   					<div class="contact__button">
-   						<a href="<?php echo esc_url(home_url('/contact')); ?>" class="button">Contact us</a>
-   					</div>
+   					<script src="/wp-content/uploads/weather-app/static/js/main.f17a80f5.js"></script>
+   					<link href="/wp-content/uploads/weather-app/static/css/main.9a3fbc66.css" rel="stylesheet" />
+
    				</div>
    			</div>
    		</div>
