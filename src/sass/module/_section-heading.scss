@@ -38,20 +38,16 @@
 
 .section-heading__title--top-blog {
   @include mq(md) {
-    color: $white;
+    color: $greenaccent;
   }
 }
 
 .section-heading__title--top-blog::first-letter {
   @include mq(md) {
-    color: $greenpale;
+    // color: #99ff00;
   }
 }
-.section-heading__subtitle--top-blog {
-  @include mq(md) {
-    color: $white;
-  }
-}
+
 .section-heading__title.section-heading__title--contact {
   font-size: rem(80);
   line-height: 1;

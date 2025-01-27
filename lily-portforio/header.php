@@ -7,18 +7,18 @@
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="robots" content="noindex" />
 	<!-- meta情報 -->
-	<title>CodeUps</title>
-	<meta name="description" content="CodeUpsのWordPress化課題サイトです" />
-	<meta name="keywords" content="CodeUps, WordPress化, lilychaco" />
-	<meta name="copyright" content="Copyright © 2024 CodeUps Diving Site. All rights reserved.">
+	<title>GranLily</title>
+	<meta name="description" content="GranLilyのポートフォリオサイトです" />
+	<meta name="keywords" content="GranLily, lilychaco" />
+	<meta name="copyright" content="Copyright © 2025 GranLily. All rights reserved.">
 	<!-- ogp -->
-	<meta property="og:title" content="CodeUps Diving Site - 潜る楽しさを発見しよう！" />
+	<meta property="og:title" content="GranLilyの世界へようこそ！" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://ninikokoji.com/diving-lily/" />
+	<meta property="og:url" content="" />
 	<meta property="og:image"
 		content="https://ninikokoji.com/diving-lily/wp-content/uploads/2024/11/iriomote1200x630.jpeg" />
-	<meta property="og:site_name" content="CodeUps Diving Site" />
-	<meta property="og:description" content="CodeUpsのWordPress化課題サイトで、ダイビングの魅力を学び、挑戦しませんか？" />
+	<meta property="og:site_name" content="GranLily ポートフォリオサイト" />
+	<meta property="og:description" content="GranLilyのポートフォリオサイトです！" />
 	<meta property="og:locale" content="ja_JP" />
 	<!-- アイコン -->
 	<link rel="icon" href="https://ninikokoji.com/diving-lily/wp-content/uploads/2024/11/iriomote512.png">
@@ -35,9 +35,9 @@
 			<h1 class="header__logo">
 				<a href="<?php echo esc_url(home_url('/')); ?>">
 					<picture>
-						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/CodeUps-logo-pc.png"
+						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/GranLily_logo_transparent.png"
 							media="(min-width: 768px)" />
-						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/CodeUps-logo-sp.png" alt="ヘッダーロゴ" />
+						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/GranLily_logo_transparent.png" alt="ヘッダーロゴ" />
 					</picture>
 				</a>
 			</h1>
@@ -45,9 +45,9 @@
 			<div class="header__logo">
 				<a href="<?php echo esc_url(home_url('/')); ?>">
 					<picture>
-						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/CodeUps-logo-pc.png"
+						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/GranLily_logo_transparent.png"
 							media="(min-width: 768px)" />
-						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/CodeUps-logo-sp.png" alt="ヘッダーロゴ" />
+						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/GranLily_logo_transparent.png" alt="ヘッダーロゴ" />
 					</picture>
 				</a>
 			</div>
@@ -58,8 +58,8 @@
 				<ul class="header-menu__items">
 					<li class="header-menu__item">
 						<a href="<?php echo esc_url(home_url('/campaign')); ?>">
-							<p class="header-menu__text-english">campaign</p>
-							<p class="header-menu__text-japanese">キャンペーン</p>
+							<p class="header-menu__text-english">works</p>
+							<p class="header-menu__text-japanese">制作物</p>
 						</a>
 					</li>
 					<li class="header-menu__item">
@@ -70,8 +70,8 @@
 					</li>
 					<li class="header-menu__item">
 						<a href="<?php echo esc_url(home_url('/information')); ?>">
-							<p class="header-menu__text-english">information</p>
-							<p class="header-menu__text-japanese">ダイビング情報</p>
+							<p class="header-menu__text-english">hobby</p>
+							<p class="header-menu__text-japanese">趣味</p>
 						</a>
 					</li>
 					<li class="header-menu__item">
@@ -117,14 +117,14 @@
 			<li class="drawer-menu__box drqwer-menu__box--01">
 				<div class="drawer-menu__item">
 					<a href="<?php echo esc_url(home_url('/campaign')); ?>">
-						<p class="starfish-icon">キャンペーン</p>
+						<p class="starfish-icon">制作物</p>
 					</a>
 					<ul>
 						<li>
-							<a href="<?php echo esc_url(home_url('/campaign')); ?>">ライセンス取得</a>
+							<a href="<?php echo esc_url(home_url('/campaign')); ?>">WEサイトs</a>
 						</li>
-						<li><a href="<?php echo esc_url(home_url('/campaign')); ?>">貸切体験ダイビング</a></li>
-						<li><a href="<?php echo esc_url(home_url('/campaign')); ?>">ナイトダイビング</a></li>
+						<li><a href="<?php echo esc_url(home_url('/campaign')); ?>">LP</a></li>
+						<li><a href="<?php echo esc_url(home_url('/campaign')); ?>">学習成果物</a></li>
 					</ul>
 				</div>
 				<div class="drawer-menu__item drawer-menu__item--01">
@@ -138,7 +138,7 @@
 			<li class="drawer-menu__box drawer-menu__box--02">
 				<div class="drawer-menu__item">
 					<a href="<?php echo esc_url(home_url('/information')); ?>">
-						<p class="starfish-icon">ダイビング情報</p>
+						<p class="starfish-icon">趣味</p>
 					</a>
 					<ul>
 						<li><a href="<?php echo esc_url(home_url('/information?tab=license-training')); ?>">ライセンス講習</a></li>

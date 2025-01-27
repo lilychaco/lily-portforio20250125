@@ -184,3 +184,13 @@ margin-right:calc(50%-50vw);
 		<a href="<?php echo esc_url(home_url('/contact')); ?>" class="button">Contact us</a>
 	</div>
 </div>
+
+
+<!--top blog 魚のあしらい-->
+<figure class="top-blog__fish-image u-desktop">
+	<img src="<?php echo get_theme_file_uri(); ?>/assets/images/accent02.png" alt="魚のイラスト" />
+</figure>
+
+<h3 class="section-heading__title section-heading__title--top-blog">
+	Blog
+</h3>

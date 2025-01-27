@@ -2179,7 +2179,7 @@ span.wpcf7-spinner {
 }
 
 .header-menu__item a {
-	color: #fff;
+	color: #000080;
 	display: flex;
 	flex-direction: column;
 	height: inherit;
@@ -2232,7 +2232,7 @@ span.wpcf7-spinner {
 }
 
 .header {
-	background-color: rgba(13, 41, 54, 0.68);
+	background-color: rgba(255, 255, 255, 0.68);
 	height: 5rem;
 	left: 0;
 	margin-left: auto;
@@ -3623,7 +3623,7 @@ span.wpcf7-spinner {
 
 .tab__menu {
 	align-items: center;
-	background: #DDF0F1;
+	background: #D6E6F5;
 	color: #000080;
 	cursor: pointer;
 	display: flex;
@@ -3812,7 +3812,7 @@ span.wpcf7-spinner {
 }
 
 .top-information {
-	background-color: #DDF0F1;
+	background-color: #D6E6F5;
 	padding-bottom: 4.875rem;
 	padding-top: 5rem;
 	z-index: -100;
@@ -3874,7 +3874,7 @@ span.wpcf7-spinner {
 }
 
 .top-price {
-	background-color: #DDF0F1;
+	background-color: #D6E6F5;
 	padding-bottom: 5.125rem;
 	padding-top: 5rem;
 	z-index: -100;
@@ -5107,15 +5107,7 @@ html {
 }
 
 .section-heading__title--top-blog {
-	color: #fff;
-}
-
-.section-heading__title--top-blog::first-letter {
-	color: #DDF0F1;
-}
-
-.section-heading__subtitle--top-blog {
-	color: #fff;
+	color: #000080;
 }
 
 .section-heading__title.section-heading__title--contact {
@@ -5382,7 +5374,7 @@ html {
 }
 
 .top-blog::before {
-	background-image: url("../images/blog-mv-pc.jpg"); /* 画像のパスを指定 */
+	background-image: url("../images/bonotu-pc.jpg"); /* 画像のパスを指定 */
 	background-position: center; /* 画像を中央に配置 */
 	background-size: cover; /* 背景画像を要素のサイズに合わせる */
 	content: "";

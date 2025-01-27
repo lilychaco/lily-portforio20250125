@@ -13,7 +13,7 @@
 
 
 	<div class="fv__copy">
-		<h2 class="fv__main-title">GranLily<br>の世界へ</h2>
+		<h2 class="fv__main-title">GranLily</h2>
 		<p class="fv__sub-title">into&nbsp;the&nbsp;ocean</p>
 	</div>
 </section>
@@ -143,8 +143,8 @@
 <section class="top-information top-information-layout" id="information">
 	<div class="top-information__inner inner">
 		<div class="top-information__heading section-heading">
-			<h3 class="section-heading__title">information</h3>
-			<h2 class="section-heading__subtitle">ダイビング情報</h2>
+			<h3 class="section-heading__title">hobby</h3>
+			<h2 class="section-heading__subtitle">趣味</h2>
 		</div>
 		<div class="top-information__main">
 			<figure class="top-information__image colorbox">
@@ -177,9 +177,7 @@
 		?>
 
 	<div class="top-blog__inner inner">
-		<figure class="top-blog__fish-image u-desktop">
-			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/accent02.png" alt="魚のイラスト" />
-		</figure>
+
 		<div class="top-blog__heading section-heading">
 			<h3 class="section-heading__title section-heading__title--top-blog">
 				Blog

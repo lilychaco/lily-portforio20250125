@@ -7,7 +7,7 @@
 			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-information-sp.jpg" alt="ファーストビュー画像" />
 		</picture>
 	</figure>
-	<h2 class="mv__title">information</h2>
+	<h2 class="mv__title">hobby</h2>
 </section>
 <?php get_template_part('common/breadcrumb') ?>
 
