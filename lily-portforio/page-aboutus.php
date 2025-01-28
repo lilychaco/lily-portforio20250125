@@ -14,21 +14,19 @@
 	<div class="page-aboutus__inner inner">
 		<div class="page-aboutus__container">
 			<div class="page-aboutus__sp-image u-mobile">
-				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/page-aboutus-ocean2.jpg" alt="私たちについての画像" />
-				<div class="page-aboutus__title page-aboutus__title--sp u-mobile">
-					<span>d</span>ive&nbsp;into<br />
-					the&nbsp;<span>o</span>cean
+				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/lily-profile.jpg" alt="春風が戦ぐ中、樹のそばに立っているGranLily" />
+				<div class=" page-aboutus__title page-aboutus__title--sp u-mobile">
+					Gran&nbsp;Lily
 				</div>
 			</div>
 			<div class="page-aboutus__pc-image u-desktop">
-				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/aboutus-ocean1.jpg" alt="私たちについての画像" />
-				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/aboutus-ocean2.jpg" alt="私たちについての画像" />
+				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/lily-profile-tree.jpg" alt="微笑んでいるGranLily" />
+				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/rose-greengarden.jpg" alt="バラ園のピンクのばら達" />
 			</div>
 			<div class="page-aboutus__main-wrapper">
 				<div class="page-aboutus__main">
 					<div class="page-aboutus__title u-desktop">
-						<span>d</span>ive&nbsp;into<br />
-						the&nbsp;<span>o</span>cean
+						<span>g</span>ran&nbsp;<span>l</span>ily
 					</div>
 					<div class="page-aboutus__body">
 						<div class="page-aboutus__text">

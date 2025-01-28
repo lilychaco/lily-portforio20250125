@@ -150,14 +150,14 @@
 		</div>
 		<div class="top-information__main">
 			<figure class="top-information__image colorbox">
-				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/ocean3.jpg" alt="黄色い魚の写真" />
+				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/kumanomi-mure.jpg" alt="黄色い魚の写真" />
 			</figure>
 			<div class="top-information__body">
 				<div class="top-information__top">
-					<div class="top-information__title">ライセンス講習</div>
+					<div class="top-information__title">スキューバダイビング</div>
 					<div class="top-information__text">
-						当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br />
-						正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
+						還暦を目前に控えて、泳げないけど、スキューバダイビングのライセンスを取りました。海の中は広く異次元の世界。まるで宇宙空間を旅している様です。地元天草の海をはじめ、沖縄、石垣島、与那国島、奄美大島、タイ、インドネシア、フィリピン、モルジブの海でも潜りました。
+
 					</div>
 				</div>
 				<div class="top-information__button">
