@@ -14,7 +14,8 @@
 
 	<div class="fv__copy">
 		<h2 class="fv__main-title">GranLily</h2>
-		<p class="fv__sub-title">into&nbsp;the&nbsp;ocean</p>
+		<p class="fv__sub-title">into&nbsp;the&nbsp;WEB&nbsp;World
+		</p>
 	</div>
 </section>
 
@@ -105,27 +106,31 @@
 
 <section class="top-aboutus inner top-aboutus-layout" id="aboutus">
 	<div class="top-aboutus__heading section-heading">
-		<h3 class="section-heading__title">about&nbsp;us</h3>
-		<h2 class="section-heading__subtitle">私たちについて</h2>
+		<h3 class="section-heading__title">Profile</h3>
+		<h2 class="section-heading__subtitle">プロフィール</h2>
 	</div>
 	<div class="top-aboutus__container">
 		<div class="top-aboutus__sp-image u-mobile">
-			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/aboutus-image.jpg" alt="私たちについての画像" />
+			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/lily-profile-sp.jpg" alt="中村弓美" />
 		</div>
 		<div class="top-aboutus__pc-image u-desktop">
-			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/aboutus-ocean2.jpg" alt="私たちについての画像" />
-			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/aboutus-ocean1.jpg" alt="私たちについての画像" />
+			<div class="top-aboutus__pc-image-item top-aboutus__pc-image-item--primary with-filter">
+				<img class="with-filter" src="<?php echo get_theme_file_uri(); ?>/assets/images/hondo-view-pc.jpg" alt="" />
+			</div>
+			<div class="top-aboutus__pc-image-item top-aboutus__pc-image-item--secondary">
+				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/lily-profile-long.jpg" alt="" />
+			</div>
 		</div>
 		<div class="top-aboutus__main-wrapper">
 			<div class="top-aboutus__main">
 				<div class="top-aboutus__title">
-					<span>d</span>ive&nbsp;into<br />
-					the&nbsp;<span>o</span>cean
+					<span>g</span>ran&nbsp;<span>l</span>ily
 				</div>
 				<div class="top-aboutus__body">
 					<div class="top-aboutus__text">
-						ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-						ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+						はじめまして。GranLily 代表の中村弓美と申します。
+						コロナ禍で自院の来客が激減した時、WEBの力を借りてみようと思いましたが、制作会社の提示する料金の高さにビックリ。
+						その経験から自分の力でホームページを作りたいとプログラミングの学習を始めました。
 					</div>
 					<div class="top-aboutus__button">
 						<a href="<?php echo esc_url(home_url('/aboutus')); ?>" class="button"> View more </a>
@@ -133,9 +138,6 @@
 				</div>
 			</div>
 		</div>
-		<figure class="top-aboutus__sango-image u-desktop">
-			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/accent01.png" alt="サンゴのイラスト" />
-		</figure>
 
 	</div>
 </section>
@@ -255,9 +257,6 @@
 						if ($voice_query->have_posts()) :
 	?>
 	<div class="top-voice__inner inner">
-		<figure class="top-voice__fish-image u-desktop">
-			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/accent03.png" alt="魚のイラスト" />
-		</figure>
 		<div class="top-voice__heading section-heading">
 			<h3 class="section-heading__title"><span>V</span>oice</h3>
 			<h2 class="section-heading__subtitle">お客様の声</h2>
@@ -343,9 +342,6 @@
 		<div class="top-voice__button">
 			<a href="<?php echo esc_url(home_url('/voice')); ?>" class="button"> View more</a>
 		</div>
-		<figure class="top-voice__seahorse-image u-desktop">
-			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/accent04.png" alt="タツノオトシゴのイラスト" />
-		</figure>
 	</div>
 	<?php endif  ?>
 	<?php wp_reset_postdata(); // クエリのリセット  ?>

@@ -64,8 +64,8 @@
 					</li>
 					<li class="header-menu__item">
 						<a href="<?php echo esc_url(home_url('/aboutus')); ?>">
-							<p class="header-menu__text-english">about&nbsp;us</p>
-							<p class="header-menu__text-japanese">私たちについて</p>
+							<p class="header-menu__text-english">profile</p>
+							<p class="header-menu__text-japanese">プロフィール</p>
 						</a>
 					</li>
 					<li class="header-menu__item">

@@ -194,3 +194,8 @@ margin-right:calc(50%-50vw);
 <h3 class="section-heading__title section-heading__title--top-blog">
 	Blog
 </h3>
+
+
+<figure class="top-voice__fish-image u-desktop">
+	<img src="<?php echo get_theme_file_uri(); ?>/assets/images/accent03.png" alt="魚のイラスト" />
+</figure>

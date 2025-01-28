@@ -3692,11 +3692,32 @@ span.wpcf7-spinner {
 	display: none;
 }
 
-.top-aboutus__pc-image img {
+.top-aboutus__pc-image-item--primary {
 	display: none;
 }
 
-.top-aboutus__pc-image img:nth-of-type(2) {
+.with-filter {
+	display: block;
+	position: relative;
+}
+
+.with-filter::after {
+	background-color: #000080;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.3;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.with-filter:hover::after {
+	opacity: 0.5;
+}
+
+.top-aboutus__pc-image-item--secondary {
 	display: none;
 }
 
@@ -3733,10 +3754,6 @@ span.wpcf7-spinner {
 	margin-top: 3.125rem;
 	padding-bottom: 0.25rem;
 	text-align: center;
-}
-
-.top-aboutus__sango-image {
-	display: none;
 }
 
 .top-blog {
@@ -5292,11 +5309,11 @@ html {
 
 .top-aboutus__pc-image {
 	display: inline-block;
-	padding-left: 12.5rem;
+	padding-right: 12.5rem;
 	position: relative;
 }
 
-.top-aboutus__pc-image img {
+.top-aboutus__pc-image-item--primary {
 	-o-object-fit: cover;
 	aspect-ratio: 880/581;
 	display: block;
@@ -5305,30 +5322,35 @@ html {
 	object-fit: cover;
 }
 
-.top-aboutus__pc-image img:nth-of-type(2) {
+.with-filter {
+	position: relative;
+}
+
+.with-filter::after {
+	content: "";
+}
+
+.top-aboutus__pc-image-item--secondary {
 	-o-object-fit: cover;
 	aspect-ratio: 400/606;
 	display: inline-block;
 	height: auto;
-	left: 0;
 	max-width: 25rem;
 	object-fit: cover;
 	position: absolute;
+	right: 0;
 	top: -5rem;
 }
 
 .top-aboutus__main-wrapper {
-	left: 12.375rem;
+	left: 3.75rem;
+	max-width: 35rem;
 	position: absolute;
 	top: 7.625rem;
 	z-index: 10;
 }
 
 .top-aboutus__main {
-	grid-gap: 2.5rem;
-	display: grid;
-	gap: 2.5rem;
-	grid-template-columns: 1fr 1fr;
 	margin-top: 0;
 	max-width: 52.5rem;
 	width: 100%;
@@ -5340,10 +5362,6 @@ html {
 	line-height: 1.25;
 }
 
-.top-aboutus__body {
-	margin-top: 0;
-}
-
 .top-aboutus__text {
 	color: #fff;
 	max-height: 21.875rem;
@@ -5352,21 +5370,6 @@ html {
 
 .top-aboutus__button {
 	margin-top: 2.5rem;
-}
-
-.top-aboutus__sango-image {
-	bottom: -5.375rem;
-	display: block;
-	position: absolute;
-	right: calc(50% - min(48vw, 39.8125rem));
-	width: 12.125rem;
-	z-index: 100;
-}
-
-.top-aboutus__sango-image img {
-	-o-object-fit: cover;
-	aspect-ratio: 194/181;
-	object-fit: cover;
 }
 
 .top-blog {
