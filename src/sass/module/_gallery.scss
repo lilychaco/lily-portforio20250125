@@ -9,22 +9,7 @@
   position: relative;
 }
 
-.gallery__inner::after {
-  display: none;
 
-  @include mq(md) {
-    content: '';
-    display: block;
-    width: rem(301);
-    height: rem(138);
-    background-image: url('../images/contact-fish.png');
-    background-size: cover;
-    position: absolute;
-    top: -76px;
-    right: calc(50% - min(48vw, 40rem));
-    z-index: 100;
-  }
-}
 
 .gallery__heading {
   padding-left: rem(6);

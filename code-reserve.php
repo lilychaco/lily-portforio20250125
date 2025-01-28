@@ -199,3 +199,21 @@ margin-right:calc(50%-50vw);
 <figure class="top-voice__fish-image u-desktop">
 	<img src="<?php echo get_theme_file_uri(); ?>/assets/images/accent03.png" alt="魚のイラスト" />
 </figure>
+
+<!--gallery 魚のあしらい-->
+<!-- .gallery__inner::after {
+display: none;
+
+@include mq(md) {
+content: '';
+display: block;
+width: rem(301);
+height: rem(138);
+background-image: url('../images/contact-fish.png');
+background-size: cover;
+position: absolute;
+top: -76px;
+right: calc(50% - min(48vw, 40rem));
+z-index: 100;
+}
+} -->

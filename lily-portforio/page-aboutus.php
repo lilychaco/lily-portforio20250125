@@ -2,11 +2,12 @@
 <section class="mv">
 	<figure class="mv__img">
 		<picture>
-			<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv-aboutus.jpg" media="(min-width: 768px)" />
-			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-aboutus-sp.jpg" alt="ファーストビュー画像" />
+			<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/rose-greengarden.jpg"
+				media="(min-width: 768px)" />
+			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/rose-greengarden.jpg" alt="バラ園のバラ" />
 		</picture>
 	</figure>
-	<h2 class="mv__title">about us</h2>
+	<h2 class="mv__title">profile</h2>
 </section>
 <?php get_template_part('common/breadcrumb') ?>
 
@@ -21,7 +22,7 @@
 			</div>
 			<div class="page-aboutus__pc-image u-desktop">
 				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/lily-profile-tree.jpg" alt="微笑んでいるGranLily" />
-				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/rose-greengarden.jpg" alt="バラ園のピンクのばら達" />
+				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/bali-morning.jpg" alt="バラ園のピンクのばら達" />
 			</div>
 			<div class="page-aboutus__main-wrapper">
 				<div class="page-aboutus__main">
@@ -41,36 +42,6 @@
 </div>
 
 
-<section class="gallery gallery-layout">
-	<?php
-// gallery_imageフィールドのデータを取得
-$fields = SCF::get('gallery_image');
 
-// $fieldsが空の場合は<section>を出力しない
-if (!empty($fields)) : ?>
-	<div class="gallery__inner inner">
-		<div class="gallery__heading section-heading">
-			<h3 class="section-heading__title">gallery</h3>
-			<h2 class="section-heading__subtitle">フォト</h2>
-		</div>
-		<div class="gallery__content">
-			<?php
-				// gallery_imageフィールドの中身をループ
-				foreach ($fields as $field) {
-					// 画像のURLを取得、なければデフォルト画像を指定
-					$image_url = $field['gallery_img'] ? wp_get_attachment_url($field['gallery_img']) : esc_url(get_theme_file_uri('/assets/images/gallery1.jpg'));
-					?>
-			<div class="gallery__item js-modal-open">
-				<img src="<?php echo $image_url; ?>" alt="海の中の写真">
-			</div>
-			<?php
-				}
-			?>
-		</div>
-		<!-- 画像のモーダル時のグレー背景 -->
-		<div class="gallery__display" id="grayDisplay"></div>
-	</div>
-	<?php endif;  ?>
-</section>
 
 <?php get_footer(); ?>

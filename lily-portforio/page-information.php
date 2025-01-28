@@ -17,59 +17,165 @@
 			<ul class="tab__list">
 				<li class="tab__menu js-tab" data-tab="license-training" current>
 					<p class="tab__text tab__text--01" id="license-training">
-						ライセンス<br class="u-mobile" />講習
+						ダイビング<br class="u-mobile" />
 					</p>
 				</li>
 				<li class="tab__menu js-tab" data-tab="fun-diving">
 					<p class="tab__text tab__text--02" id="fun-diving">
-						ファン<br class="u-mobile" />ダイビング
+						バラ栽培<br class="u-mobile" />
 					</p>
 				</li>
 				<li class="tab__menu js-tab" data-tab="trial-diving">
 					<p class="tab__text tab__text--03" id="trial-diving">
-						体験<br class="u-mobile" />ダイビング
+						トレッキング<br />海外旅行
 					</p>
 				</li>
 			</ul>
 			<div class="tab__contents">
-				<div class="tab__content js-content info-card">
-					<div class="info-card__container">
-						<div class="info-card__body">
-							<div class="info-card__title">ライセンス講習</div>
-							<div class="info-card__text">
-								泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします！スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう！
+				<div class="tab__content js-content">
+					<div class="tab__content-item info-card">
+						<div class="info-card__container">
+							<div class="info-card__body">
+								<div class="info-card__title">スキューバダイビング</div>
+								<div class="info-card__text">
+									還暦を目前に控えて、泳げないけど、スキューバダイビングのライセンスを取りました。海の中は広く異次元の世界。まるで宇宙空間を旅している様です。地元天草の海をはじめ、沖縄、石垣島、与那国島、奄美大島、タイ、インドネシア、フィリピン、モルジブの海でも潜りました。
+								</div>
 							</div>
-						</div>
-						<div class="info-card__img">
-							<img src="<?php echo get_theme_file_uri(); ?>/assets/images/info-card-img01.jpg"
-								alt="ダイバーが海に浮かんでるのを空から撮影している写真" />
+							<div class="info-card__img">
+								<img src="<?php echo get_theme_file_uri(); ?>/assets/images/kakurekumanomi-ami.jpg"
+									alt="イソギンチャクの中にいるかわいいカクレクマノミ" />
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="tab__content js-content info-card">
-					<div class="info-card__container">
-						<div class="info-card__body">
-							<div class="info-card__title">ファンダイビング</div>
-							<div class="info-card__text">
-								ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
+					<div class="tab__content-item">
+						<section class="gallery gallery-layout">
+							<?php
+								// gallery_imageフィールドのデータを取得
+								$fields_diving = SCF::get('gallery_image-diving');
+
+								// $fieldsが空の場合は<section>を出力しない
+								if (!empty($fields_diving)) : ?>
+							<div class="gallery__inner inner">
+								<div class="gallery__heading section-heading">
+									<h3 class="section-heading__title">gallery</h3>
+									<h2 class="section-heading__subtitle">フォト</h2>
+								</div>
+								<div class="gallery__content">
+									<?php
+									// gallery_imageフィールドの中身をループ
+									foreach ($fields_diving as $field_diving) {
+										// 画像のURLを取得、なければデフォルト画像を指定
+										$image_url_diving = $field_diving['gallery_img-diving'] ? wp_get_attachment_url($field_diving['gallery_img-diving']) : esc_url(get_theme_file_uri('/assets/images/gallery1.jpg'));
+										?>
+									<div class="gallery__item js-modal-open">
+										<img src="<?php echo $image_url_diving; ?>" alt="海の中の写真">
+									</div>
+									<?php
+									}
+								?>
+								</div>
+								<!-- 画像のモーダル時のグレー背景 -->
+								<div class="gallery__display" id="grayDisplay"></div>
 							</div>
-						</div>
-						<div class="info-card__img">
-							<img src="<?php echo get_theme_file_uri(); ?>/assets/images/info-card-img02.jpg" alt="" />
-						</div>
+							<?php endif;  ?>
+						</section>
 					</div>
 				</div>
-				<div class="tab__content js-content info-card">
-					<div class="info-card__container">
-						<div class="info-card__body">
-							<div class="info-card__title">体験ダイビング</div>
-							<div class="info-card__text">
-								ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
+				<div class="tab__content js-content">
+					<div class="tab__content-item info-card">
+						<div class="info-card__container">
+							<div class="info-card__body">
+								<div class="info-card__title">バラ栽培</div>
+								<div class="info-card__text">実家の父が育てられなくなったバラ鉢を受け継いで、バラを育てました。1輪が大きくて香りの良いバラが好きです。
+								</div>
+							</div>
+							<div class="info-card__img">
+								<img src="<?php echo get_theme_file_uri(); ?>/assets/images/kakurekumanomi-ami.jpg" alt="" />
 							</div>
 						</div>
-						<div class="info-card__img">
-							<img src="<?php echo get_theme_file_uri(); ?>/assets/images/info-card-img03.jpg" alt="" />
+					</div>
+					<div class="tab__content-item">
+						<section class="gallery gallery-layout">
+							<?php
+								// gallery_imageフィールドのデータを取得
+								$fields_rose = SCF::get('gallery_image-rose');
+
+								// $fieldsが空の場合は<section>を出力しない
+								if (!empty($fields_rose)) : ?>
+							<div class="gallery__inner inner">
+								<div class="gallery__heading section-heading">
+									<h3 class="section-heading__title">gallery</h3>
+									<h2 class="section-heading__subtitle">フォト</h2>
+								</div>
+								<div class="gallery__content">
+									<?php
+									// gallery_imageフィールドの中身をループ
+									foreach ($fields_rose as $field_rose) {
+										// 画像のURLを取得、なければデフォルト画像を指定
+										$image_url_rose = $field_rose['gallery_img-rose'] ? wp_get_attachment_url($field_rose['gallery_img-rose']) : esc_url(get_theme_file_uri('/assets/images/gallery1.jpg'));
+										?>
+									<div class="gallery__item js-modal-open">
+										<img src="<?php echo $image_url_rose; ?>" alt="海の中の写真">
+									</div>
+									<?php
+									}
+								?>
+								</div>
+								<!-- 画像のモーダル時のグレー背景 -->
+								<div class="gallery__display" id="grayDisplay"></div>
+							</div>
+							<?php endif;  ?>
+						</section>
+					</div>
+				</div>
+				<div class="tab__content js-content">
+					<div class="tab__content-item info-card">
+						<div class="info-card__container">
+							<div class="info-card__body">
+								<div class="info-card__title">トレッキング・海外旅行</div>
+								<div class="info-card__text">
+									子ども達が小さい頃から、近くの山へ登っていました。十万山、次郎丸岳、久住山、市房山、高千穂峰、豊満山、福知山などなど。
+									中でも久住山は、10回以上登っています。<br>
+									60過ぎてダイビングを始めて、海外遠征をするようになり、海外へ出るハードルが下がりました。2023年にはスペインへ、2024年にはインドを旅行してきました。
+								</div>
+							</div>
+							<div class="info-card__img">
+								<img src="<?php echo get_theme_file_uri(); ?>/assets/images/info-card-img03.jpg" alt="" />
+							</div>
 						</div>
+					</div>
+					<div class="tab__content-item">
+						<section class="gallery gallery-layout">
+							<?php
+								// gallery_imageフィールドのデータを取得
+								$fields_trecking = SCF::get('gallery_image-trecking');
+
+								// $fieldsが空の場合は<section>を出力しない
+								if (!empty($fields_trecking)) : ?>
+							<div class="gallery__inner inner">
+								<div class="gallery__heading section-heading">
+									<h3 class="section-heading__title">gallery</h3>
+									<h2 class="section-heading__subtitle">フォト</h2>
+								</div>
+								<div class="gallery__content">
+									<?php
+									// gallery_imageフィールドの中身をループ
+									foreach ($fields_trecking as $field_trecking) {
+										// 画像のURLを取得、なければデフォルト画像を指定
+										$image_url_trecking = $field_trecking['gallery_img-trecking'] ? wp_get_attachment_url($field_trecking['gallery_img-trecking']) : esc_url(get_theme_file_uri('/assets/images/gallery1.jpg'));
+										?>
+									<div class="gallery__item js-modal-open">
+										<img src="<?php echo $image_url_trecking; ?>" alt="海の中の写真">
+									</div>
+									<?php
+									}
+								?>
+								</div>
+								<!-- 画像のモーダル時のグレー背景 -->
+								<div class="gallery__display" id="grayDisplay"></div>
+							</div>
+							<?php endif;  ?>
+						</section>
 					</div>
 				</div>
 			</div>
