@@ -41,9 +41,6 @@
    					<div id="weather-app-container">
    						<div id="root"></div>
    					</div>
-   					<script src="/wp-content/uploads/weather-app/static/js/main.f17a80f5.js"></script>
-   					<link href="/wp-content/uploads/weather-app/static/css/main.9a3fbc66.css" rel="stylesheet" />
-
    				</div>
    			</div>
    		</div>

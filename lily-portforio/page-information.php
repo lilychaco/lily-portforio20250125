@@ -51,7 +51,7 @@
 						<section class="gallery gallery-layout">
 							<?php
 								// gallery_imageフィールドのデータを取得
-								$fields_diving = SCF::get('gallery_image-diving');
+								$fields_diving = SCF::get('gallery_image-diving', get_the_ID());
 
 								// $fieldsが空の場合は<section>を出力しない
 								if (!empty($fields_diving)) : ?>
@@ -98,7 +98,7 @@
 						<section class="gallery gallery-layout">
 							<?php
 								// gallery_imageフィールドのデータを取得
-								$fields_rose = SCF::get('gallery_image-rose');
+								$fields_rose = SCF::get('gallery_image-rose', get_the_ID());
 
 								// $fieldsが空の場合は<section>を出力しない
 								if (!empty($fields_rose)) : ?>
@@ -148,7 +148,7 @@
 						<section class="gallery gallery-layout">
 							<?php
 								// gallery_imageフィールドのデータを取得
-								$fields_trecking = SCF::get('gallery_image-trecking');
+								$fields_trecking = SCF::get('gallery_image-trecking', get_the_ID());
 
 								// $fieldsが空の場合は<section>を出力しない
 								if (!empty($fields_trecking)) : ?>

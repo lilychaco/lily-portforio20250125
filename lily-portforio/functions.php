@@ -1,32 +1,37 @@
 <?php
 
-function theme_enqueue_styles() {
-    // Google Fontsの読み込み
-    wp_enqueue_style('mytheme-google-fonts', 'https://fonts.googleapis.com/css2?family=Lato&family=Gotu&family=Noto+Sans+JP:wght@400;500;700&display=swap', [], null);
+		function theme_enqueue_styles() {
+		// Google Fontsの読み込み
+		wp_enqueue_style('mytheme-google-fonts',
+		'https://fonts.googleapis.com/css2?family=Lato&family=Gotu&family=Noto+Sans+JP:wght@400;500;700&display=swap', [],
+		null);
 
-    // jQueryを読み込む（WordPressの標準jQuery）
-    wp_enqueue_script('jquery');
+		// jQueryを読み込む（WordPressの標準jQuery）
+		wp_enqueue_script('jquery');
 
-    // Swiper JSとそのCSSの読み込み
-    wp_enqueue_script('mytheme-swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js', [], null, true);
-    wp_enqueue_style('mytheme-swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css', [], null);
+		// Swiper JSとそのCSSの読み込み
+		wp_enqueue_script('mytheme-swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js', [], null, true);
+		wp_enqueue_style('mytheme-swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css', [], null);
 
-    // ローカルJavaScriptファイルの読み込み
-    wp_enqueue_script('jquery-inview', get_template_directory_uri() . '/assets/js/jquery.inview.min.js', ['jquery'], null, true);
-    wp_enqueue_script('custom-script', get_template_directory_uri() . '/assets/js/script.js', ['jquery'], null, true);
-		  wp_enqueue_script('custom-script', get_template_directory_uri() . '/assets/js/custom-slider.js', ['jquery'], null, true);
+		// ローカルJavaScriptファイルの読み込み
+		wp_enqueue_script('jquery-inview', get_template_directory_uri() . '/assets/js/jquery.inview.min.js', ['jquery'], null,
+		true);
+		wp_enqueue_script('custom-script', get_template_directory_uri() . '/assets/js/script.js', ['jquery'], null, true);
+		wp_enqueue_script('custom-script', get_template_directory_uri() . '/assets/js/custom-slider.js', ['jquery'], null,
+		true);
 
-    // jQuery UI CSSの読み込み
-    wp_enqueue_style('jquery-ui-css', 'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css', [], null);
+		// jQuery UI CSSの読み込み
+		wp_enqueue_style('jquery-ui-css', 'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css', [], null);
 
-    // ローカルCSSファイルの読み込み
-    $theme_version = wp_get_theme()->get('Version');
-    wp_enqueue_style('custom-style', get_template_directory_uri() . '/assets/css/styles.css', [], $theme_version);
-}
-add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
+		// ローカルCSSファイルの読み込み
+		$theme_version = wp_get_theme()->get('Version');
+		wp_enqueue_style('custom-style', get_template_directory_uri() . '/assets/css/styles.css', [], $theme_version);
+		}
+		add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
 
-//weather-appのCSSとJSを読み込む
+
+			//weather-appのCSSとJSを読み込む
 function enqueue_weather_app_assets() {
     $uploads_dir = wp_upload_dir(); // アップロードディレクトリのURLを取得
     $base_url = $uploads_dir['baseurl'] . '/weather-app'; // ReactアプリのベースURL
@@ -38,6 +43,9 @@ function enqueue_weather_app_assets() {
     wp_enqueue_script('weather-app-scripts', $base_url . '/static/js/main.067c1b69.js', array(), null, true);
 }
 add_action('wp_enqueue_scripts', 'enqueue_weather_app_assets');
+
+
+
 
 
 
