@@ -129,8 +129,7 @@
 				<div class="top-aboutus__body">
 					<div class="top-aboutus__text">
 						はじめまして。GranLily 代表の中村弓美と申します。開業18年の小児科医ですが、コーダーとしてWEB制作のお仕事をしています。
-						コロナ禍で自院の来客が激減した時、WEBの力を借りてみようと思いましたが、制作会社の提示する料金の高さにビックリ。
-						その経験から自分の力でホームページを作りたいとプログラミングの学習を始めました。
+						コロナ禍で自院の来客が激減した時、危機感を持ち、プログラミングの学習を始めました。
 					</div>
 					<div class="top-aboutus__button">
 						<a href="<?php echo esc_url(home_url('/aboutus')); ?>" class="button"> View more </a>
