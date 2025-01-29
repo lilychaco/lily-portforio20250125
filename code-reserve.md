@@ -288,3 +288,82 @@ function enqueue_weather_app_assets() {
     );
 }
 add_action('wp_enqueue_scripts', 'enqueue_weather_app_assets');
+
+
+
+
+
+						<section class="gallery gallery-layout">
+							<?php
+								// gallery_imageフィールドのデータを取得
+								$fields_diving = SCF::get('gallery_image-diving', get_the_ID());
+
+								// $fieldsが空の場合は<section>を出力しない
+								if (!empty($fields_diving)) : ?>
+							<div class="gallery__inner inner">
+								<div class="gallery__heading section-heading">
+									<h3 class="section-heading__title">gallery</h3>
+									<h2 class="section-heading__subtitle">フォト</h2>
+								</div>
+								<div class="gallery__content">
+									<?php
+									// gallery_imageフィールドの中身をループ
+									foreach ($fields_diving as $field_diving) {
+										// 画像のURLを取得、なければデフォルト画像を指定
+										$image_url_diving = $field_diving['gallery_img-diving'] ? wp_get_attachment_url($field_diving['gallery_img-diving']) : esc_url(get_theme_file_uri('/assets/images/gallery1.jpg'));
+										?>
+									<div class="gallery__item js-modal-open">
+										<img src="<?php echo $image_url_diving; ?>" alt="海の中の写真">
+									</div>
+									<?php
+									}
+								?>
+								</div>
+								<!-- 画像のモーダル時のグレー背景 -->
+						<div class="gallery__display" id="grayDisplay"></div>
+					</div>
+					<?php endif;  ?>
+					</section>
+
+
+
+
+
+<section>
+	<div class="profile__inner inner">
+		<h2 class="info__heading">特定商取引法に基づく表記</h2>
+		<div class="business-info c-info">
+			<div class="info__item">
+				<p class="info__label">販売業者</p>
+				<p class="info__content">株式会社umipro</p>
+			</div>
+			<div class="info__item">
+				<p class="info__label">運営統括責任者</p>
+				<p class="info__content">服部尚人</p>
+			</div>
+			<div class="info__item">
+				<p class="info__label">所在地</p>
+				<p class="info__content">沖縄県石垣市登野城510番地</p>
+			</div>
+
+			<div class="info__item">
+				<p class="info__label">連絡先</p>
+				<p class="info__content">070-8973-0790</p>
+				<p class="info__note">
+					※原則お電話での問い合わせは受け付けておりません。<br />
+					お問い合わせ、ご質問等は下記メールアドレスよりお願いいたします
+				</p>
+			</div>
+			<div class="info__item">
+				<p class="info__label">メールアドレス</p>
+				<p class="info__content">
+					info★umipro.net<br />
+					（スパム防止のため★部分を半角@に書き換えて送付ください。）
+				</p>
+			</div>
+
+
+
+		</div>
+	</div>
+</section>

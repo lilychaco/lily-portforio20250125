@@ -80,18 +80,8 @@
 							<p class="header-menu__text-japanese">ブログ</p>
 						</a>
 					</li>
-					<li class="header-menu__item">
-						<a href="<?php echo esc_url(home_url('/voice')); ?>">
-							<p class="header-menu__text-english">voice</p>
-							<p class="header-menu__text-japanese">お客様の声</p>
-						</a>
-					</li>
-					<li class="header-menu__item">
-						<a href="<?php echo esc_url(home_url('/price')); ?>">
-							<p class="header-menu__text-english">price</p>
-							<p class="header-menu__text-japanese">料金一覧</p>
-						</a>
-					</li>
+
+
 					<li class="header-menu__item">
 						<a href="<?php echo esc_url(home_url('/faq')); ?>">
 							<p class="header-menu__text-english">FAQ</p>
@@ -113,90 +103,35 @@
 	</header>
 	<div class="drawer drawer-layout" id="js-global-menu" aria-hidden="true">
 		<ul class="drawer-menu inner">
-			<!-- ブロック1 -->
-			<li class="drawer-menu__box drqwer-menu__box--01">
-				<div class="drawer-menu__item">
-					<a href="<?php echo esc_url(home_url('/campaign')); ?>">
-						<p class="starfish-icon">制作物</p>
-					</a>
-					<ul>
-						<li>
-							<a href="<?php echo esc_url(home_url('/campaign')); ?>">WEサイトs</a>
-						</li>
-						<li><a href="<?php echo esc_url(home_url('/campaign')); ?>">LP</a></li>
-						<li><a href="<?php echo esc_url(home_url('/campaign')); ?>">学習成果物</a></li>
-					</ul>
-				</div>
-				<div class="drawer-menu__item drawer-menu__item--01">
-					<a href="<?php echo esc_url(home_url('/aboutus')); ?>">
-						<p class="starfish-icon">私たちについて</p>
-					</a>
-				</div>
+			<li class="drawer-menu__item">
+				<a href="<?php echo esc_url(home_url('/campaign')); ?>">
+					<p class="starfish-icon">制作物</p>
+				</a>
 			</li>
-
-			<!-- ブロック2 -->
-			<li class="drawer-menu__box drawer-menu__box--02">
-				<div class="drawer-menu__item">
-					<a href="<?php echo esc_url(home_url('/information')); ?>">
-						<p class="starfish-icon">趣味</p>
-					</a>
-					<ul>
-						<li><a href="<?php echo esc_url(home_url('/information?tab=license-training')); ?>">ライセンス講習</a></li>
-						<li><a href="<?php echo esc_url(home_url('/information?tab=trial-diving')); ?>">体験ダイビング</a></li>
-						<li><a href="<?php echo esc_url(home_url('/information?tab=fun-diving')); ?>">ファンダイビング</a></li>
-					</ul>
-
-				</div>
-				<div class="drawer-menu__item drawer-menu__item--01">
-					<a href="<?php echo esc_url(home_url('/blog')); ?>">
-						<p class="starfish-icon">ブログ</p>
-					</a>
-				</div>
+			<li class="drawer-menu__item">
+				<a href="<?php echo esc_url(home_url('/aboutus')); ?>">
+					<p class="starfish-icon">私たちについて</p>
+				</a>
 			</li>
-
-			<!-- ブロック3 -->
-			<li class="drawer-menu__box drawer-menu__box--03">
-				<div class="drawer-menu__item">
-					<a href="<?php echo esc_url(home_url('/voice')); ?>">
-						<p class="starfish-icon">お客様の声</p>
-					</a>
-				</div>
-				<div class="drawer-menu__item">
-					<a href="<?php echo esc_url(home_url('/price')); ?>">
-						<p class="starfish-icon">料金一覧</p>
-					</a>
-					<ul>
-						<li><a href="<?php echo esc_url(home_url('/price')); ?>">ライセンス講習</a></li>
-						<li><a href="<?php echo esc_url(home_url('/price')); ?>">体験ダイビング</a></li>
-						<li><a href="<?php echo esc_url(home_url('/price')); ?>">ファンダイビング</a></li>
-					</ul>
-				</div>
+			<li class="drawer-menu__item">
+				<a href="<?php echo esc_url(home_url('/information')); ?>">
+					<p class="starfish-icon">趣味</p>
+				</a>
 			</li>
-
-			<!-- ブロック4 -->
-			<li class="drawer-menu__box drawer-menu__box--04">
-				<div class="drawer-menu__item">
-					<a href="<?php echo esc_url(home_url('/faq')); ?>">
-						<p class="starfish-icon">よくある質問</p>
-					</a>
-				</div>
-				<div class="drawer-menu__item">
-					<a href="<?php echo esc_url(home_url('/privacypolicy')); ?>">
-						<p class="starfish-icon">
-							プライバシー<br class="u-mobile" />ポリシー
-						</p>
-					</a>
-				</div>
-				<div class="drawer-menu__item">
-					<a href="<?php echo esc_url(home_url('/terms-of-service')); ?>">
-						<p class="starfish-icon">利用規約</p>
-					</a>
-				</div>
-				<div class="drawer-menu__item">
-					<a href="<?php echo esc_url(home_url('/contact')); ?>">
-						<p class="starfish-icon">お問い合わせ</p>
-					</a>
-				</div>
+			<li class="drawer-menu__item">
+				<a href="<?php echo esc_url(home_url('/blog')); ?>">
+					<p class="starfish-icon">ブログ</p>
+				</a>
+			</li>
+			<li class="drawer-menu__item">
+				<a href="<?php echo esc_url(home_url('/faq')); ?>">
+					<p class="starfish-icon">よくある質問</p>
+				</a>
+			</li>
+			<li class="drawer-menu__item">
+				<a href="<?php echo esc_url(home_url('/contact')); ?>">
+					<p class="starfish-icon">お問い合わせ</p>
+				</a>
 			</li>
 		</ul>
 	</div>

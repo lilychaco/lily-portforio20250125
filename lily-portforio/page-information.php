@@ -2,9 +2,9 @@
 <section class="mv">
 	<figure class="mv__img">
 		<picture>
-			<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv-information.jpg"
+			<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/20240612bigeyetrevally.jpg"
 				media="(min-width: 768px)" />
-			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-information-sp.jpg" alt="ファーストビュー画像" />
+			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/20240612bigeyetrevally.jpg" alt="ファーストビュー画像" />
 		</picture>
 	</figure>
 	<h2 class="mv__title">hobby</h2>
@@ -27,7 +27,7 @@
 				</li>
 				<li class="tab__menu js-tab" data-tab="trial-diving">
 					<p class="tab__text tab__text--03" id="trial-diving">
-						トレッキング<br />海外旅行
+						トレッキング<br />旅行
 					</p>
 				</li>
 			</ul>
@@ -90,7 +90,7 @@
 								</div>
 							</div>
 							<div class="info-card__img">
-								<img src="<?php echo get_theme_file_uri(); ?>/assets/images/kakurekumanomi-ami.jpg" alt="" />
+								<img src="<?php echo get_theme_file_uri(); ?>/assets/images/20190501ambridgerose.jpg" alt="" />
 							</div>
 						</div>
 					</div>
@@ -115,7 +115,7 @@
 										$image_url_rose = $field_rose['gallery_img-rose'] ? wp_get_attachment_url($field_rose['gallery_img-rose']) : esc_url(get_theme_file_uri('/assets/images/gallery1.jpg'));
 										?>
 									<div class="gallery__item js-modal-open">
-										<img src="<?php echo $image_url_rose; ?>" alt="海の中の写真">
+										<img src="<?php echo $image_url_rose; ?>" alt="赤やピンク、黄色のバラ">
 									</div>
 									<?php
 									}
@@ -126,13 +126,14 @@
 							</div>
 							<?php endif;  ?>
 						</section>
+
 					</div>
 				</div>
 				<div class="tab__content js-content">
 					<div class="tab__content-item info-card">
 						<div class="info-card__container">
 							<div class="info-card__body">
-								<div class="info-card__title">トレッキング・海外旅行</div>
+								<div class="info-card__title">トレッキング・旅行</div>
 								<div class="info-card__text">
 									子ども達が小さい頃から、近くの山へ登っていました。十万山、次郎丸岳、久住山、市房山、高千穂峰、豊満山、福知山などなど。
 									中でも久住山は、10回以上登っています。<br>
@@ -140,7 +141,7 @@
 								</div>
 							</div>
 							<div class="info-card__img">
-								<img src="<?php echo get_theme_file_uri(); ?>/assets/images/info-card-img03.jpg" alt="" />
+								<img src="<?php echo get_theme_file_uri(); ?>/assets/images/Taj-Mahal.jpg" alt="" />
 							</div>
 						</div>
 					</div>
@@ -165,7 +166,7 @@
 										$image_url_trecking = $field_trecking['gallery_img-trecking'] ? wp_get_attachment_url($field_trecking['gallery_img-trecking']) : esc_url(get_theme_file_uri('/assets/images/gallery1.jpg'));
 										?>
 									<div class="gallery__item js-modal-open">
-										<img src="<?php echo $image_url_trecking; ?>" alt="海の中の写真">
+										<img src="<?php echo $image_url_trecking; ?>" alt="スペイン王様の小道、ロンダの街、インドのタージマハル、久住山、星生山、京都嵐山">
 									</div>
 									<?php
 									}
@@ -176,6 +177,8 @@
 							</div>
 							<?php endif;  ?>
 						</section>
+
+
 					</div>
 				</div>
 			</div>

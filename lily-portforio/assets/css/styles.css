@@ -1468,13 +1468,8 @@ span.wpcf7-spinner {
 }
 
 .drawer-menu {
-	grid-column-gap: 2.1671826625%;
-	-moz-column-gap: 2.1671826625%;
 	grid-row-gap: 2.125rem;
-	column-gap: 2.1671826625%;
 	display: grid;
-	grid-template-areas: "a b" "c d";
-	grid-template-columns: 10.375rem 9.375rem;
 	margin-inline: auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -1486,49 +1481,8 @@ span.wpcf7-spinner {
 	width: 100%;
 }
 
-.drawer-menu__box {
-	color: #fff;
-	display: flex;
-	flex-direction: column;
-	height: inherit;
-	width: 100%;
-}
-
-.drawer-menu__box--01 {
-	grid-area: a;
-	padding-top: 0;
-}
-
-.drawer-menu__box--02 {
-	grid-area: c;
-	padding-bottom: 0.875rem;
-	padding-top: 0;
-}
-
-.drawer-menu__box--03 {
-	grid-area: b;
-	padding-top: 0;
-}
-
-.drawer-menu__box--04 {
-	grid-area: d;
-	padding-bottom: 1rem;
-}
-
-.drawer-menu__box--05 {
-	padding-bottom: 1rem;
-	padding-left: 0.625rem;
-	padding-top: 1.5rem;
-}
-
-.drawer-menu__box--06 {
-	padding-bottom: 1rem;
-	padding-left: 0.625rem;
-	padding-top: 1.25rem;
-}
-
 .drawer-menu__item:not(:first-child) {
-	margin-top: 2.5rem;
+	margin-top: 1.25rem;
 }
 
 .drawer-menu__item {
@@ -3039,7 +2993,8 @@ span.wpcf7-spinner {
 
 .price-list__item {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: row;
+	gap: 1.875rem;
 	margin-top: 0.5rem;
 }
 
@@ -3049,6 +3004,7 @@ span.wpcf7-spinner {
 	font-weight: 400;
 	letter-spacing: 0;
 	line-height: 1.7;
+	text-align: left;
 }
 
 .price-list__number {
@@ -3057,7 +3013,7 @@ span.wpcf7-spinner {
 	font-weight: 400;
 	letter-spacing: 0;
 	line-height: 1.7;
-	margin-left: 0.3125rem;
+	margin-left: 1.25rem;
 }
 
 .price-lists {
@@ -3928,10 +3884,6 @@ span.wpcf7-spinner {
 	z-index: 1000;
 }
 
-.top-price__fish-image {
-	display: none;
-}
-
 .top-voice__inner {
 	position: relative;
 }
@@ -4599,30 +4551,6 @@ html {
 	justify-content: space-between;
 	margin: 0;
 	width: 63rem;
-}
-
-.drawer-menu__box--01 {
-	padding-top: 1.5rem;
-}
-
-.drawer-menu__box--02 {
-	padding-top: 1.5rem;
-}
-
-.drawer-menu__box--04 {
-	padding-top: 1rem;
-}
-
-.drawer-menu__box--05 {
-	padding-bottom: 1rem;
-	padding-left: 0;
-	padding-top: 1.5rem;
-}
-
-.drawer-menu__box--06 {
-	padding-bottom: 1rem;
-	padding-left: 0;
-	padding-top: 1.5rem;
 }
 
 .fish::after {
@@ -5433,7 +5361,7 @@ html {
 .top-price__main {
 	flex-direction: row-reverse;
 	flex-wrap: nowrap;
-	gap: 8.635097493%;
+	gap: 5.5710306407%;
 	justify-content: space-between;
 	margin-top: 2.5rem;
 }
@@ -5441,6 +5369,7 @@ html {
 .top-price__lists {
 	flex: 1;
 	max-width: 30.75rem;
+	padding-left: 1.875rem;
 }
 
 .top-price__image {
@@ -5453,22 +5382,6 @@ html {
 
 .top-price__button {
 	margin-top: 5rem;
-}
-
-.top-price__fish-image {
-	bottom: -2.375rem;
-	display: block;
-	left: calc(50% - min(48vw, 38.75rem));
-	position: absolute;
-	width: 27.3125rem;
-}
-
-.top-price__fish-image img {
-	-o-object-fit: cover;
-	aspect-ratio: 437/201;
-	height: auto;
-	object-fit: cover;
-	width: 100%;
 }
 
 .top-voice__fish-image {
