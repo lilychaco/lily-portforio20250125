@@ -128,7 +128,7 @@
 				</div>
 				<div class="top-aboutus__body">
 					<div class="top-aboutus__text">
-						はじめまして。GranLily 代表の中村弓美と申します。
+						はじめまして。GranLily 代表の中村弓美と申します。開業18年の小児科医ですが、コーダーとしてWEB制作のお仕事をしています。
 						コロナ禍で自院の来客が激減した時、WEBの力を借りてみようと思いましたが、制作会社の提示する料金の高さにビックリ。
 						その経験から自分の力でホームページを作りたいとプログラミングの学習を始めました。
 					</div>
@@ -470,9 +470,7 @@
 			<div class="top-price__button">
 				<a href="<?php echo esc_url(home_url('/price')); ?>" class="button"> View more</a>
 			</div>
-			<figure class="top-price__fish-image u-desktop">
-				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/top-price-fish.png" alt="魚のイラスト" />
-			</figure>
+
 		</div>
 	</div>
 </section>

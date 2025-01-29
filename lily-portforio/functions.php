@@ -48,11 +48,6 @@ add_action('wp_enqueue_scripts', 'enqueue_weather_app_assets');
 
 
 
-
-
-
-
-
 /**
 * WordPress標準機能
 */
