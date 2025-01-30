@@ -22,7 +22,8 @@
 			</div>
 			<div class="page-aboutus__pc-image u-desktop">
 				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/lily-profile-tree.jpg" alt="微笑んでいるGranLily" />
-				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/bali-morning.jpg" alt="バラ園のピンクのばら達" />
+				<img class="with-filter" src="<?php echo get_theme_file_uri(); ?>/assets/images/bali-morning.jpg"
+					alt="バリ島朝の海辺" />
 			</div>
 			<div class="page-aboutus__main-wrapper">
 				<div class="page-aboutus__main">

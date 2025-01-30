@@ -84,8 +84,9 @@
   @include mq(md) {
     position: absolute;
     top: rem(200);
-    left: rem(198);
+    right: rem(60);
     z-index: 10;
+		max-width:rem(560);
   }
 }
 .page-aboutus__main {
@@ -94,9 +95,7 @@
     width: 100%;
     max-width: rem(841);
     margin-top: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: calc(calc(41/841)*100%);
+
   }
 }
 .page-aboutus__body {

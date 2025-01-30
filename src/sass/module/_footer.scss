@@ -3,7 +3,7 @@
 .footer {
 	padding-top: rem(48);
 	padding-bottom: rem(56);
-	background-color: $greenaccent;
+	background-color: $greenpale;
 	position: relative;
 	@include mq(md) {
 			padding-top: rem(80);
@@ -59,7 +59,7 @@
 	margin-top: rem(22);
 	margin-inline:auto;
 	text-align: center;
-	color:$white;
+	color:$greenaccent;
 	font-size: rem(12);
 			font-family: $third-font-family;
 			font-weight: $regular;

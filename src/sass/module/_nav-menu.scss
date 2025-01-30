@@ -3,6 +3,7 @@
 .nav-menu {
 	margin-inline:auto;
 	width:100%;
+	color:$greenaccent;
 	display: grid;
 	grid-template-areas:
 	"a b"
@@ -23,7 +24,7 @@
 .nav-menu__box {
     display: flex;
     flex-direction: column;
-		color:$white;
+		color:$greenaccent;
 		width: 100%;
 		height:inherit;
 }

@@ -10,7 +10,7 @@
 	<title>GranLily</title>
 	<meta name="description" content="GranLilyのポートフォリオサイトです" />
 	<meta name="keywords" content="GranLily, lilychaco" />
-	<meta name="copyright" content="Copyright © 2025 GranLily. All rights reserved.">
+	<meta name="copyright" content="© 2025 GranLily.">
 	<!-- ogp -->
 	<meta property="og:title" content="GranLilyの世界へようこそ！" />
 	<meta property="og:type" content="website" />
@@ -21,7 +21,7 @@
 	<meta property="og:description" content="GranLilyのポートフォリオサイトです！" />
 	<meta property="og:locale" content="ja_JP" />
 	<!-- アイコン -->
-	<link rel="icon" href="https://ninikokoji.com/diving-lily/wp-content/uploads/2024/11/iriomote512.png">
+	<link rel="icon" href="<?php echo get_theme_file_uri(); ?>/assets/images/rose-peace512.jpg">
 
 	<?php wp_head(); ?>
 </head>

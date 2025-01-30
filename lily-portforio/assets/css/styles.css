@@ -1582,7 +1582,7 @@ span.wpcf7-spinner {
 }
 
 .footer {
-	background-color: #000080;
+	background-color: #D6E6F5;
 	padding-bottom: 3.5rem;
 	padding-top: 3rem;
 	position: relative;
@@ -1622,7 +1622,7 @@ span.wpcf7-spinner {
 }
 
 .footer__copyright {
-	color: #fff;
+	color: #000080;
 	font-family: "Gotu", serif;
 	font-size: 0.75rem;
 	font-weight: 400;
@@ -2304,6 +2304,7 @@ span.wpcf7-spinner {
 	grid-column-gap: 2.1671826625%;
 	-moz-column-gap: 2.1671826625%;
 	grid-row-gap: 1.125rem;
+	color: #000080;
 	column-gap: 2.1671826625%;
 	display: grid;
 	grid-template-areas: "a b" "c d";
@@ -2315,7 +2316,7 @@ span.wpcf7-spinner {
 }
 
 .nav-menu__box {
-	color: #fff;
+	color: #000080;
 	display: flex;
 	flex-direction: column;
 	height: inherit;
@@ -4899,17 +4900,14 @@ html {
 }
 
 .page-aboutus__main-wrapper {
-	left: 12.375rem;
+	max-width: 35rem;
 	position: absolute;
+	right: 3.75rem;
 	top: 12.5rem;
 	z-index: 10;
 }
 
 .page-aboutus__main {
-	grid-gap: 4.8751486326%;
-	display: grid;
-	gap: 4.8751486326%;
-	grid-template-columns: 1fr 1fr;
 	margin-top: 0;
 	max-width: 52.5625rem;
 	width: 100%;
@@ -5282,7 +5280,6 @@ html {
 
 .top-aboutus__main {
 	margin-top: 0;
-	max-width: 52.5rem;
 	width: 100%;
 }
 

@@ -51,9 +51,10 @@
    			<div class="footer__logo">
    				<a href="<?php echo esc_url(home_url('/')); ?>">
    					<picture>
-   						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/footer-logo-pc.png"
+   						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/GranLily_logo_transparent.png"
    							media="(min-width: 768px)" />
-   						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/footer-logo-sp.png" alt="フッターロゴ" />
+   						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/GranLily_logo_transparent.png"
+   							alt="ヘッダーロゴ" />
    					</picture>
    				</a>
    			</div>
