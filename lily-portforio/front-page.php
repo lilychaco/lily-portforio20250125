@@ -23,7 +23,7 @@
 	<?php
 				// カスタム投稿「campaign」を取得するためのWP_Query
 				$args = [
-		    'post_type' => 'campaign', // カスタム投稿タイプ「campaign」を指定
+		    'post_type' => 'works', // カスタム投稿タイプ「campaign」を指定
   		  'posts_per_page' => -1, // 全ての投稿を取得（必要に応じて数を変更）
 				];
 
@@ -50,7 +50,7 @@
         $user_name = get_post_meta(get_the_ID(), 'user-name', true);
         $password = get_post_meta(get_the_ID(), 'password', true);
         $thumbnail_url = has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID(), 'full') : get_theme_file_uri('assets/images/campaign1.jpg');
-        $terms = get_the_terms(get_the_ID(), 'campaign-category');
+        $terms = get_the_terms(get_the_ID(), 'works-category');
         ?>
 				<li class="campaign-cards__item campaign-card swiper-slide p-swiper__slide">
 					<?php if ($link_url) : ?>
@@ -96,7 +96,7 @@
 			</ul>
 		</div>
 		<div class="top-campaign__button">
-			<a href="<?php echo esc_url(home_url('/campaign')); ?>" class="button">View&nbsp;more</a>
+			<a href="<?php echo esc_url(home_url('/works')); ?>" class="button">View&nbsp;more</a>
 		</div>
 	</div>
 
