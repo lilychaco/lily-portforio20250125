@@ -42,61 +42,6 @@
 					<?php wp_reset_postdata(); ?>
 				</section>
 
-				<section class="side-voice">
-					<?php
-							// 最新の口コミを取得
-							$latest_voice_args = array(
-								'post_type' => 'voice', // カスタム投稿タイプが 'voice' であることを指定
-								'posts_per_page' => 1,  // 1件のみ取得
-								'orderby' => 'date',    // 日付順で取得
-								'order' => 'DESC'       // 降順で取得
-							);
-
-							$latest_voice_query = new WP_Query($latest_voice_args);
-
-							if ($latest_voice_query->have_posts()) : ?>
-					<h2 class="side-voice__heading side-heading">口コミ</h2>
-
-					<div class="side-voice__content">
-						<?php while ($latest_voice_query->have_posts()) : $latest_voice_query->the_post(); ?>
-						<div class="side-voice__item">
-							<div class="side-voice__img">
-								<img src="<?php echo esc_url(get_the_post_thumbnail_url()); ?>"
-									alt="<?php echo esc_attr(get_the_title()); ?>" />
-							</div>
-							<p class="side-voice__caption">
-								<?php
-                        // グループフィールドを取得
-                        $voiceUser = get_field('voice_user');
-                        // グループフィールド内の「年代」フィールドを取得
-                        $userAge = $voiceUser['user_age'] ?? '';
-                        // グループフィールド内の「性別」フィールドを取得
-                        $userGender = $voiceUser['user_gender'] ?? '';
-
-												// 年齢と性別が両方設定されている場合にHTMLを出力
-								if($userAge && $userGender):
-												?>
-								<?php if ( $userAge ): ?>
-								<?php echo esc_html( $userAge ); ?>
-								<?php endif; ?>
-								(<?php if ( $userGender ): ?>
-								<?php echo esc_html( $userGender ); ?>
-								<?php endif; ?>)
-							</p>
-							<?php endif; ?>
-							<div class="side-voice__title">
-								<?php the_title(); ?>
-							</div>
-						</div>
-						<?php endwhile; ?>
-
-						<div class="side-voice__button">
-							<a href="<?php echo esc_url(home_url('/voice')); ?>" class="button"> View more</a>
-						</div>
-					</div>
-					<?php endif; ?>
-					<?php  wp_reset_postdata(); ?>
-				</section>
 
 				<section class="side-campaign">
 					<?php
@@ -111,7 +56,7 @@
 							$latest_campaign_query = new WP_Query($latest_campaign_args);
 
 							if ($latest_campaign_query->have_posts()) : ?>
-					<h2 class="side-campaign__heading side-heading">キャンペーン</h2>
+					<h2 class="side-campaign__heading side-heading">制作物</h2>
 					<ul class="side-campaign__items">
 						<?php while ($latest_campaign_query->have_posts()) : $latest_campaign_query->the_post(); ?>
 
@@ -131,17 +76,6 @@
 									</div>
 								</div>
 								<div class="side-campaign__text">
-									<p class="side-campaign__price-info">
-										全部コミコミ(お一人様)
-									</p>
-									<?php
-										// グループフィールド「campaign-price」の値を取得
-										$priceInfo = get_field('campaign-price');
-
-										// サブフィールド「campaign-price_old」と「campaign-price_new」を取得
-										$price_old = $priceInfo['campaign-price_old'] ?? ''; // 値がない場合は空文字を設定
-										$price_new = $priceInfo['campaign-price_new'] ?? ''; // 値がない場合は空文字を設定
-											?>
 									<div class="side-campaign__price">
 										<?php if (!empty($price_old)) : ?>
 										<p class="side-campaign__price-before">
