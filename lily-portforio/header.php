@@ -23,7 +23,6 @@
 	<!-- アイコン -->
 	<link rel="icon" href="https://ninikokoji.com/diving-lily/wp-content/uploads/2024/11/iriomote512.png">
 
-
 	<?php wp_head(); ?>
 </head>
 

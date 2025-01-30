@@ -234,3 +234,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var fadeElements = document.querySelectorAll(".fade-in-right");
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+      }
+    });
+  }, {
+    root: null,
+    // ビューポートを基準にする
+    threshold: 0.3 // 30%見えたら発火
+  });
+
+  fadeElements.forEach(function (element) {
+    observer.observe(element);
+  });
+});

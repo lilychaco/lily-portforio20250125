@@ -52,11 +52,12 @@
 			</div>
 
 			<div class="top-price__main">
-				<figure class="top-price__image colorbox">
+				<figure class="top-price__image">
 					<picture>
 						<source media="(min-width: 768px)"
-							srcset="<?php echo get_theme_file_uri(); ?>/assets/images/price-pc.jpg" />
-						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/price-sp.jpg" alt="魚の写真" />
+							srcset="<?php echo get_theme_file_uri(); ?>/assets/images/20211120shimodayuhi.jpg" />
+						<img class="fade-in-right" src="<?php echo get_theme_file_uri(); ?>/assets/images/20211120shimodayuhi.jpg"
+							alt="天草下田の夕日" />
 					</picture>
 				</figure>
 				<div class="top-price__lists price-lists">

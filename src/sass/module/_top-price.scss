@@ -59,6 +59,35 @@
 	}
 }
 
+/* 画像が右から左へふわっと出現するアニメーション */
+@keyframes fadeInRight {
+    from {
+        opacity: 0; /* 最初は見えない */
+        transform: translateX(50px); /* 右側から50pxずらした位置 */
+    }
+    to {
+        opacity: 1; /* 完全に表示 */
+        transform: translateX(0); /* 元の位置 */
+    }
+}
+
+/* アニメーションの基本スタイル */
+/* 初期状態では見えない */
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(70px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+/* アニメーションを適用するクラス（JavaScriptで追加） */
+.fade-in-right.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
 .top-price__button {
 	z-index: 1000;
 	margin-top: rem(37);

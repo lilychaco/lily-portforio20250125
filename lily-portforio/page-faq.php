@@ -2,8 +2,8 @@
 <section class="mv">
 	<figure class="mv__img">
 		<picture>
-			<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv-faq.jpg" media="(min-width: 768px)" />
-			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-faq-sp.jpg" alt="ファーストビュー画像" />
+			<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/20211002iruka.jpg" media="(min-width: 768px)" />
+			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/20211002iruka.jpg" alt="ファーストビュー画像" />
 		</picture>
 	</figure>
 
