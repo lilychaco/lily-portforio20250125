@@ -57,7 +57,7 @@
 			<nav class="header__nav header-menu">
 				<ul class="header-menu__items">
 					<li class="header-menu__item">
-						<a href="<?php echo esc_url(home_url('/campaign')); ?>">
+						<a href="<?php echo esc_url(home_url('/works')); ?>">
 							<p class="header-menu__text-english">works</p>
 							<p class="header-menu__text-japanese">制作物</p>
 						</a>
@@ -104,7 +104,7 @@
 	<div class="drawer drawer-layout" id="js-global-menu" aria-hidden="true">
 		<ul class="drawer-menu inner">
 			<li class="drawer-menu__item">
-				<a href="<?php echo esc_url(home_url('/campaign')); ?>">
+				<a href="<?php echo esc_url(home_url('/works')); ?>">
 					<p class="starfish-icon">制作物</p>
 				</a>
 			</li>

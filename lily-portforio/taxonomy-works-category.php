@@ -18,14 +18,14 @@
 		<ul class="archive-campaign__category-list category-list">
 			<!-- ALL のリンク -->
 			<li class="category-list__item">
-				<a href="<?php echo esc_url(get_post_type_archive_link('campaign')); ?>"
-					class="category-list__link <?php echo (is_post_type_archive('campaign') || is_tax('campaign-category')) ? '' : 'is-current'; ?>">
+				<a href="<?php echo esc_url(get_post_type_archive_link('works')); ?>"
+					class="category-list__link <?php echo (is_post_type_archive('works') || is_tax('works-category')) ? '' : 'is-current'; ?>">
 					ALL
 				</a>
 			</li>
 			<?php
 				// 'campaign-category'タクソノミーの用語を取得
-				$taxonomy = 'campaign-category'; // タクソノミー名を変数に格納
+				$taxonomy = 'works-category'; // タクソノミー名を変数に格納
 				$terms = get_terms(array(
 						'taxonomy' => $taxonomy,
 						'hide_empty' => false,
@@ -73,7 +73,7 @@
 						<?php echo $thumbnail; ?>
 						<?php else : ?>
 						<!-- デフォルト画像を表示 -->
-						<img src="<?php echo esc_url($default_thumbnail); ?>" alt="制作物の画像" />
+						<img src="<?php echo esc_url($default_thumbnail); ?>" alt="制作物トップページ" />
 						<?php endif; ?>
 					</figure>
 

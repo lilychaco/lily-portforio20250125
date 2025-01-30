@@ -46,9 +46,6 @@ add_action('wp_enqueue_scripts', 'enqueue_weather_app_assets');
 
 
 
-
-
-
 /**
 * WordPress標準機能
 */
@@ -77,8 +74,8 @@ function my_archive_title( $title ) {
         $title = '' . single_cat_title( '', false ) . '';
     } elseif ( is_tag() ) { /* タグアーカイブの場合 */
         $title = '' . single_tag_title( '', false ) . '';
-    } elseif ( is_post_type_archive('campaign') ) { /* 投稿タイプが campaign の場合 */
-        $title = 'campaign'; // タイトルを英語表記に変更
+		} elseif ( is_post_type_archive('works') ) { /* 投稿タイプが works の場合 */
+        $title = 'works'; // タイトルを英語表記に変更
     }elseif ( is_post_type_archive('voice') ) { /* 投稿タイプが voice の場合 */
         $title = 'voice'; // タイトルを英語表記に変更
 		}elseif ( is_post_type_archive() ) { /* その他の投稿タイプアーカイブの場合 */
@@ -210,20 +207,17 @@ function custom_pagenavi_html($html) {
 add_filter('wp_pagenavi', 'custom_pagenavi_html');
 
 
-
-
 /*-----------------------------------
-// メインループで campaign を取得するためのフィルター追加
+// メインループで works を取得するためのフィルター追加
 -----------------------------------*/
-function include_campaign_in_main_query($query) {
+function include_works_in_main_query($query) {
     // 管理画面ではなく、メインクエリかつ特定のアーカイブページでのみ処理
-    if (!is_admin() && $query->is_main_query() && is_post_type_archive('campaign')) {
-        $query->set('post_type', 'campaign'); // カスタム投稿タイプを指定
-        $query->set('posts_per_page', 4);    // 1ページあたりの投稿数
+    if (!is_admin() && $query->is_main_query() && is_post_type_archive('works')) {
+        $query->set('post_type', 'works'); // カスタム投稿タイプを指定
+        $query->set('posts_per_page', 4);  // 1ページあたりの投稿数
     }
 }
-add_action('pre_get_posts', 'include_campaign_in_main_query');
-
+add_action('pre_get_posts', 'include_works_in_main_query');
 
 
 
@@ -248,8 +242,8 @@ function modify_main_query($query) {
         return;
     }
 
-    if ($query->is_post_type_archive('campaign') || $query->is_tax('campaign-category')) {
-        $query->set('post_type', 'campaign');
+    if ($query->is_post_type_archive('works') || $query->is_tax('works-category')) {
+        $query->set('post_type', 'works');
         $query->set('posts_per_page', 4);
         $query->set('orderby', 'date');
         $query->set('order', 'DESC');
@@ -354,7 +348,7 @@ function filter_wpcf7_form_tag_campaign_titles( $scanned_tag, $replace ) {
     if ($scanned_tag['name'] == 'custom_menu') {
       // カスタム投稿タイプ 'campaign' の投稿を取得
       $posts = get_posts([
-        'post_type'      => 'campaign', // カスタム投稿タイプのスラッグ
+        'post_type'      => 'works', // カスタム投稿タイプのスラッグ
         'posts_per_page' => -1,         // 全ての投稿を取得
         'post_status'    => 'publish', // 公開済みの投稿のみ取得
         'orderby'        => 'title',   // タイトル順に並べる
