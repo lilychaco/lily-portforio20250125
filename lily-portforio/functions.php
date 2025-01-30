@@ -48,6 +48,7 @@ add_action('wp_enqueue_scripts', 'enqueue_weather_app_assets');
 
 
 
+
 /**
 * WordPress標準機能
 */
@@ -69,12 +70,6 @@ function my_setup() {
 add_action( 'after_setup_theme', 'my_setup' );
 
 
-/*-----------------------------------
-* アーカイブタイトル書き換え
-*
-* @param string $title 書き換え前のタイトル.
-* @return string $title 書き換え後のタイトル.
------------------------------------*/
 function my_archive_title( $title ) {
     if ( is_home() ) { /* ホームの場合 */
         $title = 'blog';
@@ -109,6 +104,8 @@ function my_archive_title( $title ) {
     return $title;
 }
 add_filter( 'get_the_archive_title', 'my_archive_title' );
+
+
 
 
 /*-----------------------------------
@@ -391,35 +388,7 @@ function filter_wpcf7_form_tag_campaign_titles( $scanned_tag, $replace ) {
 add_filter('wpcf7_form_tag', 'filter_wpcf7_form_tag_campaign_titles', 11, 2);
 
 
-/*-----------------------------------
-投稿ビュー数を カスタムフィールドpost_views_countに、記録する
------------------------------------*/
-/**
-* 投稿ビュー数をカウントする関数
-*
-* @param int $postID 投稿ID
-*/
-// function set_post_views($postID) {
-// $count_key = 'post_views_count';
-// $count = get_field($count_key, $postID);
-// if($count == ''){
-// $count = 0;
-// update_field($count_key, $count, $postID);
-// } else {
-// $count++;
-// update_field($count_key, $count, $postID);
-// }
-// }
 
-// function track_post_views($post_id) {
-// if (!is_single() || is_admin()) return; // 管理画面ではカウントしない
-// if (empty($post_id)) {
-// global $post;
-// $post_id = $post->ID;
-// }
-// set_post_views($post_id);
-// }
-// add_action('wp_head', 'track_post_views');
 
 
 /*-----------------------------------

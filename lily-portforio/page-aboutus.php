@@ -82,10 +82,7 @@
 					<div class="price-lists__item price-lists__item--first price-list">
 						<div class="price-list__title">職歴</div>
 						<ul class="price-list__items">
-							<li class="price-list__item">
-								<p class="price-list__number">1958年</p>
-								<p class="price-list__name">福岡県北九州市に生まれる</p>
-							</li>
+
 							<li class="price-list__item">
 								<p class="price-list__number">1983年</p>
 								<p class="price-list__name">山口大学医学部卒業<br>小児科医となる</p>
@@ -93,7 +90,7 @@
 							<li class="price-list__item">
 								<p class="price-list__number">1988年</p>
 								<p class="price-list__name">相方のふるさと天草へ転居<br>
-									重症心身障害児者施設はまゆう療育園勤務</p>
+									重症心身障害児者施設勤務</p>
 							</li>
 							<li class="price-list__item">
 								<p class="price-list__number">2004年</p>
@@ -112,6 +109,10 @@
 					<div class="price-lists__item price-list">
 						<div class="price-list__title">家族歴</div>
 						<ul class="price-list__items">
+							<li class="price-list__item">
+								<p class="price-list__number">1958年</p>
+								<p class="price-list__name">福岡県北九州市に生まれる</p>
+							</li>
 							<li class="price-list__item">
 								<p class="price-list__number">1985年</p>
 								<p class="price-list__name">結婚</p>

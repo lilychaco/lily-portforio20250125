@@ -367,3 +367,35 @@ add_action('wp_enqueue_scripts', 'enqueue_weather_app_assets');
 		</div>
 	</div>
 </section>
+
+
+
+/*-----------------------------------
+投稿ビュー数を カスタムフィールドpost_views_countに、記録する
+-----------------------------------*/
+/**
+* 投稿ビュー数をカウントする関数
+*
+* @param int $postID 投稿ID
+*/
+// function set_post_views($postID) {
+// $count_key = 'post_views_count';
+// $count = get_field($count_key, $postID);
+// if($count == ''){
+// $count = 0;
+// update_field($count_key, $count, $postID);
+// } else {
+// $count++;
+// update_field($count_key, $count, $postID);
+// }
+// }
+
+// function track_post_views($post_id) {
+// if (!is_single() || is_admin()) return; // 管理画面ではカウントしない
+// if (empty($post_id)) {
+// global $post;
+// $post_id = $post->ID;
+// }
+// set_post_views($post_id);
+// }
+// add_action('wp_head', 'track_post_views');
