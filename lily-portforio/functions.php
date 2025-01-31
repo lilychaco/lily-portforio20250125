@@ -342,11 +342,11 @@ document.addEventListener('wpcf7mailsent', function() {
 /*-----------------------------------
 CPT UIで作成したカスタム投稿のタイトルを基に、セレクトボックスを動的に生成（重複排除）
 -----------------------------------*/
-function filter_wpcf7_form_tag_campaign_titles( $scanned_tag, $replace ) {
+function filter_wpcf7_form_tag_works_titles( $scanned_tag, $replace ) {
   if (!empty($scanned_tag)) {
     // CF7フォームタグのname属性が "custom_menu" の場合に処理
     if ($scanned_tag['name'] == 'custom_menu') {
-      // カスタム投稿タイプ 'campaign' の投稿を取得
+      // カスタム投稿タイプ 'works' の投稿を取得
       $posts = get_posts([
         'post_type'      => 'works', // カスタム投稿タイプのスラッグ
         'posts_per_page' => -1,         // 全ての投稿を取得
@@ -379,7 +379,7 @@ function filter_wpcf7_form_tag_campaign_titles( $scanned_tag, $replace ) {
 }
 
 // フィルターフックに登録
-add_filter('wpcf7_form_tag', 'filter_wpcf7_form_tag_campaign_titles', 11, 2);
+add_filter('wpcf7_form_tag', 'filter_wpcf7_form_tag_works_titles', 11, 2);
 
 
 

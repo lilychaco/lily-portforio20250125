@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   //================================
-    // campaignのスライダー用
+    // worksのスライダー用
   // ==================================
 document.addEventListener("DOMContentLoaded", function () {
-  let campaignSlider = new Swiper(".js-campaign-swiper", {
+  let worksSlider = new Swiper(".js-works-swiper", {
     loop: true,
     centeredSlides: true,
     slidesPerView: 1,

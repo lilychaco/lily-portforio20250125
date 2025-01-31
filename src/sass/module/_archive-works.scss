@@ -1,17 +1,17 @@
 @use "global" as *;
 
-.archive-campaign {
+.archive-works {
   margin-inline: auto;
   width: 100%;
   position: relative;
 }
 
-.archive-campaign__category-list {
+.archive-works__category-list {
   margin-inline: auto;
   width: 100%;
 }
 
-.archive-campaign__content {
+.archive-works__content {
   margin-top: rem(40);
   padding-left: rem(33);
   padding-right: rem(32);
@@ -20,7 +20,7 @@
     padding-right: 0;
   }
 }
-.archive-campaign__nav {
+.archive-works__nav {
 	margin-top: rem(82);
 	@include mq(md) {
 		margin-top: rem(76);

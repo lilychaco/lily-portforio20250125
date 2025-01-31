@@ -43,47 +43,47 @@
 				</section>
 
 
-				<section class="side-campaign">
+				<section class="side-works">
 					<?php
 							// 最新のキャンペーン情報を取得
-							$latest_campaign_args = array(
-								'post_type' => 'campaign', // カスタム投稿タイプが 'campaign' であることを指定
+							$latest_works_args = array(
+								'post_type' => 'works', // カスタム投稿タイプが 'works' であることを指定
 								'posts_per_page' => 2,  // 2件のみ取
 								'orderby' => 'date',    // 日付順で取得
 								'order' => 'DESC'       // 降順で取得
 							);
 
-							$latest_campaign_query = new WP_Query($latest_campaign_args);
+							$latest_works_query = new WP_Query($latest_works_args);
 
-							if ($latest_campaign_query->have_posts()) : ?>
-					<h2 class="side-campaign__heading side-heading">制作物</h2>
-					<ul class="side-campaign__items">
-						<?php while ($latest_campaign_query->have_posts()) : $latest_campaign_query->the_post(); ?>
+							if ($latest_works_query->have_posts()) : ?>
+					<h2 class="side-works__heading side-heading">制作物</h2>
+					<ul class="side-works__items">
+						<?php while ($latest_works_query->have_posts()) : $latest_works_query->the_post(); ?>
 
-						<li class="side-campaign__item">
-							<figure class="side-campaign__img">
+						<li class="side-works__item">
+							<figure class="side-works__img">
 								<?php
 								// サムネイルのURLを変数に格納
-								$thumbnail = has_post_thumbnail() ? get_the_post_thumbnail_url(null, 'full') : get_theme_file_uri('/assets/images/campaign1.jpg');
+								$thumbnail = has_post_thumbnail() ? get_the_post_thumbnail_url(null, 'full') : get_theme_file_uri('/assets/images/works1.jpg');
 								// altテキストを設定
 								$alt_text = has_post_thumbnail() ? get_the_title() : 'キャンペーンの画像';
 								?>
 								<img src="<?php echo esc_url($thumbnail); ?>" alt="<?php echo esc_attr($alt_text); ?>" />
 							</figure>
-							<div class="side-campaign__body">
-								<div class="side-campaign__top">
-									<div class="side-campaign__title"><?php the_title(); ?>
+							<div class="side-works__body">
+								<div class="side-works__top">
+									<div class="side-works__title"><?php the_title(); ?>
 									</div>
 								</div>
-								<div class="side-campaign__text">
-									<div class="side-campaign__price">
+								<div class="side-works__text">
+									<div class="side-works__price">
 										<?php if (!empty($price_old)) : ?>
-										<p class="side-campaign__price-before">
+										<p class="side-works__price-before">
 											&yen;<?php echo esc_html(number_format($price_old)); ?>
 										</p>
 										<?php endif; ?>
 										<?php if (!empty($price_new)) : ?>
-										<p class="side-campaign__price-after">
+										<p class="side-works__price-after">
 											&yen;<?php echo esc_html(number_format($price_new)); ?>
 										</p>
 										<?php endif; ?>
@@ -93,8 +93,8 @@
 						</li>
 						<?php endwhile; ?>
 					</ul>
-					<div class="side-campaign__button">
-						<a href="<?php echo esc_url(home_url('/campaign')); ?>" class="button">View&nbsp;more</a>
+					<div class="side-works__button">
+						<a href="<?php echo esc_url(home_url('/works')); ?>" class="button">View&nbsp;more</a>
 					</div>
 					<?php endif; ?>
 					<?php wp_reset_postdata(); ?>
