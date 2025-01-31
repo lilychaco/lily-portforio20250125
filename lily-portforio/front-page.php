@@ -111,10 +111,10 @@
 		</div>
 		<div class="top-aboutus__pc-image u-desktop">
 			<div class="top-aboutus__pc-image-item top-aboutus__pc-image-item--primary with-filter">
-				<img class="with-filter" src="<?php echo get_theme_file_uri(); ?>/assets/images/hondo-view-pc.jpg" alt="" />
+				<img class="with-filter" src="<?php echo get_theme_file_uri(); ?>/assets/images/hondo-view-pc.jpg" alt="本渡全景" />
 			</div>
 			<div class="top-aboutus__pc-image-item top-aboutus__pc-image-item--secondary">
-				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/lily-profile-long.jpg" alt="" />
+				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/lily-profile-long.jpg" alt="中村弓美" />
 			</div>
 		</div>
 		<div class="top-aboutus__main-wrapper">
