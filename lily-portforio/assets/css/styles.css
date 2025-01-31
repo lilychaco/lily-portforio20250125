@@ -3482,20 +3482,22 @@ span.wpcf7-spinner {
 	position: relative;
 }
 
-.with-filter::after {
-	background-color: #000080;
-	content: "";
-	height: 100%;
-	left: 0;
-	opacity: 0.3;
-	pointer-events: none;
-	position: absolute;
-	top: 0;
+.with-filter img {
+	display: block;
+	height: auto;
 	width: 100%;
 }
 
-.with-filter:hover::after {
-	opacity: 0.5;
+.with-filter::after {
+	background-color: rgba(0, 0, 128, 0.3);
+	content: "";
+	height: 100%;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	top: 0;
+	width: 100%;
 }
 
 .top-aboutus__pc-image-item--secondary {
@@ -5179,10 +5181,6 @@ html {
 
 .with-filter {
 	position: relative;
-}
-
-.with-filter::after {
-	content: "";
 }
 
 .top-aboutus__pc-image-item--secondary {
