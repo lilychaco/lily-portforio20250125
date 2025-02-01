@@ -9,7 +9,7 @@
 
 .header-menu__items {
 	@include mq(md) {
-			width: 100%;
+	width: 100%;
 	height: inherit;
 	display: flex;
 	justify-content: flex-end;
@@ -25,13 +25,18 @@
 	height: inherit;
 	padding-inline:rem(20);
 	text-align: center;
-	color:$greenaccent;
 	white-space: nowrap;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
+	color:$greenaccent;
 }
+
+.header-menu__item a.is-scroll{
+    color: #fff;
+}
+
 
 .header-menu__item a::after {
 	content:"";

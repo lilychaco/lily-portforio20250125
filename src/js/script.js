@@ -22,6 +22,34 @@ jQuery(function ($) {
       $("#js-drawer-background").removeClass("is-drawerActive");
     });
 
+    //==================================
+    //FVを過ぎたら、headerの色が変わる
+    // ==================================
+    //FVを過ぎたら、headerの色が変わる
+    // ファーストビューの高さを取得（ページ読み込み時に計算）
+    const fvHeight = $(".js-fv").outerHeight();
+    let isScrolled = false; // 状態管理用の変数（無駄なクラスの追加・削除を防ぐ）
+
+    // スクロールイベント
+    $(window).on("scroll", function () {
+      if (!isScrolled) {
+        requestAnimationFrame(updateHeader);
+        isScrolled = true;
+      }
+    });
+
+    function updateHeader() {
+      const scrollTop = $(window).scrollTop();
+      if (scrollTop > fvHeight) {
+        $(".js-header").addClass("is-scroll");
+        $(".js-header .header-menu__item a").addClass("is-scroll");
+      } else {
+        $(".js-header").removeClass("is-scroll");
+        $(".js-header .header-menu__item a").removeClass("is-scroll");
+      }
+      isScrolled = false;
+    }
+
     //================================
     // ボタンをクリックしてページトップに戻る
     // ==================================
@@ -29,9 +57,6 @@ jQuery(function ($) {
       $("body,html").animate({ scrollTop: 0 }, 1000, "swing");
       return false;
     });
-
-
-
 
     // ==================================
     // インフォメーションページのタブの動きを制御
@@ -261,4 +286,32 @@ document.addEventListener("DOMContentLoaded", function () {
   fadeElements.forEach((element) => {
     observer.observe(element);
   });
+});
+
+
+
+$(function () {
+  // ファーストビューの高さを取得（ページ読み込み時に計算）
+  const fvHeight = $(".js-fv").outerHeight();
+  let isScrolled = false; // 状態管理用の変数（無駄なクラスの追加・削除を防ぐ）
+
+  // スクロールイベント
+  $(window).on("scroll", function () {
+    if (!isScrolled) {
+      requestAnimationFrame(updateHeader);
+      isScrolled = true;
+    }
+  });
+
+  function updateHeader() {
+    const scrollTop = $(window).scrollTop();
+    if (scrollTop > fvHeight) {
+      $(".js-header").addClass("is-scroll");
+      $(".js-header .header__menu-item a").addClass("is-scroll");
+    } else {
+      $(".js-header").removeClass("is-scroll");
+      $(".js-header .header__menu-item a").removeClass("is-scroll");
+    }
+    isScrolled = false;
+  }
 });

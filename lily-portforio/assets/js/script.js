@@ -19,6 +19,33 @@ jQuery(function ($) {
       $("#js-drawer-background").removeClass("is-drawerActive");
     });
 
+    //==================================
+    //FVを過ぎたら、headerの色が変わる
+    // ==================================
+    //FVを過ぎたら、headerの色が変わる
+    // ファーストビューの高さを取得（ページ読み込み時に計算）
+    var fvHeight = $(".js-fv").outerHeight();
+    var isScrolled = false; // 状態管理用の変数（無駄なクラスの追加・削除を防ぐ）
+
+    // スクロールイベント
+    $(window).on("scroll", function () {
+      if (!isScrolled) {
+        requestAnimationFrame(updateHeader);
+        isScrolled = true;
+      }
+    });
+    function updateHeader() {
+      var scrollTop = $(window).scrollTop();
+      if (scrollTop > fvHeight) {
+        $(".js-header").addClass("is-scroll");
+        $(".js-header .header-menu__item a").addClass("is-scroll");
+      } else {
+        $(".js-header").removeClass("is-scroll");
+        $(".js-header .header-menu__item a").removeClass("is-scroll");
+      }
+      isScrolled = false;
+    }
+
     //================================
     // ボタンをクリックしてページトップに戻る
     // ==================================
@@ -252,4 +279,28 @@ document.addEventListener("DOMContentLoaded", function () {
   fadeElements.forEach(function (element) {
     observer.observe(element);
   });
+});
+$(function () {
+  // ファーストビューの高さを取得（ページ読み込み時に計算）
+  var fvHeight = $(".js-fv").outerHeight();
+  var isScrolled = false; // 状態管理用の変数（無駄なクラスの追加・削除を防ぐ）
+
+  // スクロールイベント
+  $(window).on("scroll", function () {
+    if (!isScrolled) {
+      requestAnimationFrame(updateHeader);
+      isScrolled = true;
+    }
+  });
+  function updateHeader() {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > fvHeight) {
+      $(".js-header").addClass("is-scroll");
+      $(".js-header .header__menu-item a").addClass("is-scroll");
+    } else {
+      $(".js-header").removeClass("is-scroll");
+      $(".js-header .header__menu-item a").removeClass("is-scroll");
+    }
+    isScrolled = false;
+  }
 });

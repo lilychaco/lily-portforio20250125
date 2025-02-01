@@ -28,15 +28,15 @@
 
 <body <?php body_class(); ?>>
 
-	<header class="header">
+	<header class="header js-header">
 		<div class="header__inner">
 			<?php if (is_front_page()) : ?>
 			<h1 class="header__logo">
 				<a href="<?php echo esc_url(home_url('/')); ?>">
 					<picture>
-						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/GranLily_logo_transparent.png"
+						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-long2.jpg"
 							media="(min-width: 768px)" />
-						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/GranLily_logo_transparent.png" alt="ヘッダーロゴ" />
+						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-long2.jpg" alt="ヘッダーロゴ" />
 					</picture>
 				</a>
 			</h1>

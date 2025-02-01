@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
-<section class="fv">
-	<div class="fv-video-container"><video autoplay muted loop>
+<section class="fv js-fv">
+	<div class="fv__video-container">
+		<video autoplay muted loop playsinline preload="auto">
 			<source src="<?php echo get_template_directory_uri(); ?>/assets/images/manta.MP4" type="video/mp4">
 			お使いのブラウザは動画に対応していません。
 		</video>

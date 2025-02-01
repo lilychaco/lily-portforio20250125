@@ -90,7 +90,8 @@
 								</div>
 							</div>
 							<div class="info-card__img">
-								<img src="<?php echo get_theme_file_uri(); ?>/assets/images/20190501ambridgerose.jpg" alt="" />
+								<img src="<?php echo get_theme_file_uri(); ?>/assets/images/20190501ambridgerose.jpg"
+									alt=薔薇の花アンブリッジローズ" />
 							</div>
 						</div>
 					</div>
@@ -141,7 +142,7 @@
 								</div>
 							</div>
 							<div class="info-card__img">
-								<img src="<?php echo get_theme_file_uri(); ?>/assets/images/Taj-Mahal.jpg" alt="" />
+								<img src="<?php echo get_theme_file_uri(); ?>/assets/images/Taj-Mahal.jpg" alt="タージマハル" />
 							</div>
 						</div>
 					</div>
