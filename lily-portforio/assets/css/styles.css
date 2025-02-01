@@ -1962,12 +1962,16 @@ span.wpcf7-spinner {
 	color: #fff;
 }
 
+.header-menu__item--line {
+	width: 100%;
+}
+
 .header-menu__item--line img {
 	width: 100%;
 }
 
-.header-menu__item--line a.is-scroll {
-	background-color: #000080;
+.header--sub .header-menu__item a {
+	color: #fff;
 }
 
 .header-menu__item a::after {
@@ -1987,6 +1991,14 @@ span.wpcf7-spinner {
 .header-menu__item a:hover::after {
 	opacity: 1;
 	transform: scale(1, 1);
+}
+
+.header-menu__item--line a::after {
+	content: none;
+}
+
+.header-menu__item--line a::hover::after {
+	content: none;
 }
 
 .header-menu__text-english {
@@ -2022,12 +2034,16 @@ span.wpcf7-spinner {
 	z-index: 200;
 }
 
-.header {
-	background-color: rgba(255, 255, 255, 0.68);
+.header--top {
+	background-color: rgba(255, 255, 255, 0.9);
 	transition: background-color 0.3s ease-in-out;
 }
 
-.header.is-scroll {
+.header--top.is-scroll {
+	background-color: rgb(0, 0, 128);
+}
+
+.header--sub {
 	background-color: rgb(0, 0, 128);
 }
 
@@ -2044,10 +2060,6 @@ span.wpcf7-spinner {
 
 .header__logo {
 	width: 6.375rem;
-}
-
-.header__container {
-	display: none;
 }
 
 .info-card__container {
@@ -4697,17 +4709,6 @@ html {
 .header__logo {
 	padding-top: 0.25rem;
 	width: 8.3125rem;
-}
-
-.header__container {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	padding-top: 0.25rem;
-}
-
-.header__nav {
-	height: inherit;
 }
 
 .info-card__container {

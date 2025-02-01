@@ -73,7 +73,7 @@
    				</div>
    				<div class="nav-menu__item nav-menu__item--01">
    					<a href="<?php echo esc_url(home_url('/aboutus')); ?>">
-   						<p class="starfish-icon">私たちについて</p>
+   						<p class="starfish-icon">プロフィール</p>
    					</a>
    				</div>
    			</div>

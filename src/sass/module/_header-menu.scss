@@ -37,13 +37,13 @@
     color: #fff;
 }
 .header-menu__item--line {
-	// background-color: $greenaccent;
+	width: 100%;
 }
 .header-menu__item--line img {
 	width:100%;
 }
-.header-menu__item--line a.is-scroll {
-	background-color: $greenaccent;
+.header--sub .header-menu__item a {
+	color:#fff;
 }
 
 .header-menu__item a::after {
@@ -63,7 +63,12 @@
 	transform: scale(1, 1);
 	opacity: 1;
 }
-
+.header-menu__item--line a::after {
+    content: none;
+}
+.header-menu__item--line a::hover::after {
+	content:none;
+}
 .header-menu__text-english {
 	font-size: rem(18);
 			font-family:  $third-font-family;

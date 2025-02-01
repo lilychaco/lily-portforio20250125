@@ -28,7 +28,7 @@
 
 <body <?php body_class(); ?>>
 
-	<header class="header js-header">
+	<header class="header <?php echo is_front_page() ? 'header--top' : 'header--sub'; ?> js-header">
 		<div class="header__inner">
 			<?php if (is_front_page()) : ?>
 			<h1 class="header__logo">
@@ -44,9 +44,9 @@
 			<div class="header__logo">
 				<a href="<?php echo esc_url(home_url('/')); ?>">
 					<picture>
-						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/GranLily_logo_transparent.png"
+						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-long2.jpg"
 							media="(min-width: 768px)" />
-						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/GranLily_logo_transparent.png" alt="ヘッダーロゴ" />
+						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-long2.jpg" alt="ヘッダーロゴ" />
 					</picture>
 				</a>
 			</div>
@@ -93,7 +93,6 @@
 					<li class="header-menu__item header-menu__item--line">
 						<a href="https://lin.ee/RNytVdZ"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/line.png"
 								alt="友だち追加" height="42" border="0"></a>
-
 					</li>
 				</ul>
 			</nav>
@@ -102,6 +101,7 @@
 			</div>
 		</div>
 	</header>
+
 	<div class="drawer drawer-layout" id="js-global-menu" aria-hidden="true">
 		<ul class="drawer-menu inner">
 			<li class="drawer-menu__item">
@@ -136,3 +136,4 @@
 			</li>
 		</ul>
 	</div>
+</body>
