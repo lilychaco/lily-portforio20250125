@@ -52,7 +52,6 @@
 			</div>
 			<?php endif; ?>
 
-
 			<nav class="header__nav header-menu">
 				<ul class="header-menu__items">
 					<li class="header-menu__item">
@@ -79,8 +78,6 @@
 							<p class="header-menu__text-japanese">ブログ</p>
 						</a>
 					</li>
-
-
 					<li class="header-menu__item">
 						<a href="<?php echo esc_url(home_url('/faq')); ?>">
 							<p class="header-menu__text-english">FAQ</p>
@@ -92,6 +89,11 @@
 							<p class="header-menu__text-english">contact</p>
 							<p class="header-menu__text-japanese">お問合せ</p>
 						</a>
+					</li>
+					<li class="header-menu__item header-menu__item--line">
+						<a href="https://lin.ee/RNytVdZ"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/line.png"
+								alt="友だち追加" height="42" border="0"></a>
+
 					</li>
 				</ul>
 			</nav>

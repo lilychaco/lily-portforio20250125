@@ -999,7 +999,7 @@ time {
 
 .contact-maparea__top {
 	border-bottom: 1px solid #000080;
-	padding-bottom: 0.25rem;
+	padding-bottom: 0.625rem;
 	width: 100%;
 }
 
@@ -1765,33 +1765,6 @@ span.wpcf7-spinner {
 	width: 100%; /* 動画の横幅を100%に設定 */
 }
 
-.fv__slider-wrap {
-	overflow: hidden;
-}
-
-.fv__slider {
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-}
-
-.fv__slider-img {
-	height: 100vh;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-}
-
-.fv__slider-img img {
-	-o-object-fit: cover;
-	display: block;
-	height: 100vh;
-	height: calc(1vh * 100);
-	height: calc(var(--vh, 1vh) * 100);
-	object-fit: cover;
-	width: 100%;
-}
-
 .fv__copy {
 	color: #fff;
 	left: 50%;
@@ -1989,6 +1962,14 @@ span.wpcf7-spinner {
 	color: #fff;
 }
 
+.header-menu__item--line img {
+	width: 100%;
+}
+
+.header-menu__item--line a.is-scroll {
+	background-color: #000080;
+}
+
 .header-menu__item a::after {
 	background: #fff;
 	bottom: 1.25rem;
@@ -2063,6 +2044,10 @@ span.wpcf7-spinner {
 
 .header__logo {
 	width: 6.375rem;
+}
+
+.header__container {
+	display: none;
 }
 
 .info-card__container {
@@ -4634,10 +4619,6 @@ html {
 	justify-content: center;
 }
 
-.fv__slider-img {
-	overflow: hidden;
-}
-
 .fv__copy {
 	left: 50%;
 	position: absolute;
@@ -4710,12 +4691,19 @@ html {
 
 .header__inner {
 	padding-left: 2.5rem;
-	padding-right: 1.25rem;
+	padding-right: 0;
 }
 
 .header__logo {
 	padding-top: 0.25rem;
 	width: 8.3125rem;
+}
+
+.header__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding-top: 0.25rem;
 }
 
 .header__nav {

@@ -399,3 +399,40 @@ add_action('wp_enqueue_scripts', 'enqueue_weather_app_assets');
 // set_post_views($post_id);
 // }
 // add_action('wp_head', 'track_post_views');
+
+
+.fv__slider-wrap {
+	overflow: hidden;
+}
+
+.fv__slider {
+	margin-inline:auto;
+	width:100%;
+}
+
+.fv__slider-img {
+	margin-inline: auto;
+  width: 100%;
+  height: 100vh;
+	@include mq(md) {
+		overflow: hidden;
+  }
+}
+.fv__slider-img img {
+  display: block;
+	width:100%;
+	height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  object-fit: cover;
+}
+
+
+  // picture,
+  // img {
+  //   width: 100%;
+  //   height: 100%;
+  //   aspect-ratio: inherit;
+  //   object-fit: cover;
+  //   object-position: 50% 50%;
+  //   border-radius: inherit;
+  // }

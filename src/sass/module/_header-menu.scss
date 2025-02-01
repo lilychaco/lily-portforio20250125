@@ -36,7 +36,15 @@
 .header-menu__item a.is-scroll{
     color: #fff;
 }
-
+.header-menu__item--line {
+	// background-color: $greenaccent;
+}
+.header-menu__item--line img {
+	width:100%;
+}
+.header-menu__item--line a.is-scroll {
+	background-color: $greenaccent;
+}
 
 .header-menu__item a::after {
 	content:"";

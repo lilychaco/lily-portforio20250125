@@ -31,10 +31,10 @@
 	display: flex;
   justify-content: space-between;
   align-items: center;
-	padding: 0 rem(15);
+	padding:0 rem(15);
 
 	@include mq(md) {
-		padding-right:rem(20);
+		padding-right:0;
 		padding-left: rem(40);
 	}
 }
@@ -43,6 +43,16 @@
 	@include mq(md) {
 			width: rem(133);
 			padding-top: rem(4);
+	}
+}
+
+.header__container {
+	display: none;
+	@include mq(md) {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding-top: rem(4);
 	}
 }
 .header__nav {
