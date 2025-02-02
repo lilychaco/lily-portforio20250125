@@ -14,17 +14,16 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	gap:rem(30);
 	}
 }
 
 .header-menu__item {
-	width: 100%;
 	height: inherit;
 }
 .header-menu__item a{
 	width: 100%;
 	height: inherit;
-	padding-inline:rem(20);
 	text-align: center;
 	white-space: nowrap;
 	display:flex;

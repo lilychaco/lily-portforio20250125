@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="fv js-fv">
+<section class="fv fv-layout js-fv">
 	<div class="fv__video-container">
 		<video autoplay muted loop playsinline preload="auto">
 			<source src="<?php echo get_template_directory_uri(); ?>/assets/images/manta.MP4" type="video/mp4">

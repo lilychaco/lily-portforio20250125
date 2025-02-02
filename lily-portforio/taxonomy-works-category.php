@@ -2,8 +2,8 @@
 <section class="mv">
 	<figure class="mv__img">
 		<picture>
-			<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv-works.jpg" media="(min-width: 768px)" />
-			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-works-sp.jpg" alt="ファーストビュー画像" />
+			<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/pctote.jpg" media="(min-width: 768px)" />
+			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/pctote.jpg" alt="ファーストビュー画像" />
 		</picture>
 	</figure>
 
@@ -62,34 +62,30 @@
                 : $content; // 本文を164文字以内に切り詰める
             ?>
 			<li class="archive-works-cards__item archive-works-card">
-				<?php if ($link_url) : ?>
-				<a href="<?php echo esc_url($link_url); ?>" class="archive-works-card__link" target="_blank"
-					rel="noopener noreferrer">
+
+				<figure class="archive-works-card__img">
+					<?php if ($thumbnail) : ?>
+					<!-- アイキャッチ画像がある場合 -->
+					<?php echo $thumbnail; ?>
+					<?php else : ?>
+					<!-- デフォルト画像を表示 -->
+					<img src="<?php echo esc_url($default_thumbnail); ?>" alt="制作物トップページ" />
 					<?php endif; ?>
+				</figure>
 
-					<figure class="archive-works-card__img">
-						<?php if ($thumbnail) : ?>
-						<!-- アイキャッチ画像がある場合 -->
-						<?php echo $thumbnail; ?>
-						<?php else : ?>
-						<!-- デフォルト画像を表示 -->
-						<img src="<?php echo esc_url($default_thumbnail); ?>" alt="制作物トップページ" />
-						<?php endif; ?>
-					</figure>
-
-					<div class="archive-works-card__body">
-						<div class="archive-works-card__top">
-							<div class="archive-works-card__category">
-								<?php single_term_title(); // タクソノミー名を表示 ?>
-							</div>
-							<div class="archive-works-card__title">
-								<?php the_title(); // 投稿タイトル ?>
-							</div>
+				<div class="archive-works-card__body">
+					<div class="archive-works-card__top">
+						<div class="archive-works-card__category">
+							<?php single_term_title(); // タクソノミー名を表示 ?>
 						</div>
+						<div class="archive-works-card__title">
+							<?php the_title(); // 投稿タイトル ?>
+						</div>
+					</div>
 
 
-						<div class="works-card__text">
-							<?php
+					<div class="works-card__text">
+						<?php
 									// 現在表示中のページ（固定ページや投稿など）のIDを取得
 									$current_post_id = get_the_ID();
 
@@ -99,41 +95,39 @@
 									$password = get_post_meta($current_post_id, 'password', true);
 									?>
 
-							<?php if ($link_url) : ?>
-							<p class="works-card__price-info">クリックしたらサイトへ飛びます</p>
+						<?php if ($link_url) : ?>
+						<p class="works-card__price-info"></p>
+						<?php endif; ?>
+
+						<?php if (!empty($user_name) || !empty($password)) : ?>
+						<p class="works-card__price-info">
+							<?php if (!empty($user_name)) : ?>
+							ユーザー名: <?php echo esc_html($user_name); ?><br>
 							<?php endif; ?>
-
-							<?php if (!empty($user_name) || !empty($password)) : ?>
-							<p class="works-card__price-info">
-								<?php if (!empty($user_name)) : ?>
-								ユーザー名: <?php echo esc_html($user_name); ?><br>
-								<?php endif; ?>
-								<?php if (!empty($password)) : ?>
-								パスワード: <?php echo esc_html($password); ?>
-								<?php endif; ?>
-							</p>
+							<?php if (!empty($password)) : ?>
+							パスワード: <?php echo esc_html($password); ?>
 							<?php endif; ?>
-						</div>
-
-
-						<div class="archive-works-card__subbody">
-							<div class="archive-works-card__subtext">
-								<?php echo esc_html($trimmed_content); // 本文をエスケープして表示 ?>
-							</div>
-							<div class="archive-works-card__meta">
-								<div class="archive-works-card__microcopy">
-									お問い合わせはコチラ
-								</div>
-								<div class="archive-works-card__button">
-									<a href="<?php echo esc_url(home_url('/contact')); ?>" class="button">Contact us</a>
-								</div>
-							</div>
-						</div>
+						</p>
+						<?php endif; ?>
 					</div>
 
-					<?php if ($link_url) : ?>
-				</a>
-				<?php endif; ?>
+
+					<div class="archive-works-card__subbody">
+						<div class="archive-works-card__subtext">
+							<?php echo esc_html($trimmed_content); // 本文をエスケープして表示 ?>
+						</div>
+						<div class="archive-works-card__meta">
+							<?php if ($link_url) : ?>
+							<div class="archive-works-card__microcopy">
+								詳しくはコチラ
+							</div>
+							<div class="archive-works-card__button">
+								<a href="<?php echo esc_url($link_url); ?>" class="button" rel="noopener noreferrer">View more</a>
+							</div>
+							<?php endif; ?>
+						</div>
+					</div>
+				</div>
 			</li>
 			<?php endwhile; ?>
 		</ul>

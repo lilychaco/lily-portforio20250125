@@ -34,8 +34,10 @@
 			<h1 class="header__logo">
 				<a href="<?php echo esc_url(home_url('/')); ?>">
 					<picture>
+						<!-- PC版（768px以上）のロゴ -->
 						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-transparent.png"
 							media="(min-width: 768px)" />
+						<!-- SP版（デフォルト）のロゴ -->
 						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-transparent.png" alt="ヘッダーロゴ" />
 					</picture>
 				</a>
@@ -44,9 +46,12 @@
 			<div class="header__logo">
 				<a href="<?php echo esc_url(home_url('/')); ?>">
 					<picture>
+						<!-- PC版（768px以上）のロゴ -->
 						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-blue-long.jpg"
 							media="(min-width: 768px)" />
-						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/" media="(min-width: 768px)" />" alt="ヘッダーロゴ" />
+						<!-- SP版（デフォルト）のロゴ -->
+						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-blue-long.jpg" alt="ヘッダーロゴ"
+							class="js-logo" />
 					</picture>
 				</a>
 			</div>
@@ -91,8 +96,8 @@
 						</a>
 					</li>
 					<li class="header-menu__item header-menu__item--line">
-						<a href="https://lin.ee/RNytVdZ"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/line.png"
-								alt="友だち追加" height="42" border="0"></a>
+						<a href="https://lin.ee/RNytVdZ" rel="noopener noreferrer"><img
+								src="<?php echo get_theme_file_uri(); ?>/assets/images/line.png" alt="友だち追加" height="42" border="0"></a>
 					</li>
 				</ul>
 			</nav>
@@ -103,7 +108,7 @@
 	</header>
 
 	<div class="drawer drawer-layout" id="js-global-menu" aria-hidden="true">
-		<ul class="drawer-menu inner">
+		<ul class="drawer-menu drawer-menu__inner inner">
 			<li class="drawer-menu__item">
 				<a href="<?php echo esc_url(home_url('/works')); ?>">
 					<p class="starfish-icon">制作物</p>
@@ -111,7 +116,7 @@
 			</li>
 			<li class="drawer-menu__item">
 				<a href="<?php echo esc_url(home_url('/aboutus')); ?>">
-					<p class="starfish-icon">私たちについて</p>
+					<p class="starfish-icon">プロフィール</p>
 				</a>
 			</li>
 			<li class="drawer-menu__item">

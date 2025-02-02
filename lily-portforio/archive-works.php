@@ -55,9 +55,8 @@
 		</ul>
 
 		<!-- 投稿リスト部分 -->
+		<?php if (have_posts()) : ?>
 		<ul class="archive-works__content archive-works-cards">
-
-			<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
 			<?php
             // 必要なカスタムフィールドの値をまとめて取得
@@ -82,7 +81,7 @@
 					<?php echo $thumbnail; ?>
 					<?php else : ?>
 					<!-- サムネイル画像がない場合はデフォルト画像を表示 -->
-					<img src="<?php echo esc_url($default_thumbnail); ?>" alt="デフォルト画像" />
+					<img src="<?php echo esc_url($default_thumbnail); ?>" alt="制作物トップページ" />
 					<?php endif; ?>
 				</figure>
 
@@ -136,7 +135,8 @@
 							</div>
 							<?php if ($link_url) : ?>
 							<div class="archive-works-card__button">
-								<a href="<?php echo esc_url($link_url); ?>" class="button" rel="noopener noreferrer">View more</a>
+								<a href="<?php echo esc_url($link_url); ?>" class="button" target="_blank"
+									rel="noopener noreferrer">View more</a>
 							</div>
 							<?php endif; ?>
 						</div>

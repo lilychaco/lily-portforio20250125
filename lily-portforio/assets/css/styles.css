@@ -1309,6 +1309,13 @@ span.wpcf7-spinner {
 	width: 100%;
 }
 
+.drawer-menu__inner.inner {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5rem;
+	width: 100%;
+}
+
 .drawer-menu__item:not(:first-child) {
 	margin-top: 1.25rem;
 }
@@ -1748,6 +1755,10 @@ span.wpcf7-spinner {
 	width: 100%;
 }
 
+.fv-layout {
+	margin-top: 5rem;
+}
+
 .fv__video-container {
 	height: 100%; /* 高さも全体に広げる */
 	left: 0;
@@ -1886,7 +1897,7 @@ span.wpcf7-spinner {
 }
 
 .hamburger__line {
-	background-color: #000080;
+	background-color: #fff;
 	bottom: 0;
 	height: 1px;
 	left: 0;
@@ -1941,7 +1952,6 @@ span.wpcf7-spinner {
 
 .header-menu__item {
 	height: inherit;
-	width: 100%;
 }
 
 .header-menu__item a {
@@ -1950,8 +1960,6 @@ span.wpcf7-spinner {
 	flex-direction: column;
 	height: inherit;
 	justify-content: center;
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
 	position: relative;
 	text-align: center;
 	white-space: nowrap;
@@ -2035,7 +2043,7 @@ span.wpcf7-spinner {
 }
 
 .header--top {
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: #D6E6F5;
 	transition: background-color 0.3s ease-in-out;
 }
 
@@ -2054,16 +2062,22 @@ span.wpcf7-spinner {
 	justify-content: space-between;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0 0.9375rem;
+	padding: 0 1.875rem;
 	width: 100%;
 }
 
 .header__logo {
+	align-items: center;
+	display: flex;
+	justify-content: center;
 	width: 11.25rem;
 }
 
 .header__logo img {
 	-o-object-fit: cover;
+	align-items: center;
+	display: flex;
+	justify-content: center;
 	object-fit: cover;
 	width: 100%;
 }
@@ -2390,6 +2404,13 @@ span.wpcf7-spinner {
 	font-weight: 400;
 	letter-spacing: 0;
 	line-height: 1.5;
+}
+
+.page-aboutus__profile {
+	background-color: #D6E6F5;
+	padding-bottom: 5.125rem;
+	padding-top: 5rem;
+	z-index: -100;
 }
 
 .page-contact {
@@ -2828,7 +2849,35 @@ span.wpcf7-spinner {
 	margin-top: 0.125rem;
 }
 
-.price-list__title {
+.profile-history__inner {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 67.3125rem;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.profile-history__main {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin-top: 1.75rem;
+}
+
+.profile-history__image {
+	width: 100%;
+}
+
+.profile-history__image img {
+	-o-object-fit: cover;
+	aspect-ratio: 345/227;
+	height: auto;
+	object-fit: cover;
+	width: 100%;
+}
+
+.profile-list__title {
 	border-bottom: 1px solid #000080;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
@@ -2838,26 +2887,26 @@ span.wpcf7-spinner {
 	padding-bottom: 0.25rem;
 }
 
-.price-list__heading {
+.profile-list__heading {
 	align-items: center;
 	display: flex;
 	justify-content: center;
 }
 
-.price-list__icon {
+.profile-list__icon {
 	height: 1.5rem;
 	margin-right: 8px;
 	width: 1.5rem;
 }
 
-.price-list__item {
+.profile-list__item {
 	display: flex;
 	flex-direction: row;
 	gap: 1.875rem;
 	margin-top: 0.5rem;
 }
 
-.price-list__name {
+.profile-list__name {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 400;
@@ -2866,7 +2915,7 @@ span.wpcf7-spinner {
 	text-align: left;
 }
 
-.price-list__number {
+.profile-list__number {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 400;
@@ -2875,19 +2924,19 @@ span.wpcf7-spinner {
 	margin-left: 1.25rem;
 }
 
-.price-lists {
+.profile-lists {
 	width: 100%;
 }
 
 /* 最初の要素のみに適用されるスタイル */
 
-.price-lists__item:first-child {
+.profile-lists__item:first-child {
 	margin-top: 0;
 }
 
 /* 2番目以降の要素に適用されるスタイル */
 
-.price-lists__item:not(:first-child) {
+.profile-lists__item:not(:first-child) {
 	margin-top: 2.5rem;
 }
 
@@ -3711,8 +3760,8 @@ span.wpcf7-spinner {
 
 .fade-in-right {
 	opacity: 0;
-	transform: translateX(70px);
-	transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+	transform: translateX(50px);
+	transition: opacity 1s ease, transform 1s ease;
 }
 
 /* アニメーションを適用するクラス（JavaScriptで追加） */
@@ -4637,6 +4686,10 @@ html {
 	justify-content: center;
 }
 
+.fv-layout {
+	margin-top: 5.625rem;
+}
+
 .fv__copy {
 	left: 50%;
 	position: absolute;
@@ -4695,6 +4748,7 @@ html {
 .header-menu__items {
 	align-items: center;
 	display: flex;
+	gap: 1.875rem;
 	height: inherit;
 	justify-content: flex-end;
 	width: 100%;
@@ -4706,11 +4760,6 @@ html {
 
 .header {
 	height: 5.625rem;
-}
-
-.header__inner {
-	padding-left: 2.5rem;
-	padding-right: 0;
 }
 
 .header__logo {
@@ -4874,6 +4923,11 @@ html {
 	overflow: auto;
 }
 
+.page-aboutus__profile {
+	padding-bottom: 6.375rem;
+	padding-top: 6.25rem;
+}
+
 .page-contact__inner {
 	max-width: 46.875rem;
 }
@@ -4973,22 +5027,44 @@ html {
 	width: 5rem;
 }
 
-.price-list {
+.profile-history__main {
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	gap: 5.5710306407%;
+	justify-content: space-between;
+	margin-top: 2.5rem;
+}
+
+.profile-history__image {
+	max-width: 30.75rem;
+}
+
+.profile-history__image img {
+	aspect-ratio: 492/746;
+}
+
+.profile-history__lists {
+	flex: 1;
+	max-width: 30.75rem;
+	padding-left: 1.875rem;
+}
+
+.profile-list {
 	display: grid;
 	grid-template-columns: 57% 71.43%;
 }
 
-.price-list__name {
+.profile-list__name {
 	font-size: 1rem;
 	line-height: 1.5;
 }
 
-.price-list__number {
+.profile-list__number {
 	font-size: 1rem;
 	line-height: 1.5;
 }
 
-.price-lists__item {
+.profile-lists__item {
 	display: flex;
 	flex-direction: column;
 }
@@ -5647,20 +5723,6 @@ html {
 
 html {
 	font-size: 4.2666666667vw;
-}
-
-}
-
-@keyframes fadeInRight {
-
-from {
-	opacity: 0; /* 最初は見えない */
-	transform: translateX(50px); /* 右側から50pxずらした位置 */
-}
-
-to {
-	opacity: 1; /* 完全に表示 */
-	transform: translateX(0); /* 元の位置 */
 }
 
 }

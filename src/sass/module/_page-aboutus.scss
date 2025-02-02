@@ -1,4 +1,4 @@
-@use "global" as *;
+@use "global"as *;
 
 .page-aboutus {
   margin-inline: auto;
@@ -7,22 +7,25 @@
 
 .page-aboutus__container {
   width: 100%;
-	position: relative;
-  @include mq(md) {
-  }
+  position: relative;
+
+  @include mq(md) {}
 }
+
 .page-aboutus__sp-image {
   margin-top: rem(28);
   display: block;
   width: 100%;
-	position: relative;
+  position: relative;
 }
+
 .page-aboutus__sp-image img {
   width: 100%;
   height: auto;
   object-fit: cover;
   aspect-ratio: 345/228;
 }
+
 .page-aboutus__title {
   font-size: rem(40);
   font-family: $third-font-family;
@@ -37,60 +40,69 @@
     color: $white;
   }
 }
+
 .page-aboutus__title span {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
+
 .page-aboutus__title--sp {
-	position: absolute;
-	top:rem(24);
-	left: rem(24);
-	color:$white;
+  position: absolute;
+  top: rem(24);
+  left: rem(24);
+  color: $white;
 
 }
+
 .page-aboutus__pc-image {
   display: none;
+
   @include mq(md) {
-		width:100%;
-		height:rem(661);
+    width: 100%;
+    height: rem(661);
     display: block;
-		position: relative;
+    position: relative;
   }
 }
+
 .page-aboutus__pc-image img:first-of-type {
   @include mq(md) {
     display: block;
     max-width: rem(400);
     height: auto;
     object-fit: cover;
-		aspect-ratio: 400/606;
-		position: absolute;
-		top:0;
-		left:0;
+    aspect-ratio: 400/606;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
+
 .page-aboutus__pc-image img:nth-of-type(2) {
   @include mq(md) {
     display: block;
     object-fit: cover;
-		aspect-ratio: 880/581;
+    aspect-ratio: 880/581;
     max-width: rem(880);
     position: absolute;
     top: rem(80);
     right: 0;
-		z-index:-1;
+    z-index: -1;
   }
 }
+
 .page-aboutus__main-wrapper {
   @include mq(md) {
     position: absolute;
     top: rem(200);
     right: rem(60);
     z-index: 10;
-		max-width:rem(560);
+    max-width: rem(560);
   }
 }
+
 .page-aboutus__main {
   margin-top: rem(40);
+
   @include mq(md) {
     width: 100%;
     max-width: rem(841);
@@ -98,13 +110,16 @@
 
   }
 }
+
 .page-aboutus__body {
   margin-top: rem(16);
+
   @include mq(md) {
     margin-top: rem(26);
-	// padding-left: rem(6);
-	}
+    // padding-left: rem(6);
+  }
 }
+
 .page-aboutus__text {
   font-size: rem(16);
   font-family: $base-font-family;
@@ -116,5 +131,17 @@
     color: $white;
     max-height: rem(350);
     overflow: auto;
+  }
+}
+
+.page-aboutus__profile {
+  background-color: $greenpale;
+  z-index: -100;
+  padding-top: rem(80);
+  padding-bottom: rem(82);
+
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(102);
   }
 }

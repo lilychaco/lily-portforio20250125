@@ -293,39 +293,6 @@ add_action('wp_enqueue_scripts', 'enqueue_weather_app_assets');
 
 
 
-						<section class="gallery gallery-layout">
-							<?php
-								// gallery_imageフィールドのデータを取得
-								$fields_diving = SCF::get('gallery_image-diving', get_the_ID());
-
-								// $fieldsが空の場合は<section>を出力しない
-								if (!empty($fields_diving)) : ?>
-							<div class="gallery__inner inner">
-								<div class="gallery__heading section-heading">
-									<h3 class="section-heading__title">gallery</h3>
-									<h2 class="section-heading__subtitle">フォト</h2>
-								</div>
-								<div class="gallery__content">
-									<?php
-									// gallery_imageフィールドの中身をループ
-									foreach ($fields_diving as $field_diving) {
-										// 画像のURLを取得、なければデフォルト画像を指定
-										$image_url_diving = $field_diving['gallery_img-diving'] ? wp_get_attachment_url($field_diving['gallery_img-diving']) : esc_url(get_theme_file_uri('/assets/images/gallery1.jpg'));
-										?>
-									<div class="gallery__item js-modal-open">
-										<img src="<?php echo $image_url_diving; ?>" alt="海の中の写真">
-									</div>
-									<?php
-									}
-								?>
-								</div>
-								<!-- 画像のモーダル時のグレー背景 -->
-						<div class="gallery__display" id="grayDisplay"></div>
-					</div>
-					<?php endif;  ?>
-					</section>
-
-
 
 
 
@@ -436,3 +403,70 @@ add_action('wp_enqueue_scripts', 'enqueue_weather_app_assets');
   //   object-position: 50% 50%;
   //   border-radius: inherit;
   // }
+
+
+
+
+
+<!--
+							data-logo-default="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-transparent.png" -->
+						data-logo-scroll="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-white.jpg" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//================================
+	//コンタクトフォーム7 未入力項目がある時に、警告メッセージを出す
+	//==================================
+	document.addEventListener("DOMContentLoaded", function () {
+		// 警告メッセージを取得
+		var warningMessage = document.getElementById("warningMessage");
+
+		// Contact Form 7 フォームを取得
+		var contactForm = document.querySelector(".wpcf7-form");
+
+		// フォーム送信時の処理
+		contactForm.addEventListener("submit", function (e) {
+			var requiredFields = contactForm.querySelectorAll("[aria-required='true']");
+			var isFormValid = true;
+
+			// 必須項目のチェック
+			requiredFields.forEach(function (field) {
+				if (!field.value.trim()) {
+					isFormValid = false;
+					field.classList.add("wpcf7-error"); // 未入力フィールドを強調するクラス
+				} else {
+					field.classList.remove("wpcf7-error");
+				}
+			});
+
+			// フォームが無効な場合
+			if (!isFormValid) {
+				e.preventDefault(); // フォーム送信を中止
+				warningMessage.style.display = "block"; // 警告メッセージを表示
+			} else {
+				warningMessage.style.display = "none"; // 警告メッセージを非表示
+			}
+		});
+	});

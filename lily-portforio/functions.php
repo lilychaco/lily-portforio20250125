@@ -425,3 +425,27 @@ add_action('wp_head', function() {
         update_post_views($post->ID); // 閲覧回数を更新
     }
 });
+
+// テーマのセットアップ
+function lily_theme_setup() {
+    // テーマサポートの追加
+    add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'lily_theme_setup');
+
+// スクリプトとスタイルの読み込み
+function lily_enqueue_scripts() {
+    // jQueryの読み込み
+    wp_enqueue_script('jquery');
+
+    // テーマのJavaScript
+    wp_enqueue_script(
+        'lily-script',
+        get_theme_file_uri('/src/js/script.js'),
+        array('jquery'),
+        '1.0.0',
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'lily_enqueue_scripts');

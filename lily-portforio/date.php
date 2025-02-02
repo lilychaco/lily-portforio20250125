@@ -2,8 +2,9 @@
 <section class="mv">
 	<figure class="mv__img">
 		<picture>
-			<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv-blog.jpg" media="(min-width: 768px)" />
-			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-blog-sp.jpg" alt="ファーストビュー画像" />
+			<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/watashitokame-pc.jpg"
+				media="(min-width: 768px)" />
+			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/watashitokame-sp.jpg" alt="ファーストビュー画像" />
 		</picture>
 	</figure>
 	<h2 class="mv__title"><?php echo get_the_archive_title(); ?></h2>
