@@ -72,20 +72,42 @@
 
 }
 .header__logo-img--before{
+	display: block;
 	opacity: 1; /* 表示 */
 	z-index: 1;
 }
 
 .header__logo-img--after {
+	display: none;
   opacity: 0; /* 非表示 */
   z-index: 0; /* 優先順位を下げる */
 }
 /* スクロール時にロゴを切り替え */
 .header.is-scroll .header__logo-img--before {
+	display: none;
   opacity: 0; /* スクロール後はフェードアウト */
   z-index: 0; /* 優先順位を下げる */
 }
 .header.is-scroll .header__logo-img--after {
+	display: block;
   opacity: 1; /* スクロール後はフェードイン */
   z-index: 1; /* 優先順位を上げる */
+}
+
+/* 初期状態ではドロワー用のロゴを非表示 */
+.header__logo-img--drawer {
+	display: none;
+}
+
+/* ドロワーが開いたとき（`is-drawerActive` クラスが追加されたとき） */
+.is-drawerActive .header__logo-img--before {
+	display: none; /* 通常ロゴを非表示 */
+}
+
+.is-drawerActive .header__logo-img--drawer {
+	display: block; /* ドロワー用ロゴを表示 */
+}
+
+.is-drawerActive .header__logo-img--after {
+	display: block; /* ドロワー用ロゴを表示 */
 }
