@@ -2084,14 +2084,6 @@ span.wpcf7-spinner {
 	width: 11.25rem;
 }
 
-.header__logo img {
-	-o-object-fit: cover;
-	display: block; /* `flex` は不要なので `block` に修正 */
-	margin: 0 auto; /* 画像を中央揃え */
-	object-fit: cover; /* 画像の縦横比を維持しつつ、コンテナに収める */
-	width: 100%;
-}
-
 .header__logo-img {
 	height: auto;
 	left: 50%;
@@ -2102,50 +2094,31 @@ span.wpcf7-spinner {
 	width: 100%;
 }
 
-.header__logo-img--before {
-	display: block;
-	opacity: 1; /* 表示 */
-	z-index: 1;
-}
+/* 初期状態（PC/SP共通）：スクロール後のロゴとドロワーメニュー用ロゴを非表示 */
 
-.header__logo-img--after {
-	display: none;
-	opacity: 0; /* 非表示 */
-	z-index: 0; /* 優先順位を下げる */
-}
-
-/* スクロール時にロゴを切り替え */
-
-.header.is-scroll .header__logo-img--before {
-	display: none;
-	opacity: 0; /* スクロール後はフェードアウト */
-	z-index: 0; /* 優先順位を下げる */
-}
-
-.header.is-scroll .header__logo-img--after {
-	display: block;
-	opacity: 1; /* スクロール後はフェードイン */
-	z-index: 1; /* 優先順位を上げる */
-}
-
-/* 初期状態ではドロワー用のロゴを非表示 */
-
+.header__logo-img--after,
 .header__logo-img--drawer {
 	display: none;
 }
 
-/* ドロワーが開いたとき（`is-drawerActive` クラスが追加されたとき） */
+/* PC版：FVを超えてスクロールした場合 */
+
+.is-scroll .header__logo-img--before {
+	display: none; /* 初期ロゴを非表示 */
+}
+
+.is-scroll .header__logo-img--after {
+	display: block; /* スクロール後のロゴを表示 */
+}
+
+/* SP版：ドロワーメニューが開いている場合 */
 
 .is-drawerActive .header__logo-img--before {
-	display: none; /* 通常ロゴを非表示 */
+	display: none; /* 初期ロゴを非表示 */
 }
 
 .is-drawerActive .header__logo-img--drawer {
-	display: block; /* ドロワー用ロゴを表示 */
-}
-
-.is-drawerActive .header__logo-img--after {
-	display: block; /* ドロワー用ロゴを表示 */
+	display: block; /* ドロワーメニュー用のロゴを表示 */
 }
 
 .info-card__container {

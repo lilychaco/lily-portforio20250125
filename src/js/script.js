@@ -17,7 +17,7 @@ jQuery(function ($) {
 
   // ドロワーのリンクがクリックされたらメニューを閉じる
   $("#js-global-menu a").click(function () {
-    $("body").toggleClass("is-drawerActive");
+    $("body").removeClass("is-drawerActive");
     $("#js-hamburger").attr("aria-expanded", false);
     $("#js-global-menu")
       .css("visibility", "hidden")

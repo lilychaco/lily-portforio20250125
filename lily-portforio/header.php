@@ -54,12 +54,15 @@
 				<a href="<?php echo esc_url(home_url('/')); ?>">
 					<picture>
 						<!-- PC版（768px以上）のロゴ -->
-						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-blue-long.jpg"
+						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-long2.jpg"
 							media="(min-width: 768px)" />
 						<!-- SP版（デフォルト）のロゴ -->
-						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-blue-long.jpg" alt="ヘッダーロゴ"
+						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-long2.jpg" alt="ヘッダーロゴ"
 							class="header__logo-img header__logo-img--before" />
 					</picture>
+					<!-- ドロワーオープン時のロゴ -->
+					<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-long2.jpg" alt="ドロワーメニュー用のロゴ"
+						class="header__logo-img header__logo-img--drawer" />
 				</a>
 			</div>
 			<?php endif; ?>
