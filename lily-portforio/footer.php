@@ -17,9 +17,6 @@
    						</div>
    					</div>
    					<div class="contact-maparea__body">
-   						<div class="contact-maparea__address">
-   							<p>熊本県天草市</p>
-   						</div>
    						<div class="contact-maparea__map-wrapper">
    							<div class="contact-maparea__map">
    								<iframe

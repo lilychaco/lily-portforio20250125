@@ -15,6 +15,7 @@ outline: none;
 				}
 }
 
+// デフォルトのハンバーガーアイコン（トップページ以外は $white）
 .hamburger__line {
 	position: absolute;
 	top: 0;
@@ -27,6 +28,7 @@ outline: none;
 	background-color: $white;
 	-webkit-transition: inherit;
 					transition: inherit;
+
 	&::before,
 	&::after {
 		position: absolute;
@@ -45,6 +47,7 @@ outline: none;
 	top: 11px;
 }
 
+// ハンバーガーアイコンが開いたときのスタイル
 .hamburger[aria-expanded="true"] .hamburger__line {
 	background-color: transparent;
 	&::before,
@@ -66,6 +69,26 @@ outline: none;
 // トップページのハンバーガーアイコンの色を変更
 .header--top .hamburger__line {
   background-color: $greenaccent;
+
+  &::before,
+  &::after {
+    background-color: inherit;
+  }
+}
+
+// **スクロール時（`.is-scroll` が付いたら `$white` に変更）**
+.header--top.is-scroll .hamburger__line {
+  background-color: $white;
+
+  &::before,
+  &::after {
+    background-color: inherit;
+  }
+}
+
+// **トップページ以外のページは常に `$white`（上書き）**
+.header:not(.header--top) .hamburger__line {
+  background-color: $white;
 
   &::before,
   &::after {

@@ -1006,12 +1006,12 @@ time {
 .contact-maparea__logo {
 	margin-left: auto;
 	margin-right: auto;
-	width: 10.875rem;
+	width: 11.25rem;
 }
 
 .contact-maparea__logo img {
 	-o-object-fit: cover;
-	aspect-ratio: 174/65;
+	aspect-ratio: 180/70;
 	height: auto;
 	object-fit: cover;
 	width: 100%;
@@ -1952,6 +1952,24 @@ span.wpcf7-spinner {
 
 .header--top .hamburger__line::before,
 .header--top .hamburger__line::after {
+	background-color: inherit;
+}
+
+.header--top.is-scroll .hamburger__line {
+	background-color: #fff;
+}
+
+.header--top.is-scroll .hamburger__line::before,
+.header--top.is-scroll .hamburger__line::after {
+	background-color: inherit;
+}
+
+.header:not(.header--top) .hamburger__line {
+	background-color: #fff;
+}
+
+.header:not(.header--top) .hamburger__line::before,
+.header:not(.header--top) .hamburger__line::after {
 	background-color: inherit;
 }
 
@@ -4572,7 +4590,7 @@ html {
 }
 
 .contact-maparea__map-wrapper {
-	max-width: 17.0625rem;
+	max-width: 28.125rem;
 }
 
 .contact-maparea__map {
