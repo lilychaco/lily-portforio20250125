@@ -45,7 +45,7 @@
 	</div>
 </div>
 <div class="page-aboutus__profile profile-history">
-	<div class="profile-history__inner">
+	<div class="profile-history__inner inner">
 
 		<div class="profile-history__heading section-heading">
 			<h3 class="section-heading__title">Profile</h3>

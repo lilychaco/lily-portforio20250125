@@ -47,9 +47,10 @@
 
 .page-aboutus__title--sp {
   position: absolute;
-  top: rem(24);
+	bottom:rem(10);
   left: rem(24);
   color: $white;
+
 
 }
 
@@ -101,7 +102,7 @@
 }
 
 .page-aboutus__main {
-  margin-top: rem(40);
+  margin-top: rem(20);
 
   @include mq(md) {
     width: 100%;
@@ -135,8 +136,11 @@
 }
 
 .page-aboutus__profile {
+	margin-inline:auto;
+	width:100%;
   background-color: $greenpale;
   z-index: -100;
+	margin-top: rem(100);
   padding-top: rem(80);
   padding-bottom: rem(82);
 

@@ -2437,10 +2437,10 @@ span.wpcf7-spinner {
 }
 
 .page-aboutus__title--sp {
+	bottom: 0.625rem;
 	color: #fff;
 	left: 1.5rem;
 	position: absolute;
-	top: 1.5rem;
 }
 
 .page-aboutus__pc-image {
@@ -2448,7 +2448,7 @@ span.wpcf7-spinner {
 }
 
 .page-aboutus__main {
-	margin-top: 2.5rem;
+	margin-top: 1.25rem;
 }
 
 .page-aboutus__body {
@@ -2465,8 +2465,12 @@ span.wpcf7-spinner {
 
 .page-aboutus__profile {
 	background-color: #D6E6F5;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6.25rem;
 	padding-bottom: 5.125rem;
 	padding-top: 5rem;
+	width: 100%;
 	z-index: -100;
 }
 
@@ -2909,7 +2913,6 @@ span.wpcf7-spinner {
 .profile-history__inner {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 67.3125rem;
 	position: relative;
 	width: 100%;
 	z-index: 1;
@@ -5082,6 +5085,10 @@ html {
 
 .page-top-button__img {
 	width: 5rem;
+}
+
+.profile-history__inner {
+	max-width: 67.3125rem;
 }
 
 .profile-history__main {
