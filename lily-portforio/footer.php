@@ -50,9 +50,9 @@
    			<div class="footer__logo">
    				<a href="<?php echo esc_url(home_url('/')); ?>">
    					<picture>
-   						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-long2.jpg"
+   						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-transparent.png"
    							media="(min-width: 768px)" />
-   						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-long2.jpg" alt="ロゴ" />
+   						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-transparent.png" alt="ロゴ" />
    					</picture>
    				</a>
    			</div>

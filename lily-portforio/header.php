@@ -34,9 +34,9 @@
 			<h1 class="header__logo">
 				<a href="<?php echo esc_url(home_url('/')); ?>">
 					<picture>
-						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-white.jpg"
+						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-transparent.png"
 							media="(min-width: 768px)" />
-						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-white.jpg" alt="ヘッダーロゴ" />
+						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-transparent.png" alt="ヘッダーロゴ" />
 					</picture>
 				</a>
 			</h1>
@@ -44,9 +44,9 @@
 			<div class="header__logo">
 				<a href="<?php echo esc_url(home_url('/')); ?>">
 					<picture>
-						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-long2.jpg"
+						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-blue-long.jpg"
 							media="(min-width: 768px)" />
-						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-long2.jpg" alt="ヘッダーロゴ" />
+						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/" media="(min-width: 768px)" />" alt="ヘッダーロゴ" />
 					</picture>
 				</a>
 			</div>

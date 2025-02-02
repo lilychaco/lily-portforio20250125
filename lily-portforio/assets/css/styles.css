@@ -1424,7 +1424,7 @@ span.wpcf7-spinner {
 
 .footer__logo {
 	text-align: left;
-	width: 7.5rem;
+	width: 10rem;
 }
 
 .footer__img {
@@ -1745,7 +1745,7 @@ span.wpcf7-spinner {
 	height: 100vh;
 	overflow: hidden;
 	position: relative;
-	width: 100vw;
+	width: 100%;
 }
 
 .fv__video-container {
@@ -1886,7 +1886,7 @@ span.wpcf7-spinner {
 }
 
 .hamburger__line {
-	background-color: #fff;
+	background-color: #000080;
 	bottom: 0;
 	height: 1px;
 	left: 0;
@@ -2059,7 +2059,13 @@ span.wpcf7-spinner {
 }
 
 .header__logo {
-	width: 6.375rem;
+	width: 11.25rem;
+}
+
+.header__logo img {
+	-o-object-fit: cover;
+	object-fit: cover;
+	width: 100%;
 }
 
 .info-card__container {
@@ -4458,7 +4464,7 @@ html {
 }
 
 .contact-maparea__logo img {
-	aspect-ratio: 200/75;
+	aspect-ratio: 1273/500;
 }
 
 .contact-maparea__body {
@@ -4687,6 +4693,7 @@ html {
 }
 
 .header-menu__items {
+	align-items: center;
 	display: flex;
 	height: inherit;
 	justify-content: flex-end;
@@ -4707,8 +4714,7 @@ html {
 }
 
 .header__logo {
-	padding-top: 0.25rem;
-	width: 8.3125rem;
+	width: 12.5rem;
 }
 
 .info-card__container {

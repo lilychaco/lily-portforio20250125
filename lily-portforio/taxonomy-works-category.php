@@ -2,8 +2,8 @@
 <section class="mv">
 	<figure class="mv__img">
 		<picture>
-			<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv-campaign.jpg" media="(min-width: 768px)" />
-			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-campaign-sp.jpg" alt="ファーストビュー画像" />
+			<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv-works.jpg" media="(min-width: 768px)" />
+			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-works-sp.jpg" alt="ファーストビュー画像" />
 		</picture>
 	</figure>
 
@@ -12,10 +12,10 @@
 
 <?php get_template_part('common/breadcrumb'); ?>
 
-<div class="archive-campaign archive-campaign-layout">
-	<div class="archive-campaign__inner inner">
+<div class="archive-works archive-works-layout">
+	<div class="archive-works__inner inner">
 		<!-- カテゴリリスト部分 -->
-		<ul class="archive-campaign__category-list category-list">
+		<ul class="archive-works__category-list category-list">
 			<!-- ALL のリンク -->
 			<li class="category-list__item">
 				<a href="<?php echo esc_url(get_post_type_archive_link('works')); ?>"
@@ -24,7 +24,7 @@
 				</a>
 			</li>
 			<?php
-				// 'campaign-category'タクソノミーの用語を取得
+				// 'works-category'タクソノミーの用語を取得
 				$taxonomy = 'works-category'; // タクソノミー名を変数に格納
 				$terms = get_terms(array(
 						'taxonomy' => $taxonomy,
@@ -45,7 +45,7 @@
 		<!-- 投稿リスト部分 -->
 
 		<?php if (have_posts()) : ?>
-		<ul class="archive-campaign__content archive-campaign-cards">
+		<ul class="archive-works__content archive-works-cards">
 			<?php while (have_posts()) : the_post(); ?>
 			<?php
             // 必要なカスタムフィールドとデータを事前に取得
@@ -55,19 +55,19 @@
                 'full',
                 array('alt' => esc_attr(get_the_title() . 'の画像')) // アイキャッチ画像の alt 属性
             );
-            $default_thumbnail = get_theme_file_uri('assets/images/campaign1.jpg'); // デフォルト画像のパス
+            $default_thumbnail = get_theme_file_uri('assets/images/works1.jpg'); // デフォルト画像のパス
             $content = strip_tags(get_the_content()); // 本文からHTMLタグを除去
             $trimmed_content = mb_strlen($content, 'UTF-8') > 164
                 ? mb_substr($content, 0, 164, 'UTF-8')
                 : $content; // 本文を164文字以内に切り詰める
             ?>
-			<li class="archive-campaign-cards__item archive-campaign-card">
+			<li class="archive-works-cards__item archive-works-card">
 				<?php if ($link_url) : ?>
-				<a href="<?php echo esc_url($link_url); ?>" class="archive-campaign-card__link" target="_blank"
+				<a href="<?php echo esc_url($link_url); ?>" class="archive-works-card__link" target="_blank"
 					rel="noopener noreferrer">
 					<?php endif; ?>
 
-					<figure class="archive-campaign-card__img">
+					<figure class="archive-works-card__img">
 						<?php if ($thumbnail) : ?>
 						<!-- アイキャッチ画像がある場合 -->
 						<?php echo $thumbnail; ?>
@@ -77,18 +77,18 @@
 						<?php endif; ?>
 					</figure>
 
-					<div class="archive-campaign-card__body">
-						<div class="archive-campaign-card__top">
-							<div class="archive-campaign-card__category">
+					<div class="archive-works-card__body">
+						<div class="archive-works-card__top">
+							<div class="archive-works-card__category">
 								<?php single_term_title(); // タクソノミー名を表示 ?>
 							</div>
-							<div class="archive-campaign-card__title">
+							<div class="archive-works-card__title">
 								<?php the_title(); // 投稿タイトル ?>
 							</div>
 						</div>
 
 
-						<div class="campaign-card__text">
+						<div class="works-card__text">
 							<?php
 									// 現在表示中のページ（固定ページや投稿など）のIDを取得
 									$current_post_id = get_the_ID();
@@ -100,11 +100,11 @@
 									?>
 
 							<?php if ($link_url) : ?>
-							<p class="campaign-card__price-info">クリックしたらサイトへ飛びます</p>
+							<p class="works-card__price-info">クリックしたらサイトへ飛びます</p>
 							<?php endif; ?>
 
 							<?php if (!empty($user_name) || !empty($password)) : ?>
-							<p class="campaign-card__price-info">
+							<p class="works-card__price-info">
 								<?php if (!empty($user_name)) : ?>
 								ユーザー名: <?php echo esc_html($user_name); ?><br>
 								<?php endif; ?>
@@ -116,15 +116,15 @@
 						</div>
 
 
-						<div class="archive-campaign-card__subbody">
-							<div class="archive-campaign-card__subtext">
+						<div class="archive-works-card__subbody">
+							<div class="archive-works-card__subtext">
 								<?php echo esc_html($trimmed_content); // 本文をエスケープして表示 ?>
 							</div>
-							<div class="archive-campaign-card__meta">
-								<div class="archive-campaign-card__microcopy">
+							<div class="archive-works-card__meta">
+								<div class="archive-works-card__microcopy">
 									お問い合わせはコチラ
 								</div>
-								<div class="archive-campaign-card__button">
+								<div class="archive-works-card__button">
 									<a href="<?php echo esc_url(home_url('/contact')); ?>" class="button">Contact us</a>
 								</div>
 							</div>
@@ -142,7 +142,7 @@
 
 
 		<!-- ページネーション -->
-		<div class="archive-campaign__nav page-nav">
+		<div class="archive-works__nav page-nav">
 			<ul class="page-nav__pager">
 				<?php wp_pagenavi(); ?>
 			</ul>

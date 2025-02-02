@@ -76,35 +76,30 @@
             ?>
 
 			<li class="archive-works-cards__item archive-works-card">
-				<?php if ($link_url) : ?>
-				<a href="<?php echo esc_url($link_url); ?>" class="archive-works-card__link" target="_blank"
-					rel="noopener noreferrer">
+				<figure class="archive-works-card__img">
+					<?php if ($thumbnail) : ?>
+					<!-- サムネイル画像を表示 -->
+					<?php echo $thumbnail; ?>
+					<?php else : ?>
+					<!-- サムネイル画像がない場合はデフォルト画像を表示 -->
+					<img src="<?php echo esc_url($default_thumbnail); ?>" alt="デフォルト画像" />
 					<?php endif; ?>
+				</figure>
 
-					<figure class="archive-works-card__img">
-						<?php if ($thumbnail) : ?>
-						<!-- サムネイル画像を表示 -->
-						<?php echo $thumbnail; ?>
-						<?php else : ?>
-						<!-- サムネイル画像がない場合はデフォルト画像を表示 -->
-						<img src="<?php echo esc_url($default_thumbnail); ?>" alt="デフォルト画像" />
-						<?php endif; ?>
-					</figure>
-
-					<div class="archive-works-card__body">
-						<div class="archive-works-card__top">
-							<?php if (!empty($terms) && !is_wp_error($terms)) : ?>
-							<div class="archive-works-card__category">
-								<?php foreach ($terms as $term) : ?>
-								<span><?php echo esc_html($term->name); ?></span>
-								<?php endforeach; ?>
-							</div>
-							<?php endif; ?>
-							<div class="archive-works-card__title"><?php the_title(); ?></div>
+				<div class="archive-works-card__body">
+					<div class="archive-works-card__top">
+						<?php if (!empty($terms) && !is_wp_error($terms)) : ?>
+						<div class="archive-works-card__category">
+							<?php foreach ($terms as $term) : ?>
+							<span><?php echo esc_html($term->name); ?></span>
+							<?php endforeach; ?>
 						</div>
+						<?php endif; ?>
+						<div class="archive-works-card__title"><?php the_title(); ?></div>
+					</div>
 
-						<div class="works-card__text">
-							<?php
+					<div class="works-card__text">
+						<?php
 									// 現在表示中のページ（固定ページや投稿など）のIDを取得
 									$current_post_id = get_the_ID();
 
@@ -114,41 +109,39 @@
 									$password = get_post_meta($current_post_id, 'password', true);
 									?>
 
-							<?php if ($link_url) : ?>
-							<p class="works-card__price-info">クリックしたらサイトへ飛びます</p>
+						<?php if ($link_url) : ?>
+						<p class="works-card__price-info"></p>
+						<?php endif; ?>
+
+						<?php if (!empty($user_name) || !empty($password)) : ?>
+						<p class="works-card__price-info">
+							<?php if (!empty($user_name)) : ?>
+							ユーザー名: <?php echo esc_html($user_name); ?><br>
 							<?php endif; ?>
-
-							<?php if (!empty($user_name) || !empty($password)) : ?>
-							<p class="works-card__price-info">
-								<?php if (!empty($user_name)) : ?>
-								ユーザー名: <?php echo esc_html($user_name); ?><br>
-								<?php endif; ?>
-								<?php if (!empty($password)) : ?>
-								パスワード: <?php echo esc_html($password); ?>
-								<?php endif; ?>
-							</p>
+							<?php if (!empty($password)) : ?>
+							パスワード: <?php echo esc_html($password); ?>
 							<?php endif; ?>
-						</div>
-
-
-						<div class="archive-works-card__subbody">
-							<div class="archive-works-card__subtext">
-								<?php echo esc_html($trimmed_content); ?>
-							</div>
-							<div class="archive-works-card__meta">
-								<div class="archive-works-card__microcopy">
-									お問い合わせはコチラ
-								</div>
-								<div class="archive-works-card__button">
-									<a href="<?php echo esc_url(home_url('/contact')); ?>" class="button">Contact us</a>
-								</div>
-							</div>
-						</div>
+						</p>
+						<?php endif; ?>
 					</div>
 
-					<?php if ($link_url) : ?>
-				</a>
-				<?php endif; ?>
+
+					<div class="archive-works-card__subbody">
+						<div class="archive-works-card__subtext">
+							<?php echo esc_html($trimmed_content); ?>
+						</div>
+						<div class="archive-works-card__meta">
+							<div class="archive-works-card__microcopy">
+								詳しくはコチラ
+							</div>
+							<?php if ($link_url) : ?>
+							<div class="archive-works-card__button">
+								<a href="<?php echo esc_url($link_url); ?>" class="button" rel="noopener noreferrer">View more</a>
+							</div>
+							<?php endif; ?>
+						</div>
+					</div>
+				</div>
 			</li>
 
 			<?php endwhile; ?>
