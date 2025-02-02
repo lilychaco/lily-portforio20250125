@@ -1946,6 +1946,15 @@ span.wpcf7-spinner {
 	transform: rotate(-45deg);
 }
 
+.header--top .hamburger__line {
+	background-color: #000080;
+}
+
+.header--top .hamburger__line::before,
+.header--top .hamburger__line::after {
+	background-color: inherit;
+}
+
 .header-menu {
 	display: none;
 }
@@ -2069,17 +2078,50 @@ span.wpcf7-spinner {
 .header__logo {
 	align-items: center;
 	display: flex;
+	height: auto;
 	justify-content: center;
+	position: relative;
 	width: 11.25rem;
 }
 
 .header__logo img {
 	-o-object-fit: cover;
-	align-items: center;
-	display: flex;
-	justify-content: center;
-	object-fit: cover;
+	display: block; /* `flex` は不要なので `block` に修正 */
+	margin: 0 auto; /* 画像を中央揃え */
+	object-fit: cover; /* 画像の縦横比を維持しつつ、コンテナに収める */
 	width: 100%;
+}
+
+.header__logo-img {
+	height: auto;
+	left: 50%;
+	position: absolute; /* 親要素内で重ねて配置 */
+	top: 50%; /* 縦方向中央揃え */
+	transform: translate(-50%, -50%); /* 中央揃えを実現 */
+	transition: opacity 0.3s ease-in-out; /* フェードアニメーション */
+	width: 100%;
+}
+
+.header__logo-img--before {
+	opacity: 1; /* 表示 */
+	z-index: 1;
+}
+
+.header__logo-img--after {
+	opacity: 0; /* 非表示 */
+	z-index: 0; /* 優先順位を下げる */
+}
+
+/* スクロール時にロゴを切り替え */
+
+.header.is-scroll .header__logo-img--before {
+	opacity: 0; /* スクロール後はフェードアウト */
+	z-index: 0; /* 優先順位を下げる */
+}
+
+.header.is-scroll .header__logo-img--after {
+	opacity: 1; /* スクロール後はフェードイン */
+	z-index: 1; /* 優先順位を上げる */
 }
 
 .info-card__container {

@@ -62,3 +62,13 @@ outline: none;
 			-ms-transform: rotate(-45deg);
 					transform: rotate(-45deg);
 }
+
+// トップページのハンバーガーアイコンの色を変更
+.header--top .hamburger__line {
+  background-color: $greenaccent;
+
+  &::before,
+  &::after {
+    background-color: inherit;
+  }
+}

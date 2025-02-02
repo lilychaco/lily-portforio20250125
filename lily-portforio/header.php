@@ -38,8 +38,12 @@
 						<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-transparent.png"
 							media="(min-width: 768px)" />
 						<!-- SP版（デフォルト）のロゴ -->
-						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-transparent.png" alt="ヘッダーロゴ" />
+						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-transparent.png" alt="ヘッダーロゴ"
+							class="header__logo-img header__logo-img--before" />
 					</picture>
+					<!-- 切り替え用のロゴ（スクロール後に表示） -->
+					<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-long2.jpg" alt="スクロール後のロゴ"
+						class="header__logo-img header__logo-img--after" />
 				</a>
 			</h1>
 			<?php else : ?>
@@ -51,11 +55,12 @@
 							media="(min-width: 768px)" />
 						<!-- SP版（デフォルト）のロゴ -->
 						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-blue-long.jpg" alt="ヘッダーロゴ"
-							class="js-logo" />
+							class="header__logo-img header__logo-img--before" />
 					</picture>
 				</a>
 			</div>
 			<?php endif; ?>
+
 
 			<nav class="header__nav header-menu">
 				<ul class="header-menu__items">
