@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="mv">
+<section class="mv mv-layout">
 	<figure class="mv__img">
 		<picture>
 			<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/pctote.jpg" media="(min-width: 768px)" />

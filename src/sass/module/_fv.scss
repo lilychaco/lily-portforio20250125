@@ -12,12 +12,7 @@
 		align-items: center;
 	}
 }
-.fv-layout {
-	margin-top: rem(80);
-	@include mq(md) {
-		margin-top: rem(90);
-	}
-}
+
 .fv__video-container {
 	position: absolute;
   top: 0;
