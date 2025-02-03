@@ -86,7 +86,6 @@
 	display: block; /* スクロール後のロゴを表示 */
 	visibility: visible;
 	opacity: 1;
-	position: static;
 }
 
 /* SP版：ドロワーメニューが開いている場合 */
@@ -101,5 +100,4 @@
 	display: block; /* ドロワーメニュー用のロゴを表示 */
 	visibility: visible;
 	opacity: 1;
-	position: static;
 }

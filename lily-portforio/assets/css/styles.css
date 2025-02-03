@@ -2130,7 +2130,6 @@ span.wpcf7-spinner {
 .is-scroll .header__logo-img--after {
 	display: block; /* スクロール後のロゴを表示 */
 	opacity: 1;
-	position: static;
 	visibility: visible;
 }
 
@@ -2146,7 +2145,6 @@ span.wpcf7-spinner {
 .is-drawerActive .header__logo-img--drawer {
 	display: block; /* ドロワーメニュー用のロゴを表示 */
 	opacity: 1;
-	position: static;
 	visibility: visible;
 }
 
