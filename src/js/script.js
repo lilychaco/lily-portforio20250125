@@ -211,5 +211,4 @@ jQuery(function ($) {
 	});
 
 
-
 }); // ← jQuery(function ($) { の閉じタグ
