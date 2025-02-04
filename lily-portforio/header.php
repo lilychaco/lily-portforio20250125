@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	<meta name="format-detection" content="telephone=no" />
-	<meta name="robots" content="noindex" />
+
 	<!-- meta情報 -->
 	<title>GranLily</title>
 	<meta name="description" content="GranLilyのポートフォリオサイトです" />
@@ -152,4 +152,3 @@
 			</li>
 		</ul>
 	</div>
-</body>

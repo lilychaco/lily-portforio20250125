@@ -165,8 +165,6 @@ jQuery(function ($) {
     });
   });
 
-
-
   //================================
   // profile 画像が右からfade-in
   //================================
@@ -196,25 +194,22 @@ jQuery(function ($) {
   //================================
   // gallery一覧の拡大画像モーダル処理
   //================================
-  $(document).on("click", ".js-modal-open img", function () {
-    // クリックされた画像を#grayDisplayにコピー
-    $("#grayDisplay").html($(this).prop("outerHTML"));
+	$(document).on("click", ".js-modal-open img", function () {
+		const imageHtml = $(this).prop("outerHTML");
+		$("#grayDisplay")
+			.html(`<div class="modal-content">${imageHtml}</div>`)
+			.css("display", "flex") // 先にdisplay: flexを設定
+			.hide()
+			.fadeIn(200); // フェードインのみ適用
 
-    // モーダルをフェードインで表示（display: flex に対応）
-    $("#grayDisplay").fadeIn(200, function () {
-      $(this).css("display", "flex");
-    });
+		$("body").addClass("no-scroll"); // スクロール無効化
+	});
 
-    // 背景のスクロールを無効化
-    $("body").addClass("no-scroll");
-  });
+	$(document).on("click", "#grayDisplay, #grayDisplay img", (event) => {
+		$("#grayDisplay").fadeOut(200);
+		$("body").removeClass("no-scroll");
+	});
 
-  // モーダルを閉じるイベント（背景部分のみクリック時）
-  $("#grayDisplay").click(function (event) {
-    // 自分自身（#grayDisplay）がクリックされた場合のみ閉じる
-    if (event.target === this) {
-      $(this).fadeOut(200);
-      $("body").removeClass("no-scroll");
-    }
-  });
+
+
 }); // ← jQuery(function ($) { の閉じタグ

@@ -192,24 +192,15 @@ jQuery(function ($) {
   // gallery一覧の拡大画像モーダル処理
   //================================
   $(document).on("click", ".js-modal-open img", function () {
-    // クリックされた画像を#grayDisplayにコピー
-    $("#grayDisplay").html($(this).prop("outerHTML"));
+    var imageHtml = $(this).prop("outerHTML");
+    $("#grayDisplay").html("<div class=\"modal-content\">".concat(imageHtml, "</div>")).css("display", "flex") // 先にdisplay: flexを設定
+    .hide().fadeIn(200); // フェードインのみ適用
 
-    // モーダルをフェードインで表示（display: flex に対応）
-    $("#grayDisplay").fadeIn(200, function () {
-      $(this).css("display", "flex");
-    });
-
-    // 背景のスクロールを無効化
-    $("body").addClass("no-scroll");
+    $("body").addClass("no-scroll"); // スクロール無効化
   });
 
-  // モーダルを閉じるイベント（背景部分のみクリック時）
-  $("#grayDisplay").click(function (event) {
-    // 自分自身（#grayDisplay）がクリックされた場合のみ閉じる
-    if (event.target === this) {
-      $(this).fadeOut(200);
-      $("body").removeClass("no-scroll");
-    }
+  $(document).on("click", "#grayDisplay, #grayDisplay img", function (event) {
+    $("#grayDisplay").fadeOut(200);
+    $("body").removeClass("no-scroll");
   });
 }); // ← jQuery(function ($) { の閉じタグ

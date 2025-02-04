@@ -31,6 +31,7 @@
 					</p>
 				</li>
 			</ul>
+
 			<div class="tab__contents">
 				<div class="tab__content js-content">
 					<div class="tab__content-item info-card">
@@ -74,8 +75,6 @@
 									}
 								?>
 								</div>
-								<!-- 画像のモーダル時のグレー背景 -->
-								<div class="gallery__display" id="grayDisplay"></div>
 							</div>
 							<?php endif;  ?>
 						</section>
@@ -122,8 +121,6 @@
 									}
 								?>
 								</div>
-								<!-- 画像のモーダル時のグレー背景 -->
-								<div class="gallery__display" id="grayDisplay"></div>
 							</div>
 							<?php endif;  ?>
 						</section>
@@ -173,8 +170,6 @@
 									}
 								?>
 								</div>
-								<!-- 画像のモーダル時のグレー背景 -->
-								<div class="gallery__display" id="grayDisplay"></div>
 							</div>
 							<?php endif;  ?>
 						</section>
@@ -183,9 +178,11 @@
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
 </div>
-
+<!-- 画像のモーダル時のグレー背景 -->
+<div class="gallery__display" id="grayDisplay"></div>
 
 <?php get_footer(); ?>
