@@ -177,7 +177,6 @@
 		?>
 
 	<div class="top-blog__inner inner">
-
 		<div class="top-blog__heading section-heading">
 			<h3 class="section-heading__title section-heading__title--top-blog">
 				Blog

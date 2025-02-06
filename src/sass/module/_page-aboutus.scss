@@ -135,7 +135,7 @@
   }
 }
 
-.page-aboutus__profile {
+.page-aboutus-profile {
 	margin-inline:auto;
 	width:100%;
   background-color: $greenpale;
@@ -148,4 +148,36 @@
     padding-top: rem(100);
     padding-bottom: rem(102);
   }
+}
+.page-aboutus-media {
+	margin-inline:auto;
+	width:100%;
+	// margin-top: rem(100);
+  padding-top: rem(80);
+  // padding-bottom: rem(82);
+	position: relative;
+
+  @include mq(md) {
+    padding-top: rem(100);
+    // padding-bottom: rem(102);
+  }
+}
+
+.page-aboutus-media::before {
+		@include mq(md) {
+		content:"";
+		position: absolute; /* 絶対位置指定 */
+    top: 0; /* 上端から0pxの位置に配置 */
+		background-image: url('../images/hondo-sea-view-pc.jpg'); /* 画像のパスを指定 */
+    width: 100vw;   /* 横幅をブラウザのビューポート幅に設定 */
+    height: rem(400);  /* 高さを500ピクセルに設定 */
+    background-size: cover; /* 背景画像を要素のサイズに合わせる */
+    background-position: center; /* 画像を中央に配置 */
+		z-index: -1; /* z-indexで重ねる順序を指定 */
+	}
+}
+
+.page-aboutus-media__inner {
+	position: relative; /* 相対位置指定 */
+	z-index:2;
 }

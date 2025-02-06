@@ -2199,6 +2199,89 @@ span.wpcf7-spinner {
 	width: 100%;
 }
 
+/* セクションのスタイル */
+
+.media {
+	margin: 0 auto;
+	width: 100%;
+	z-index: 100;
+}
+
+.media__container {
+	align-items: center;
+	display: flex;
+	flex-direction: column; /* スマホでは縦並び */
+	gap: 1.875rem;
+	margin-top: 3.75rem;
+}
+
+/* YouTube動画をレスポンシブ対応させる */
+
+.media__video {
+	aspect-ratio: 16/9; /* 比率を固定してレスポンシブ対応 */
+	background-color: #D6E6F5;
+	display: flex;
+	flex-direction: column;
+	padding: 2px;
+	width: 100%;
+}
+
+.media__video iframe {
+	height: 100%;
+	width: 100%;
+}
+
+.media__video-text {
+	font-size: 0.625rem;
+}
+
+/* 関連リンクのスタイル */
+
+.media__links {
+	background-color: #D6E6F5;
+	margin-top: 0.75rem;
+	padding: 0.625rem;
+	width: 100%;
+}
+
+.media__links-title {
+	border-bottom: 1px solid #000080;
+	color: #000080;
+	font-size: 1.2rem;
+	padding-bottom: 6px;
+	text-align: center;
+}
+
+.media__links-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	list-style: none;
+	margin-top: 1rem;
+	padding-left: 0.375rem;
+}
+
+.media__links-list--link {
+	padding-bottom: 1rem;
+}
+
+.media__links-item {
+	display: inline-block;
+}
+
+.media__link {
+	-webkit-text-decoration: none;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.media__link:hover {
+	color: #99ff00;
+	cursor: pointer;
+}
+
+/* PC画面ではYouTube動画とリンクを横並びにする */
+
 .mv {
 	margin-left: auto;
 	margin-right: auto;
@@ -2472,7 +2555,7 @@ span.wpcf7-spinner {
 	line-height: 1.5;
 }
 
-.page-aboutus__profile {
+.page-aboutus-profile {
 	background-color: #D6E6F5;
 	margin-left: auto;
 	margin-right: auto;
@@ -2481,6 +2564,19 @@ span.wpcf7-spinner {
 	padding-top: 5rem;
 	width: 100%;
 	z-index: -100;
+}
+
+.page-aboutus-media {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5rem;
+	position: relative;
+	width: 100%;
+}
+
+.page-aboutus-media__inner {
+	position: relative; /* 相対位置指定 */
+	z-index: 2;
 }
 
 .page-contact {
@@ -2930,7 +3026,7 @@ span.wpcf7-spinner {
 .profile-history__main {
 	display: flex;
 	flex-direction: column;
-	gap: 40px;
+	gap: 2rem;
 	margin-top: 1.75rem;
 }
 
@@ -3025,7 +3121,6 @@ span.wpcf7-spinner {
 }
 
 .section-heading__title::first-letter {
-	color: #000080;
 	text-transform: uppercase;
 }
 
@@ -3047,6 +3142,11 @@ span.wpcf7-spinner {
 
 .section-heading__subtitle.section-heading__subtitle--contact {
 	margin-top: -0.25rem;
+}
+
+.section-heading__title.section-heading__title--media,
+.section-heading__subtitle.section-heading__subtitle--media {
+	color: #000080;
 }
 
 .section-heading__text {
@@ -4852,6 +4952,20 @@ html {
 	padding-right: 25px;
 }
 
+.media__container {
+	align-items: stretch;
+	flex-direction: row;
+}
+
+.media__video {
+	flex: 2; /* 動画を広めに */
+}
+
+.media__links {
+	flex: 1; /* 関連リンクを小さめに */
+	margin-top: 0;
+}
+
 .mv__img img {
 	aspect-ratio: 1440/548;
 	height: 34.25rem;
@@ -4988,9 +5102,25 @@ html {
 	overflow: auto;
 }
 
-.page-aboutus__profile {
+.page-aboutus-profile {
 	padding-bottom: 6.375rem;
 	padding-top: 6.25rem;
+}
+
+.page-aboutus-media {
+	padding-top: 6.25rem;
+}
+
+.page-aboutus-media::before {
+	background-image: url("../images/hondo-sea-view-pc.jpg"); /* 画像のパスを指定 */
+	background-position: center; /* 画像を中央に配置 */
+	background-size: cover; /* 背景画像を要素のサイズに合わせる */
+	content: "";
+	height: 25rem; /* 高さを500ピクセルに設定 */
+	position: absolute; /* 絶対位置指定 */
+	top: 0; /* 上端から0pxの位置に配置 */
+	width: 100vw; /* 横幅をブラウザのビューポート幅に設定 */
+	z-index: -1; /* z-indexで重ねる順序を指定 */
 }
 
 .page-contact__inner {
@@ -5099,7 +5229,7 @@ html {
 .profile-history__main {
 	flex-direction: row-reverse;
 	flex-wrap: nowrap;
-	gap: 5.5710306407%;
+	gap: 2rem;
 	justify-content: space-between;
 	margin-top: 2.5rem;
 }
@@ -5158,6 +5288,11 @@ html {
 .section-heading__subtitle.section-heading__subtitle--contact {
 	line-height: 1;
 	margin-top: -0.375rem;
+}
+
+.section-heading__title.section-heading__title--media,
+.section-heading__subtitle.section-heading__subtitle--media {
+	color: #fff;
 }
 
 .section-heading__text {

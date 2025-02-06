@@ -20,7 +20,7 @@
   }
 }
 .section-heading__title::first-letter {
-  color: $greenaccent;
+  // color: $greenaccent;
   text-transform: uppercase;
 }
 .section-heading__subtitle {
@@ -63,6 +63,14 @@
     line-height: 1;
   }
 }
+.section-heading__title.section-heading__title--media,
+.section-heading__subtitle.section-heading__subtitle--media {
+	color:$greenaccent;
+	@include mq(md) {
+		color:$white;
+	}
+}
+
 .section-heading__text {
   margin-top: rem(6);
   font-size: rem(14);

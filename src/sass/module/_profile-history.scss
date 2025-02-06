@@ -14,15 +14,14 @@
   margin-top: rem(28);
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2rem;
 
   @include mq(md) {
     margin-top: rem(40);
     flex-direction: row-reverse;
     flex-wrap: nowrap;
     justify-content: space-between;
-    // align-items: flex-start;
-    gap: calc(calc(60 / 1077) * 100%);
+		gap:2rem;
   }
 }
 
@@ -30,7 +29,8 @@
   width: 100%;
 
   @include mq(md) {
-    max-width: rem(492);
+   max-width: calc(50% - 1rem); // 画面幅の半分から適切な余白を引いた幅に変更
+  }
   }
 }
 
@@ -48,7 +48,7 @@
 .profile-history__lists {
   @include mq(md) {
     flex: 1;
-    max-width: rem(492);
-    padding-left: rem(30);
+    max-width: calc(50% - 1rem);
+    padding-left: rem(16);
   }
 }

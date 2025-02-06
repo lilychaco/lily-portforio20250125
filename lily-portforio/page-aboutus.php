@@ -41,18 +41,15 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 </div>
-<div class="page-aboutus__profile profile-history">
+<div class="page-aboutus-profile profile-history">
 	<div class="profile-history__inner inner">
 
 		<div class="profile-history__heading section-heading">
 			<h3 class="section-heading__title">Profile</h3>
 			<h2 class="section-heading__subtitle">経歴</h2>
 		</div>
-
-
 		<div class="profile-history__main">
 			<figure class="profile-history__image">
 				<picture>
@@ -167,9 +164,37 @@
 		</div>
 	</div>
 </div>
+<div class="page-aboutus-media media">
+	<div class="page-aboutus-media__inner inner">
+		<div class="page-aboutus-media__heading section-heading">
+			<h3 class="section-heading__title section-heading__title--media">Local Introduction</h3>
+			<h2 class="section-heading__subtitle section-heading__subtitle--media">地元紹介</h2>
+		</div>
+		<div class="media__container">
+			<!-- YouTube動画の埋め込み -->
+			<div class="media__video">
+				<iframe src="https://www.youtube.com/embed/ufkVUZZLIKc?si=VCaZoCwcbh9A1tC5" title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<p class="media__video-text">動画の編集を担当しました</p>
+			</div>
 
-
-
+			<!-- 関連リンク -->
+			<div class=" media__links">
+				<h3 class="media__links-title">天草のおすすめ</h3>
+				<ul class="media__links-list media__links-list--link">
+					<li class="media__links-item">
+						<a href="https://www.t-island.jp/" target="_blank" class="media__link">Amakusa~天草紹介サイト~</a>
+					</li>
+					<li class="media__links-item">
+						<a href="https://www.yokadive.com/" target="_blank" class="media__link">天草よかよかダイビング＆シュノーケル</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 
