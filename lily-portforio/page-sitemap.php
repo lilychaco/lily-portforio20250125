@@ -2,8 +2,9 @@
 <section class="mv">
 	<figure class="mv__img">
 		<picture>
-			<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv-sitemap.jpg" media="(min-width: 768px)" />
-			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-sitemap-sp.jpg" alt="ファーストビュー画像" />
+			<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/20241123myouken-pc.jpg"
+				media="(min-width: 768px)" />
+			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/20241123myouken-sp.jpg" alt="ファーストビュー画像" />
 		</picture>
 	</figure>
 	<h2 class="mv__title">site MAP</h2>
@@ -20,13 +21,9 @@
 			<div class="nav-menu__box nav-menu__box--01">
 				<div class="nav-menu__item">
 					<a href="<?php echo esc_url(home_url('/campaign')); ?>">
-						<p class="starfish-icon02">キャンペーン</p>
+						<p class="starfish-icon02">成果物</p>
 					</a>
-					<ul>
-						<li><a href="<?php echo esc_url(home_url('/campaign')); ?>">ライセンス取得</a></li>
-						<li><a href="<?php echo esc_url(home_url('/campaign')); ?>">貸切体験ダイビング</a></li>
-						<li><a href="<?php echo esc_url(home_url('/campaign')); ?>">ナイトダイビング</a></li>
-					</ul>
+
 				</div>
 				<div class="nav-menu__item nav-menu__item--01">
 					<a href="<?php echo esc_url(home_url('/aboutus')); ?>">
@@ -39,13 +36,9 @@
 			<div class="nav-menu__box nav-menu__box--02">
 				<div class="nav-menu__item">
 					<a href="<?php echo esc_url(home_url('/information')); ?>">
-						<p class="starfish-icon02">ダイビング情報</p>
+						<p class="starfish-icon02">趣味</p>
 					</a>
-					<ul>
-						<li><a href="<?php echo esc_url(home_url('/information?tab=license-training')); ?>">ライセンス講習</a></li>
-						<li><a href="<?php echo esc_url(home_url('/information?tab=trial-diving')); ?>">体験ダイビング</a></li>
-						<li><a href="<?php echo esc_url(home_url('/information?tab=fun-diving')); ?>">ファンダイビング</a></li>
-					</ul>
+
 				</div>
 				<div class="nav-menu__item nav-menu__item--01">
 					<a href="<?php echo esc_url(home_url('/blog')); ?>">
@@ -55,29 +48,7 @@
 			</div>
 
 			<!-- ブロック3 -->
-			<div class="nav-menu__box nav-menu__box--05">
-				<div class="nav-menu__item">
-					<a href="<?php echo esc_url(home_url('/voice')); ?>">
-						<p class="starfish-icon02">お客様の声</p>
-					</a>
-				</div>
-				<div class="nav-menu__item">
-					<a href="<?php echo esc_url(home_url('/price')); ?>">
-						<p class="starfish-icon02">料金一覧</p>
-					</a>
-					<ul>
-						<li>
-							<a href="<?php echo esc_url(home_url('/price')); ?>">ライセンス講習</a>
-						</li>
-						<li>
-							<a href="<?php echo esc_url(home_url('/price')); ?>">体験ダイビング</a>
-						</li>
-						<li>
-							<a href="<?php echo esc_url(home_url('/price')); ?>">ファンダイビング</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+
 
 			<!-- ブロック4 -->
 			<div class="nav-menu__box nav-menu__box--06">

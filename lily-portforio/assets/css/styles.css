@@ -5235,7 +5235,7 @@ html {
 }
 
 .profile-history__image {
-	max-width: 30.75rem;
+	max-width: calc(50% - 1rem);
 }
 
 .profile-history__image img {
@@ -5244,8 +5244,8 @@ html {
 
 .profile-history__lists {
 	flex: 1;
-	max-width: 30.75rem;
-	padding-left: 1.875rem;
+	max-width: calc(50% - 1rem);
+	padding-left: 1rem;
 }
 
 .profile-list {
