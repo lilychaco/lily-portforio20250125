@@ -1,6 +1,6 @@
 body {
 	background-color: #fff;
-	color: #0D2936;
+	color: #000080;
 	font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -367,7 +367,7 @@ time {
 
 .archive-works-card__price-old {
 	-webkit-text-decoration: line-through;
-	color: #0D2936;
+	color: #000080;
 	display: inline-block;
 	font-family: "Lato", serif;
 	font-size: 1.25rem;
@@ -394,7 +394,7 @@ time {
 }
 
 .archive-works-card__subtext {
-	color: #0D2936;
+	color: #000080;
 	flex-grow: 1;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
@@ -526,7 +526,7 @@ time {
 }
 
 .blog-card__date {
-	color: #0D2936;
+	color: #000080;
 	font-family: "Gotu", serif;
 	font-size: 0.75rem;
 	font-weight: 400;
@@ -535,7 +535,7 @@ time {
 }
 
 .blog-card__title {
-	color: #0D2936;
+	color: #000080;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -545,7 +545,7 @@ time {
 }
 
 .blog-card__text {
-	color: #0D2936;
+	color: #000080;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -660,7 +660,7 @@ time {
 }
 
 .breadcrumb {
-	color: #0D2936;
+	color: #000080;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 400;
@@ -2924,7 +2924,7 @@ span.wpcf7-spinner {
 }
 
 .page-sitemap__nav .nav-menu__box {
-	color: #0D2936;
+	color: #000080;
 }
 
 .page-thanks {
@@ -3337,7 +3337,7 @@ span.wpcf7-spinner {
 
 .side-works__price-before {
 	-webkit-text-decoration: line-through;
-	color: #0D2936;
+	color: #000080;
 	font-family: "Lato", serif;
 	font-size: 1.25rem;
 	font-weight: 700;
@@ -3861,7 +3861,7 @@ span.wpcf7-spinner {
 
 .top-information__title {
 	border-bottom: 1px solid #000080;
-	color: #0D2936;
+	color: #000080;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.25rem;
 	font-weight: 700;
@@ -4205,7 +4205,7 @@ span.wpcf7-spinner {
 
 .works-card__price-old {
 	-webkit-text-decoration: line-through;
-	color: #0D2936;
+	color: #000080;
 	display: inline-block;
 	font-family: "Lato", serif;
 	font-size: 1.25rem;
@@ -4232,7 +4232,7 @@ span.wpcf7-spinner {
 }
 
 .works-card__subtext {
-	color: #0D2936;
+	color: #000080;
 	flex-grow: 1;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;

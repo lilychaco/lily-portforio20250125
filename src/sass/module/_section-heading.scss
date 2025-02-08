@@ -42,11 +42,7 @@
   }
 }
 
-.section-heading__title--top-blog::first-letter {
-  @include mq(md) {
-    // color: #99ff00;
-  }
-}
+
 
 .section-heading__title.section-heading__title--contact {
   font-size: rem(80);
