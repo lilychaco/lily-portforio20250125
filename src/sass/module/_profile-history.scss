@@ -14,23 +14,25 @@
   margin-top: rem(28);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 
   @include mq(md) {
     margin-top: rem(40);
     flex-direction: row-reverse;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
-		gap:2rem;
   }
 }
 
 .profile-history__image {
   width: 100%;
+	margin: 0 auto; // デフォルトの余白を削除
+	overflow: hidden;
 
   @include mq(md) {
-   max-width: calc(50% - 1rem); // 画面幅の半分から適切な余白を引いた幅に変更
-  }
+  flex: 1; // フレックスコンテナ内で調整
+  max-width: 50%;
+}
   }
 
 

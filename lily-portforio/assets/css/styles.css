@@ -1,6 +1,6 @@
 body {
 	background-color: #fff;
-	color: #000080;
+	color: #000074;
 	font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -194,7 +194,7 @@ time {
 
 .accordion-card__top {
 	align-items: center;
-	background-color: #000080;
+	background-color: #000074;
 	cursor: pointer;
 	display: flex;
 	height: auto;
@@ -204,7 +204,7 @@ time {
 }
 
 .accordion-card__title {
-	background-color: #000080;
+	background-color: #000074;
 	color: #fff;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
@@ -249,7 +249,7 @@ time {
 
 .accordion-card__body {
 	background-color: #fff;
-	border: 1px solid #000080;
+	border: 1px solid #000074;
 	padding: 1.5rem 1rem;
 }
 
@@ -317,8 +317,8 @@ time {
 }
 
 .archive-works-card__category {
-	border: 1px solid #000080;
-	color: #000080;
+	border: 1px solid #000074;
+	color: #000074;
 	display: inline-block;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
@@ -341,7 +341,7 @@ time {
 }
 
 .archive-works-card__text {
-	border-top: 1px solid #000080;
+	border-top: 1px solid #000074;
 	margin-top: auto;
 	padding-top: 0.375rem;
 	text-align: center;
@@ -367,7 +367,7 @@ time {
 
 .archive-works-card__price-old {
 	-webkit-text-decoration: line-through;
-	color: #000080;
+	color: #000074;
 	display: inline-block;
 	font-family: "Lato", serif;
 	font-size: 1.25rem;
@@ -380,7 +380,7 @@ time {
 }
 
 .archive-works-card__price-new {
-	color: #000080;
+	color: #000074;
 	font-family: "Lato", serif;
 	font-size: 2rem;
 	font-weight: 700;
@@ -394,7 +394,7 @@ time {
 }
 
 .archive-works-card__subtext {
-	color: #000080;
+	color: #000074;
 	flex-grow: 1;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
@@ -521,12 +521,12 @@ time {
 }
 
 .blog-card__top {
-	border-bottom: 1px solid #000080;
+	border-bottom: 1px solid #000074;
 	padding-bottom: 0.3125rem;
 }
 
 .blog-card__date {
-	color: #000080;
+	color: #000074;
 	font-family: "Gotu", serif;
 	font-size: 0.75rem;
 	font-weight: 400;
@@ -535,7 +535,7 @@ time {
 }
 
 .blog-card__title {
-	color: #000080;
+	color: #000074;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -545,7 +545,7 @@ time {
 }
 
 .blog-card__text {
-	color: #000080;
+	color: #000074;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -575,7 +575,7 @@ time {
 }
 
 .blog-nav__arrow {
-	border: 1px solid #000080;
+	border: 1px solid #000074;
 	height: 2.375rem;
 	width: 2.375rem;
 }
@@ -598,7 +598,7 @@ time {
 }
 
 .blog-nav__arrow:hover {
-	background-color: #000080;
+	background-color: #000074;
 	color: #fff;
 }
 
@@ -654,13 +654,13 @@ time {
 }
 
 .breadcrumb-wrapper--404 {
-	background-color: #000080;
+	background-color: #000074;
 	margin-top: 5rem;
 	padding-top: 0.75rem;
 }
 
 .breadcrumb {
-	color: #000080;
+	color: #000074;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 400;
@@ -676,7 +676,7 @@ time {
 	background-color: #fff;
 	border: 1px solid transparent; /* ホバー前のボーダーを透明に設定 */
 	box-sizing: border-box; /* ボックスサイジングを追加 */
-	color: #000080;
+	color: #000074;
 	cursor: pointer;
 	display: inline-block;
 	font-family: "Gotu", serif;
@@ -709,8 +709,8 @@ time {
 }
 
 .button-02::after {
-	border-bottom: 1px solid #000080;
-	border-right: 1px solid #000080;
+	border-bottom: 1px solid #000074;
+	border-right: 1px solid #000074;
 	content: "";
 	height: 6px;
 	margin-left: 0.875rem;
@@ -722,7 +722,7 @@ time {
 }
 
 .button-02:hover {
-	background-color: #000080;
+	background-color: #000074;
 	border: 1px solid #fff;
 	color: #fff;
 }
@@ -742,7 +742,7 @@ time {
 }
 
 .button-send-container::before {
-	border: 1px solid #000080;
+	border: 1px solid #000074;
 	content: "";
 	height: 54px;
 	left: 4px;
@@ -766,7 +766,7 @@ time {
 }
 
 .button-send {
-	background-color: #000080; /* ボックスサイジングを追加 */
+	background-color: #000074; /* ボックスサイジングを追加 */
 	border: 1px solid transparent;
 	box-sizing: border-box;
 	color: white;
@@ -788,18 +788,18 @@ time {
 
 .button-send:hover {
 	background-color: #fff;
-	border: 1px solid #000080;
-	color: #000080;
+	border: 1px solid #000074;
+	color: #000074;
 	z-index: 1;
 }
 
 .button-send-container:hover::after {
-	border-bottom: 1px solid #000080;
-	border-right: 1px solid #000080;
+	border-bottom: 1px solid #000074;
+	border-right: 1px solid #000074;
 }
 
 .button {
-	background-color: #000080; /* ボックスサイジングを追加 */
+	background-color: #000074; /* ボックスサイジングを追加 */
 	border: 1px solid transparent;
 	box-sizing: border-box;
 	color: #fff;
@@ -819,7 +819,7 @@ time {
 }
 
 .button::before {
-	border: 1px solid #000080;
+	border: 1px solid #000074;
 	content: "";
 	height: 100%;
 	left: 4px;
@@ -848,13 +848,13 @@ time {
 
 .button:hover {
 	background-color: #fff;
-	border: 1px solid #000080;
-	color: #000080;
+	border: 1px solid #000074;
+	color: #000074;
 }
 
 .button:hover::after {
-	border-bottom: 1px solid #000080;
-	border-right: 1px solid #000080;
+	border-bottom: 1px solid #000074;
+	border-right: 1px solid #000074;
 }
 
 .button--send {
@@ -862,7 +862,7 @@ time {
 }
 
 .button2 {
-	background-color: #000080;
+	background-color: #000074;
 	box-sizing: border-box;
 	color: #fff;
 	cursor: pointer;
@@ -922,8 +922,8 @@ time {
 
 .category-list__link {
 	background-color: #fff;
-	border: 1px solid #000080;
-	color: #000080;
+	border: 1px solid #000074;
+	color: #000074;
 	display: flex;
 	flex-direction: column;
 	font-family: "Noto Sans JP", sans-serif;
@@ -938,12 +938,12 @@ time {
 }
 
 .category-list__link.is-current {
-	background-color: #000080;
+	background-color: #000074;
 	color: #fff;
 }
 
 .category-list__link:hover {
-	background-color: #000080;
+	background-color: #000074;
 	color: #fff;
 }
 
@@ -998,7 +998,7 @@ time {
 }
 
 .contact-maparea__top {
-	border-bottom: 1px solid #000080;
+	border-bottom: 1px solid #000074;
 	padding-bottom: 0.625rem;
 	width: 100%;
 }
@@ -1185,7 +1185,7 @@ time {
 
 .form__select-items::after { /* 三角形の高さ */
 	-webkit-clip-path: polygon(0 0, 100% 0, 50% 100%); /* 三角形のクリップ */
-	background: #000080;
+	background: #000074;
 	clip-path: polygon(0 0, 100% 0, 50% 100%);
 	content: "";
 	height: 10.3923px;
@@ -1210,7 +1210,7 @@ time {
 	-moz-appearance: none;
 	appearance: none; /* Firefox対応 */
 	background-color: white; /* 背景色 */
-	border: 1px solid #000080; /* 文字サイズ */
+	border: 1px solid #000074; /* 文字サイズ */
 	font-family: "Noto Sans JP", sans-serif; /* テキストの左側の余白 */
 	font-size: 0.75rem; /* フォント */
 	font-weight: 400; /* 幅は親要素にフィット */
@@ -1263,7 +1263,7 @@ span.wpcf7-spinner {
 }
 
 .drawer {
-	background-color: #000080;
+	background-color: #000074;
 	bottom: 0;
 	color: #fff;
 	height: 100vh;
@@ -1292,7 +1292,7 @@ span.wpcf7-spinner {
 }
 
 .is-drawerActive .header {
-	background-color: #000080;
+	background-color: #000074;
 }
 
 .drawer-menu {
@@ -1457,7 +1457,7 @@ span.wpcf7-spinner {
 }
 
 .footer__copyright {
-	color: #000080;
+	color: #000074;
 	font-family: "Gotu", serif;
 	font-size: 0.75rem;
 	font-weight: 400;
@@ -1484,7 +1484,7 @@ span.wpcf7-spinner {
 }
 
 .form__row {
-	border-bottom: 1px dotted #000080;
+	border-bottom: 1px dotted #000074;
 	padding-bottom: 1.375rem;
 }
 
@@ -1518,7 +1518,7 @@ span.wpcf7-spinner {
 }
 
 .form__row dd input {
-	border: 1px solid #000080;
+	border: 1px solid #000074;
 	height: 2.5rem;
 	margin-top: 1.0625rem;
 	width: 100%;
@@ -1552,7 +1552,7 @@ span.wpcf7-spinner {
 }
 
 .form__checkbox-mark { /* 大きさ */
-	border: solid 2px #000080; /* 線 */
+	border: solid 2px #000074; /* 線 */
 	box-sizing: border-box;
 	height: 14px;
 	left: 0;
@@ -1611,7 +1611,7 @@ span.wpcf7-spinner {
 }
 
 .form__row--message dd textarea {
-	border: 1px solid #000080;
+	border: 1px solid #000074;
 	padding: 0.5rem;
 	resize: vertical;
 	width: 100%;
@@ -1637,7 +1637,7 @@ span.wpcf7-spinner {
 
 .form__select-items::after {
 	-webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
-	background: #000080;
+	background: #000074;
 	clip-path: polygon(0 0, 100% 0, 50% 100%);
 	content: "";
 	height: 10.3923px;
@@ -1657,8 +1657,8 @@ span.wpcf7-spinner {
 	-moz-appearance: none;
 	appearance: none; /* Firefox用 */
 	background-color: white;
-	border: 1px solid #000080;
-	border: 1px solid #000080;
+	border: 1px solid #000074;
+	border: 1px solid #000074;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 400;
@@ -1707,7 +1707,7 @@ span.wpcf7-spinner {
 
 .form__outside .wpcf7-list-item-label::before {
 	background: #fff;
-	border: solid 1px #000080;
+	border: solid 1px #000074;
 	content: "";
 	cursor: pointer;
 	display: inline-block;
@@ -1969,7 +1969,7 @@ span.wpcf7-spinner {
 }
 
 .header--top .hamburger__line {
-	background-color: #000080;
+	background-color: #000074;
 }
 
 .header--top .hamburger__line::before,
@@ -2004,7 +2004,7 @@ span.wpcf7-spinner {
 }
 
 .header-menu__item a {
-	color: #000080;
+	color: #000074;
 	display: flex;
 	flex-direction: column;
 	height: inherit;
@@ -2176,7 +2176,7 @@ span.wpcf7-spinner {
 
 .info-card__container {
 	grid-gap: 0.5rem;
-	border: 1px solid #000080;
+	border: 1px solid #000074;
 	display: grid;
 	gap: 0.5rem;
 	grid-template-columns: 1fr;
@@ -2191,7 +2191,7 @@ span.wpcf7-spinner {
 }
 
 .info-card__title {
-	border-bottom: 1px solid #000080;
+	border-bottom: 1px solid #000074;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 700;
@@ -2230,7 +2230,6 @@ span.wpcf7-spinner {
 .media {
 	margin: 0 auto;
 	width: 100%;
-	z-index: 100;
 }
 
 .media__container {
@@ -2271,8 +2270,8 @@ span.wpcf7-spinner {
 }
 
 .media__links-title {
-	border-bottom: 1px solid #000080;
-	color: #000080;
+	border-bottom: 1px solid #000074;
+	color: #000074;
 	font-size: 1.2rem;
 	padding-bottom: 6px;
 	text-align: center;
@@ -2351,7 +2350,7 @@ span.wpcf7-spinner {
 	grid-column-gap: 2.1671826625%;
 	-moz-column-gap: 2.1671826625%;
 	grid-row-gap: 1.125rem;
-	color: #000080;
+	color: #000074;
 	column-gap: 2.1671826625%;
 	display: grid;
 	grid-template-areas: "a b" "c d";
@@ -2363,7 +2362,7 @@ span.wpcf7-spinner {
 }
 
 .nav-menu__box {
-	color: #000080;
+	color: #000074;
 	display: flex;
 	flex-direction: column;
 	height: inherit;
@@ -2454,7 +2453,7 @@ span.wpcf7-spinner {
 }
 
 .page-404 {
-	background-color: #000080;
+	background-color: #000074;
 	padding-top: 5rem;
 	position: relative;
 }
@@ -2542,7 +2541,7 @@ span.wpcf7-spinner {
 }
 
 .page-aboutus__title {
-	color: #000080;
+	color: #000074;
 	font-family: "Gotu", serif;
 	font-size: 2.5rem;
 	font-weight: 400;
@@ -2702,8 +2701,8 @@ span.wpcf7-spinner {
 
 .page-nav li {
 	align-items: center;
-	border: 1px solid #000080;
-	color: #000080;
+	border: 1px solid #000074;
+	color: #000074;
 	display: flex;
 	flex-direction: column;
 	height: inherit;
@@ -2715,12 +2714,12 @@ span.wpcf7-spinner {
 }
 
 .page-nav li.current {
-	background-color: #000080;
+	background-color: #000074;
 	color: #fff;
 }
 
 .page-nav li:hover {
-	background-color: #000080;
+	background-color: #000074;
 	color: #fff;
 }
 
@@ -2733,14 +2732,14 @@ span.wpcf7-spinner {
 }
 
 .page-nav__arrow {
-	border: 1px solid #000080;
+	border: 1px solid #000074;
 	height: 2.375rem;
 	width: 2.375rem;
 }
 
 .page-nav__arrow a {
 	align-items: center;
-	color: #000080;
+	color: #000074;
 	display: flex;
 	flex-direction: column;
 	height: inherit;
@@ -2750,7 +2749,7 @@ span.wpcf7-spinner {
 }
 
 .page-nav__arrow a:hover {
-	background-color: #000080;
+	background-color: #000074;
 	color: #fff;
 }
 
@@ -2761,7 +2760,7 @@ span.wpcf7-spinner {
 }
 
 .page-price-list__title {
-	background-color: #000080;
+	background-color: #000074;
 	color: #fff;
 	padding-bottom: 0.5rem;
 	padding-top: 0.5rem;
@@ -2794,9 +2793,9 @@ span.wpcf7-spinner {
 }
 
 .page-price-list__item {
-	border-left: 1px solid #000080;
-	border-right: 1px solid #000080;
-	border-top: 1px solid #000080;
+	border-left: 1px solid #000074;
+	border-right: 1px solid #000074;
+	border-top: 1px solid #000074;
 	display: grid;
 	grid-template-columns: 70% 30%;
 	height: auto;
@@ -2805,12 +2804,12 @@ span.wpcf7-spinner {
 }
 
 .page-price-list__item:last-child {
-	border-bottom: 1px solid #000080;
+	border-bottom: 1px solid #000074;
 }
 
 .page-price-list__name {
 	align-items: center;
-	border-right: 1px solid #000080;
+	border-right: 1px solid #000074;
 	display: flex;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
@@ -2950,7 +2949,7 @@ span.wpcf7-spinner {
 }
 
 .page-sitemap__nav .nav-menu__box {
-	color: #000080;
+	color: #000074;
 }
 
 .page-thanks {
@@ -3052,11 +3051,13 @@ span.wpcf7-spinner {
 .profile-history__main {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 1.5rem;
 	margin-top: 1.75rem;
 }
 
 .profile-history__image {
+	margin: 0 auto;
+	overflow: hidden;
 	width: 100%;
 }
 
@@ -3069,7 +3070,7 @@ span.wpcf7-spinner {
 }
 
 .profile-list__title {
-	border-bottom: 1px solid #000080;
+	border-bottom: 1px solid #000074;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 700;
@@ -3137,7 +3138,7 @@ span.wpcf7-spinner {
 }
 
 .section-heading__title {
-	color: #000080;
+	color: #000074;
 	font-family: "Gotu", serif;
 	font-size: 2rem;
 	font-weight: 400;
@@ -3151,7 +3152,7 @@ span.wpcf7-spinner {
 }
 
 .section-heading__subtitle {
-	color: #000080;
+	color: #000074;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 400;
@@ -3172,11 +3173,11 @@ span.wpcf7-spinner {
 
 .section-heading__title.section-heading__title--media,
 .section-heading__subtitle.section-heading__subtitle--media {
-	color: #000080;
+	color: #000074;
 }
 
 .section-heading__text {
-	color: #000080;
+	color: #000074;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 400;
@@ -3200,7 +3201,7 @@ span.wpcf7-spinner {
 }
 
 .side-archive__year-toggle {
-	color: #000080;
+	color: #000074;
 	cursor: pointer;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
@@ -3214,7 +3215,7 @@ span.wpcf7-spinner {
 
 .side-archive__year-toggle::before {
 	-webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
-	background: #000080;
+	background: #000074;
 	clip-path: polygon(0 0, 100% 50%, 0 100%);
 	content: "";
 	height: 20px;
@@ -3248,7 +3249,7 @@ span.wpcf7-spinner {
 }
 
 .side-archive__month {
-	color: #000080;
+	color: #000074;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 400;
@@ -3261,7 +3262,7 @@ span.wpcf7-spinner {
 
 .side-archive__month::before {
 	-webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
-	background: #000080;
+	background: #000074;
 	clip-path: polygon(0 0, 100% 50%, 0 100%);
 	content: "";
 	height: 20px;
@@ -3346,7 +3347,7 @@ span.wpcf7-spinner {
 }
 
 .side-works__text {
-	border-top: 1px solid #000080;
+	border-top: 1px solid #000074;
 	margin-top: auto;
 	padding-top: 0.5rem;
 	text-align: center;
@@ -3363,7 +3364,7 @@ span.wpcf7-spinner {
 
 .side-works__price-before {
 	-webkit-text-decoration: line-through;
-	color: #000080;
+	color: #000074;
 	font-family: "Lato", serif;
 	font-size: 1.25rem;
 	font-weight: 700;
@@ -3375,7 +3376,7 @@ span.wpcf7-spinner {
 }
 
 .side-works__price-after {
-	color: #000080;
+	color: #000074;
 	font-family: "Lato", serif;
 	font-size: 2rem;
 	font-weight: 700;
@@ -3390,7 +3391,7 @@ span.wpcf7-spinner {
 }
 
 .side-heading {
-	border-left: 8px solid #000080;
+	border-left: 8px solid #000074;
 	display: flex;
 	flex-direction: column;
 	font-family: "Noto Sans JP", sans-serif;
@@ -3489,7 +3490,7 @@ span.wpcf7-spinner {
 }
 
 .single-blog__title {
-	border-bottom: 1px solid #000080;
+	border-bottom: 1px solid #000074;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 500;
@@ -3679,7 +3680,7 @@ span.wpcf7-spinner {
 .tab__menu {
 	align-items: center;
 	background: #D6E6F5;
-	color: #000080;
+	color: #000074;
 	cursor: pointer;
 	display: flex;
 	height: 3.75rem;
@@ -3690,12 +3691,12 @@ span.wpcf7-spinner {
 }
 
 .tab__menu.current {
-	background: #000080;
+	background: #000074;
 	color: #fff;
 }
 
 .tab__menu:hover {
-	background: #000080;
+	background: #000074;
 	color: #fff;
 }
 
@@ -3783,7 +3784,7 @@ span.wpcf7-spinner {
 }
 
 .top-aboutus__title {
-	color: #000080;
+	color: #000074;
 	font-family: "Gotu", serif;
 	font-size: 2.5rem;
 	font-weight: 400;
@@ -3886,8 +3887,8 @@ span.wpcf7-spinner {
 }
 
 .top-information__title {
-	border-bottom: 1px solid #000080;
-	color: #000080;
+	border-bottom: 1px solid #000074;
+	color: #000074;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.25rem;
 	font-weight: 700;
@@ -4057,7 +4058,7 @@ span.wpcf7-spinner {
 }
 
 .voice-card__top {
-	border-bottom: 1px solid #000080;
+	border-bottom: 1px solid #000074;
 }
 
 .voice-card__meta {
@@ -4074,8 +4075,8 @@ span.wpcf7-spinner {
 }
 
 .voice-card__category span {
-	border: 1px solid #000080;
-	color: #000080;
+	border: 1px solid #000074;
+	color: #000074;
 	display: inline-block;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
@@ -4181,8 +4182,8 @@ span.wpcf7-spinner {
 }
 
 .works-card__category {
-	border: 1px solid #000080;
-	color: #000080;
+	border: 1px solid #000074;
+	color: #000074;
 	display: inline-block;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
@@ -4205,7 +4206,7 @@ span.wpcf7-spinner {
 }
 
 .works-card__text {
-	border-top: 1px solid #000080;
+	border-top: 1px solid #000074;
 	margin-top: auto;
 	padding-top: 0.5rem;
 	text-align: center;
@@ -4231,7 +4232,7 @@ span.wpcf7-spinner {
 
 .works-card__price-old {
 	-webkit-text-decoration: line-through;
-	color: #000080;
+	color: #000074;
 	display: inline-block;
 	font-family: "Lato", serif;
 	font-size: 1.25rem;
@@ -4244,7 +4245,7 @@ span.wpcf7-spinner {
 }
 
 .works-card__price-new {
-	color: #000080;
+	color: #000074;
 	font-family: "Lato", serif;
 	font-size: 2rem;
 	font-weight: 700;
@@ -4258,7 +4259,7 @@ span.wpcf7-spinner {
 }
 
 .works-card__subtext {
-	color: #000080;
+	color: #000074;
 	flex-grow: 1;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
@@ -4572,7 +4573,7 @@ html {
 }
 
 .archive-works-card__subbody {
-	color: #000080;
+	color: #000074;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
@@ -4736,7 +4737,7 @@ html {
 }
 
 .contact-verticalline {
-	background-color: #000080;
+	background-color: #000074;
 	display: block;
 	height: 255px;
 	width: 1px;
@@ -5262,14 +5263,14 @@ html {
 
 .profile-history__main {
 	flex-direction: row-reverse;
-	flex-wrap: nowrap;
-	gap: 2rem;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-top: 2.5rem;
 }
 
 .profile-history__image {
-	max-width: calc(50% - 1rem);
+	flex: 1;
+	max-width: 50%;
 }
 
 .profile-history__image img {
@@ -5312,7 +5313,7 @@ html {
 }
 
 .section-heading__title--top-blog {
-	color: #000080;
+	color: #000074;
 }
 
 .section-heading__title.section-heading__title--contact {
@@ -5780,7 +5781,7 @@ html {
 }
 
 .works-card__subbody {
-	color: #000080;
+	color: #000074;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;

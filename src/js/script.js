@@ -214,21 +214,42 @@ jQuery(function ($) {
   // トップ動画の上に、GSAP アニメーション
   //================================
   // GSAP アニメーションの適用
-  gsap.fromTo(
-    ".first",
-    { opacity: 0, y: 30 },
-    { opacity: 1, y: 0, duration: 1.5, ease: "power2.out", delay: 0.5 }
-  );
+  // GSAPのタイムラインを作成（最初のアニメーション開始時刻を0.5秒遅らせる）
+  const tl = gsap.timeline({ delay: 0.5 });
 
-  gsap.fromTo(
+  // 1つ目の要素（.first）のアニメーション
+  tl.to(".first", {
+    opacity: 1,
+    y: 0,
+    duration: 1.5,
+    ease: "power2.out",
+  });
+
+  // 2つ目の要素（.second）のアニメーション
+  tl.to(
     ".second",
-    { opacity: 0, y: 30 },
-    { opacity: 1, y: 0, duration: 1.5, ease: "power2.out", delay: 2 }
-	);
+    {
+      opacity: 1,
+      y: 0,
+      duration: 1.5,
+      ease: "power2.out",
+    },
+    "+1.5"
+  ); // 直前のアニメーションが終わってから1.5秒後に開始
 
-	  gsap.fromTo(
-      ".third",
-      { opacity: 0, y: 30 },
-      { opacity: 1, y: 0, duration: 1.5, ease: "power2.out", delay: 4 }
-    );
+  // 3つ目の要素（.third）のアニメーション
+  tl.to(
+    ".third",
+    {
+      opacity: 1,
+      y: 0,
+      duration: 1.5,
+      ease: "power2.out",
+    },
+    "+1.5"
+	); // 直前のアニメーションが終わってから1.5秒後に開始
+
+
+
+
 }); // ← jQuery(function ($) { の閉じタグ
