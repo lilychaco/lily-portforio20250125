@@ -21,20 +21,6 @@
 </section>
 
 
-<section class="fv fv-layout js-fv">
-	<div class="fv__video-container">
-		<video autoplay muted loop playsinline preload="auto">
-			<source src="<?php echo get_template_directory_uri(); ?>/assets/images/manta.MP4" type="video/mp4">
-			お使いのブラウザは動画に対応していません。
-		</video>
-	</div>
-	<div class="fv__copy">
-		<h2 class="fv__main-title">GranLily</h2>
-		<p class="fv__sub-title">into&nbsp;the&nbsp;WEB&nbsp;World
-		</p>
-	</div>
-</section>
-
 <section class="top-works top-works-layout" id="works">
 	<?php
 				// カスタム投稿「works」を取得するためのWP_Query
