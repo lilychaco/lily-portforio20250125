@@ -194,21 +194,41 @@ jQuery(function ($) {
   //================================
   // gallery一覧の拡大画像モーダル処理
   //================================
-	$(document).on("click", ".js-modal-open img", function () {
-		const imageHtml = $(this).prop("outerHTML");
-		$("#grayDisplay")
-			.html(`<div class="modal-content">${imageHtml}</div>`)
-			.css("display", "flex") // 先にdisplay: flexを設定
-			.hide()
-			.fadeIn(200); // フェードインのみ適用
+  $(document).on("click", ".js-modal-open img", function () {
+    const imageHtml = $(this).prop("outerHTML");
+    $("#grayDisplay")
+      .html(`<div class="modal-content">${imageHtml}</div>`)
+      .css("display", "flex") // 先にdisplay: flexを設定
+      .hide()
+      .fadeIn(200); // フェードインのみ適用
 
-		$("body").addClass("no-scroll"); // スクロール無効化
-	});
+    $("body").addClass("no-scroll"); // スクロール無効化
+  });
 
-	$(document).on("click", "#grayDisplay, #grayDisplay img", (event) => {
-		$("#grayDisplay").fadeOut(200);
-		$("body").removeClass("no-scroll");
-	});
+  $(document).on("click", "#grayDisplay, #grayDisplay img", (event) => {
+    $("#grayDisplay").fadeOut(200);
+    $("body").removeClass("no-scroll");
+  });
 
+  //================================
+  // トップ動画の上に、GSAP アニメーション
+  //================================
+  // GSAP アニメーションの適用
+  gsap.fromTo(
+    ".first",
+    { opacity: 0, y: 30 },
+    { opacity: 1, y: 0, duration: 1.5, ease: "power2.out", delay: 0.5 }
+  );
 
+  gsap.fromTo(
+    ".second",
+    { opacity: 0, y: 30 },
+    { opacity: 1, y: 0, duration: 1.5, ease: "power2.out", delay: 2 }
+	);
+
+	  gsap.fromTo(
+      ".third",
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 1.5, ease: "power2.out", delay: 4 }
+    );
 }); // ← jQuery(function ($) { の閉じタグ

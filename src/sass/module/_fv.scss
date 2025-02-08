@@ -72,3 +72,34 @@
 				line-height: 1.65;
 			}
 }
+
+/* GranLily の説明文 */
+.fv__description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap:rem(12);
+    margin-top: rem(20);
+    text-align: center;
+
+		@include mq(md) {
+				 margin-top: rem(40);
+		}
+}
+
+/* 説明文の各行 */
+.text-line {
+    font-size: rem(14);
+    font-family: $third-font-family;
+    font-weight: $regular;
+    color: #ffffff; /* 白色 */
+    background: rgba(0, 0, 0, 0.15); /* 半透明の黒背景 */
+    padding: rem(10) rem(20);
+    border-radius: rem(5);
+    display: inline-block;
+		line-height: 1.6; /* 行間を調整 */
+    opacity: 0; /* 初期状態は非表示 */
+		@include mq(md) {
+				font-size: rem(16);
+		}
+}

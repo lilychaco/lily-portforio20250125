@@ -203,4 +203,39 @@ jQuery(function ($) {
     $("#grayDisplay").fadeOut(200);
     $("body").removeClass("no-scroll");
   });
+
+  //================================
+  // トップ動画の上に、GSAP アニメーション
+  //================================
+  // GSAP アニメーションの適用
+  gsap.fromTo(".first", {
+    opacity: 0,
+    y: 30
+  }, {
+    opacity: 1,
+    y: 0,
+    duration: 1.5,
+    ease: "power2.out",
+    delay: 0.5
+  });
+  gsap.fromTo(".second", {
+    opacity: 0,
+    y: 30
+  }, {
+    opacity: 1,
+    y: 0,
+    duration: 1.5,
+    ease: "power2.out",
+    delay: 2
+  });
+  gsap.fromTo(".third", {
+    opacity: 0,
+    y: 30
+  }, {
+    opacity: 1,
+    y: 0,
+    duration: 1.5,
+    ease: "power2.out",
+    delay: 4
+  });
 }); // ← jQuery(function ($) { の閉じタグ

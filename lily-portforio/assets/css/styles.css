@@ -1804,6 +1804,32 @@ span.wpcf7-spinner {
 	margin-top: 0.625rem;
 }
 
+/* GranLily の説明文 */
+
+.fv__description {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	margin-top: 1.25rem;
+	text-align: center;
+}
+
+/* 説明文の各行 */
+
+.text-line {
+	background: rgba(0, 0, 0, 0.15); /* 半透明の黒背景 */
+	border-radius: 0.3125rem;
+	color: #ffffff; /* 白色 */
+	display: inline-block;
+	font-family: "Gotu", serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.6; /* 行間を調整 */
+	opacity: 0; /* 初期状態は非表示 */
+	padding: 0.625rem 1.25rem;
+}
+
 .gallery {
 	margin-left: auto;
 	margin-right: auto;
@@ -4870,6 +4896,14 @@ html {
 .fv__sub-title {
 	line-height: 1.65;
 	margin-top: 0;
+}
+
+.fv__description {
+	margin-top: 2.5rem;
+}
+
+.text-line {
+	font-size: 1rem;
 }
 
 .gallery__content {

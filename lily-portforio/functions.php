@@ -13,10 +13,13 @@
 		wp_enqueue_script('mytheme-swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js', [], null, true);
 		wp_enqueue_style('mytheme-swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css', [], null);
 
+		// GSAP（アニメーションライブラリ）の読み込み
+    wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js', [], null, true);
+
 		// ローカルJavaScriptファイルの読み込み
 		wp_enqueue_script('jquery-inview', get_template_directory_uri() . '/assets/js/jquery.inview.min.js', ['jquery'], null,
 		true);
-		wp_enqueue_script('custom-script', get_template_directory_uri() . '/assets/js/script.js', ['jquery'], null, true);
+		wp_enqueue_script('custom-script', get_template_directory_uri() . '/assets/js/script.js', ['jquery', 'gsap'], null, true);
 		wp_enqueue_script('custom-script', get_template_directory_uri() . '/assets/js/custom-slider.js', ['jquery'], null,
 		true);
 
