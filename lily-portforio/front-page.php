@@ -136,7 +136,7 @@
 						コロナ禍で自院の来客が激減した時、危機感を持ち、プログラミングの学習を始めました。
 					</div>
 					<div class="top-aboutus__button">
-						<a href="<?php echo esc_url(home_url('/aboutus')); ?>" class="button"> View more </a>
+						<a href="<?php echo esc_url(home_url('/aboutus')); ?>" class="button-02"> View more </a>
 					</div>
 				</div>
 			</div>
