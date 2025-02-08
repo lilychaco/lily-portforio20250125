@@ -3111,7 +3111,7 @@ span.wpcf7-spinner {
 }
 
 .section-heading__title {
-	color: #0D2936;
+	color: #000080;
 	font-family: "Gotu", serif;
 	font-size: 2rem;
 	font-weight: 400;
@@ -3605,12 +3605,12 @@ span.wpcf7-spinner {
 }
 
 .custom-swiper-button-prev {
-	background-image: url(../images/pre-page.png);
+	background-image: url(../images/pre-page-blue.png);
 	right: 11.5rem;
 }
 
 .custom-swiper-button-next {
-	background-image: url(../images/next-page.png);
+	background-image: url(../images/next-page-blue.png);
 	right: 1.5rem;
 }
 
