@@ -13,9 +13,9 @@
 
 		<!-- 追加する説明テキスト -->
 		<div class="fv__description">
-			<p class="text-line first">「GranLily」— 精密なコーディングで、<br class="u-mobile">デザインを忠実に再現。</p>
-			<p class="text-line second">BEMとモダン技術で、<br class="u-mobile">美しく堅実なWebサイトを構築します。</p>
-			<p class="text-line third">このサイトは、<br class="u-mobile">Webコーダー中村弓美のポートフォリオです。</p>
+			<p class="text-line first">Webコーダー中村弓美のポートフォリオです</p>
+			<p class="text-line second">丁寧なコーディングで、<br class="u-mobile">デザインを忠実に再現します</p>
+			<p class="text-line third">安心してお仕事をお任せください</p>
 		</div>
 	</div>
 </section>

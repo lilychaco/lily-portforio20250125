@@ -974,10 +974,13 @@ time {
 }
 
 .contact__inner {
+	background-color: #D6E6F5;
 	margin-left: auto;
 	margin-right: auto;
+	padding-bottom: 1.875rem;
 	padding-left: 0.9375rem;
 	padding-right: 0.9375rem;
+	padding-top: 1.875rem;
 	position: relative;
 	width: 100%;
 }
@@ -1003,41 +1006,12 @@ time {
 	width: 100%;
 }
 
-.contact-maparea__logo {
-	margin-left: auto;
-	margin-right: auto;
-	width: 11.25rem;
-}
-
-.contact-maparea__logo img {
-	-o-object-fit: cover;
-	aspect-ratio: 180/70;
-	height: auto;
-	object-fit: cover;
-	width: 100%;
-}
-
 .contact-maparea__body {
 	display: flex;
 	flex-direction: column;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 1rem;
 	width: 100%;
-}
-
-.contact-maparea__address {
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 1rem;
-	font-weight: 400;
-	letter-spacing: 0;
-	line-height: 1.5;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.contact-maparea__address p:not(:first-child) {
-	margin-top: 0.25rem;
 }
 
 .contact-maparea__map-wrapper {
@@ -1071,9 +1045,10 @@ time {
 	display: none;
 }
 
-.contact__cta {
+.contact-app {
 	display: flex;
 	flex-direction: column;
+	gap: 1.875rem;
 	height: 100%;
 	padding-left: 0.625rem;
 	padding-right: 0.625rem;
@@ -1811,7 +1786,7 @@ span.wpcf7-spinner {
 	display: flex;
 	flex-direction: column;
 	gap: 0.75rem;
-	margin-top: 1.25rem;
+	margin-top: 1.875rem;
 	text-align: center;
 }
 
@@ -2994,6 +2969,41 @@ span.wpcf7-spinner {
 	height: auto;
 	object-fit: cover;
 	width: 100%;
+}
+
+.page-top-button {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	right: 0.875rem;
+	top: -4rem;
+}
+
+.page-top-button__circle {
+	align-items: center;
+	background: #000074; /* メインカラー（濃い青） */
+	border-radius: 50%; /* 円形 */
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	display: flex;
+	height: 3.125rem;
+	justify-content: center;
+	transition: all 0.3s ease;
+	width: 3.125rem;
+}
+
+.page-top-button__circle:hover {
+	background: #3b3bb3; /* ホバー時は少し明るい青 */
+	transform: scale(1.1); /* 少し大きく */
+}
+
+.page-top-button__text {
+	color: #D6E6F5; /* サブカラー（薄い青） */
+	font-size: 0.875rem; /* テキストサイズ */
+	font-weight: bold; /* 太字 */
+	text-align: center;
+	text-transform: uppercase; /* 大文字表示 */
 }
 
 .popular-card {
@@ -4683,11 +4693,11 @@ html {
 }
 
 .contact__inner {
-	box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
-	padding-bottom: 2.5rem;
+	box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.25);
+	padding-bottom: 1.875rem;
 	padding-left: 1.875rem;
 	padding-right: 1.875rem;
-	padding-top: 2.5rem;
+	padding-top: 1.875rem;
 }
 
 .contact__container {
@@ -4704,14 +4714,6 @@ html {
 	padding-right: 0;
 }
 
-.contact-maparea__logo {
-	width: 12.5rem;
-}
-
-.contact-maparea__logo img {
-	aspect-ratio: 1273/500;
-}
-
 .contact-maparea__body {
 	display: flex;
 	flex-direction: row;
@@ -4720,12 +4722,6 @@ html {
 	margin-left: initial;
 	margin-right: 0;
 	margin-right: initial;
-	margin-top: 1.5rem;
-}
-
-.contact-maparea__address {
-	min-width: 9.125rem;
-	text-align: left;
 }
 
 .contact-maparea__map-wrapper {
@@ -4743,7 +4739,7 @@ html {
 	width: 1px;
 }
 
-.contact__cta {
+.contact-app {
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -4900,7 +4896,7 @@ html {
 }
 
 .fv__description {
-	margin-top: 2.5rem;
+	margin-top: 3.75rem;
 }
 
 .text-line {
@@ -5255,6 +5251,20 @@ html {
 
 .page-top-button__img {
 	width: 5rem;
+}
+
+.page-top-button {
+	right: 1.25rem;
+	top: -6.25rem;
+}
+
+.page-top-button__circle {
+	height: 5rem;
+	width: 5rem;
+}
+
+.page-top-button__text {
+	font-size: 1.125rem; /* 大きい画面では少し大きく */
 }
 
 .profile-history__inner {

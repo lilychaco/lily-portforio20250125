@@ -246,7 +246,7 @@ jQuery(function ($) {
       duration: 1.5,
       ease: "power2.out",
     },
-    "+1.5"
+    "+3"
 	); // 直前のアニメーションが終わってから1.5秒後に開始
 
 

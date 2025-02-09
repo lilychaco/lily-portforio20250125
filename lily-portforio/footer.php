@@ -5,17 +5,6 @@
    		<div class="contact__inner">
    			<div class="contact__container">
    				<div class="contact__item contact-maparea">
-   					<div class="contact-maparea__top">
-   						<div class="contact-maparea__logo">
-   							<a href="<?php echo esc_url(home_url('/')); ?>">
-   								<picture>
-   									<source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-white.jpg"
-   										media="(min-width: 768px)" />
-   									<img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo-granlily-white.jpg" alt="ロゴ" />
-   								</picture>
-   							</a>
-   						</div>
-   					</div>
    					<div class="contact-maparea__body">
    						<div class="contact-maparea__map-wrapper">
    							<div class="contact-maparea__map">
@@ -29,8 +18,8 @@
    				</div>
    				<div class="contact__item contact-verticalline"></div>
 
-   				<div class="contact__item contact__cta">
-   					<div id="weather-app-container">
+   				<div class="contact__item contact-app">
+   					<div class="contact-app__body" id="weather-app-container">
    						<div id="root"></div>
    					</div>
    				</div>
@@ -110,11 +99,10 @@
 
    	<?php if ( ! is_404() ) : ?>
    	<div class="footer__button page-top-button js-page-top-button">
-   		<div class="page-top-button__img">
-   			<picture>
-   				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/totop-button.png" alt="上に戻るボタン" />
-   			</picture>
+   		<div class="page-top-button__circle">
+   			<span class="page-top-button__text">TOP</span>
    		</div>
+
    	</div>
    	<?php endif; ?>
    </footer>
