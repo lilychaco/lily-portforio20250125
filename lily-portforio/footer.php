@@ -54,10 +54,10 @@
    				</a>
    			</div>
    			<div class="footer__sns">
-   				<a href="https://www.facebook.com/yumin.amakusa?locale=ja_JP" target=”_blank”><img
-   						src="<?php echo get_theme_file_uri(); ?>/assets/images/facebooklogo.png" alt="フッター" /></a>
+   				<a href="https://lin.ee/RNytVdZ" target=”_blank”><img
+   						src="<?php echo get_theme_file_uri(); ?>/assets/images/LINE_Brand_icon.png" alt="フッター" /></a>
    				<a href="https://www.instagram.com/yumin52/" target=”_blank”><img
-   						src="<?php echo get_theme_file_uri(); ?>/assets/images/instagramlogo.png" alt="フッターロゴ" /></a>
+   						src="<?php echo get_theme_file_uri(); ?>/assets/images/Instagram_Glyph_Gradient.png" alt="フッターロゴ" /></a>
    			</div>
    		</div>
    		<div class="footer__nav nav-menu">
