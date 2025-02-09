@@ -152,11 +152,7 @@
 							<p class="profile-list__name"><a href="https://lin.ee/Ad4QFH2" target="_blank">https://lin.ee/Ad4QFH2</a>
 							</p>
 						</li>
-						<li class=" profile-list__item">
-							<p class="profile-list__number">Twitter</p>
-							<p class=" profile-list__name"><a href="https://x.com/lilychaco"
-									target="_blank">https://x.com/lilychaco</a></p>
-						</li>
+
 					</ul>
 				</div>
 			</div>
