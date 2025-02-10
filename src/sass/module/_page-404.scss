@@ -3,7 +3,7 @@
   background-color: $greenaccent;
   padding-top: rem(80);
   position: relative;
-	// z-index:-1;
+	z-index:-100;
   @include mq(md) {
     padding-top: rem(90);
   }

@@ -869,35 +869,31 @@ time {
 }
 
 .contact__inner {
-	background-color: #D6E6F5;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 1.875rem;
-	padding-left: 0.9375rem;
-	padding-right: 0.9375rem;
+	padding-left: 0.375rem;
+	padding-right: 0.375rem;
 	padding-top: 1.875rem;
 	position: relative;
 	width: 100%;
 }
 
 .contact__container {
+	background-color: #D6E6F5;
 	display: flex;
 	flex-direction: column;
 	gap: 2.5rem;
+	padding-bottom: 1rem;
+	width: 100%;
 }
 
 .contact-maparea {
 	display: flex;
 	flex-direction: column;
-	padding-left: 0.625rem;
-	padding-right: 0.625rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 	text-align: center;
-	width: 100%;
-}
-
-.contact-maparea__top {
-	border-bottom: 1px solid #000074;
-	padding-bottom: 0.625rem;
 	width: 100%;
 }
 
@@ -912,7 +908,6 @@ time {
 .contact-maparea__map-wrapper {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 18.4375rem;
 	width: 100%;
 }
 
@@ -945,8 +940,8 @@ time {
 	flex-direction: column;
 	gap: 1.875rem;
 	height: 100%;
-	padding-left: 0.625rem;
-	padding-right: 0.625rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 	text-align: center;
 	width: 100%;
 }
@@ -2328,6 +2323,7 @@ span.wpcf7-spinner {
 	background-color: #000074;
 	padding-top: 5rem;
 	position: relative;
+	z-index: -100;
 }
 
 .page-404__breadcrumb {
@@ -4582,7 +4578,7 @@ html {
 }
 
 .button.button--02::before {
-	background-color: transparent;
+	background-color: #000074;
 	border: 1px solid #fff;
 	content: "";
 	height: 100%;
@@ -4628,6 +4624,7 @@ html {
 }
 
 .contact__inner {
+	background-color: #D6E6F5;
 	box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.25);
 	padding-bottom: 1.875rem;
 	padding-left: 1.875rem;
@@ -4641,6 +4638,7 @@ html {
 	flex-direction: row;
 	height: auto;
 	justify-content: space-between;
+	padding-bottom: 0;
 	width: 100%;
 }
 
@@ -4652,7 +4650,6 @@ html {
 .contact-maparea__body {
 	display: flex;
 	flex-direction: row;
-	gap: 1.25rem;
 	margin-left: 0;
 	margin-left: initial;
 	margin-right: 0;
