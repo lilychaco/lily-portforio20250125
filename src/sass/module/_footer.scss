@@ -14,12 +14,14 @@
 .footer__inner {
 	margin-inline:auto;
 	width:100%;
+
 }
 .footer__top {
 	@include mq(md) {
 			display: flex;
 			flex-direction: row;
 			gap:rem(40);
+			background-color: lightgreen;
 	}
 }
 .footer__logo {
@@ -27,6 +29,7 @@
 	width: rem(160);
 	@include mq(md) {
 		width: rem(200);
+		background-color: orange;
 	}
 }
 
@@ -40,8 +43,10 @@
 	margin-top: rem(16);
 	display: flex;
 	gap:rem(16);
+	padding-left: rem(22);
 	@include mq(md) {
 		align-items: flex-end;
+		padding-left:0;
 
 	}
 }

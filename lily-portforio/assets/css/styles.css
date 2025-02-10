@@ -1310,6 +1310,7 @@ span.wpcf7-spinner {
 	display: flex;
 	gap: 1rem;
 	margin-top: 1rem;
+	padding-left: 1.375rem;
 }
 
 .footer__sns img {
@@ -1976,7 +1977,7 @@ span.wpcf7-spinner {
 	justify-content: space-between;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0 1.875rem;
+	padding: 0 1.5625rem;
 	width: 100%;
 }
 
@@ -4725,17 +4726,20 @@ html {
 }
 
 .footer__top {
+	background-color: lightgreen;
 	display: flex;
 	flex-direction: row;
 	gap: 2.5rem;
 }
 
 .footer__logo {
+	background-color: orange;
 	width: 12.5rem;
 }
 
 .footer__sns {
 	align-items: flex-end;
+	padding-left: 0;
 }
 
 .footer__sns img {
