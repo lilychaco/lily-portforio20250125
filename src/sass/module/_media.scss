@@ -1,15 +1,17 @@
 @use "global" as *;
 
 /* セクションのスタイル */
-.media {
+.local-media {
 	width: 100%;
   margin: 0 auto;
+	position: relative; /* 相対位置指定 */
+	z-index:2;
 }
 
-.media__inner {
+.local-media__inner {
 
 }
-.media__container {
+.local-media__container {
 	margin-top: rem(60);
 	display: flex;
   flex-direction: column; /* スマホでは縦並び */
@@ -23,7 +25,7 @@
 
 }
 /* YouTube動画をレスポンシブ対応させる */
-.media__video {
+.local-media__video {
   width: 100%;
   aspect-ratio: 16 / 9; /* 比率を固定してレスポンシブ対応 */
 	background-color: $greenpale;
@@ -37,17 +39,17 @@
 	}
 }
 
-.media__video iframe {
+.local-media__video iframe {
   width: 100%;
   height: 100%;
 }
-.media__video-text {
+.local-media__video-text {
 	font-size: rem(10);
 }
 
 
 /* 関連リンクのスタイル */
-.media__links {
+.local-media__links {
   width: 100%;
 	background-color: $greenpale;
 	margin-top: rem(12);
@@ -58,7 +60,7 @@
 	}
 }
 
-.media__links-title {
+.local-media__links-title {
   font-size: 1.2rem;
 	text-align: center;
 	color:$greenaccent;
@@ -66,7 +68,7 @@
 	border-bottom: 1px solid $greenaccent;
 }
 
-.media__links-list {
+.local-media__links-list {
   list-style: none;
 	margin-top: rem(16);
   padding-left: rem(6);
@@ -75,19 +77,19 @@
   gap: rem(12);
 }
 
-.media__links-list--link {
+.local-media__links-list--link {
 	padding-bottom: rem(16);
 }
-.media__links-item {
+.local-media__links-item {
   display: inline-block;
 }
 
-.media__link {
+.local-media__link {
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.media__link:hover {
+.local-media__link:hover {
   color: #99ff00;
 	cursor: pointer;
 }

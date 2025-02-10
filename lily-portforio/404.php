@@ -15,7 +15,7 @@
 			<p class="page-404__text">申し訳ありません。<br>
 				お探しのページが見つかりません。</p>
 			<div class="page-404__button">
-				<a href="<?php echo esc_url(home_url('/')); ?>" class="button-02">page TOP</a>
+				<a href="<?php echo esc_url(home_url('/')); ?>" class="button button--02">page TOP</a>
 			</div>
 		</div>
 	</div>

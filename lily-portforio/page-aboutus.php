@@ -11,27 +11,27 @@
 </section>
 <?php get_template_part('common/breadcrumb') ?>
 
-<div class="page-aboutus page-aboutus-layout">
-	<div class="page-aboutus__inner inner">
-		<div class="page-aboutus__container">
-			<div class="page-aboutus__sp-image u-mobile">
+<div class="page-profile page-profile-layout">
+	<div class="page-profile__inner inner">
+		<div class="page-profile__container">
+			<div class="page-profile__sp-image u-mobile">
 				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/lily-profile.jpg" alt="春風が戦ぐ中、樹のそばに立っているGranLily" />
-				<div class=" page-aboutus__title page-aboutus__title--sp u-mobile">
+				<div class=" page-profile__title page-profile__title--sp u-mobile">
 					Gran&nbsp;Lily
 				</div>
 			</div>
-			<div class="page-aboutus__pc-image u-desktop">
+			<div class="page-profile__pc-image u-desktop">
 				<img src="<?php echo get_theme_file_uri(); ?>/assets/images/lily-profile-tree.jpg" alt="微笑んでいるGranLily" />
 				<img class="with-filter" src="<?php echo get_theme_file_uri(); ?>/assets/images/bali-morning.jpg"
 					alt="バリ島朝の海辺" />
 			</div>
-			<div class="page-aboutus__main-wrapper">
-				<div class="page-aboutus__main">
-					<div class="page-aboutus__title u-desktop">
+			<div class="page-profile__main-wrapper">
+				<div class="page-profile__main">
+					<div class="page-profile__title u-desktop">
 						<span>g</span>ran&nbsp;<span>l</span>ily
 					</div>
-					<div class="page-aboutus__body">
-						<div class="page-aboutus__text">
+					<div class="page-profile__body">
+						<div class="page-profile__text">
 							心を込めて作るあたたかなWebサイトをお届けします。
 							お客様の「こうしたい」という気持ちを大切に、一つひとつ丁寧に形にしていきます。<br>
 							これまでの経験を生かし、使いやすく、美しい仕上がりを目指します。
@@ -43,7 +43,7 @@
 		</div>
 	</div>
 </div>
-<div class="page-aboutus-profile profile-history">
+<div class="page-profile__profile profile-history">
 	<div class="profile-history__inner inner">
 
 		<div class="profile-history__heading section-heading">
@@ -103,7 +103,7 @@
 						</li>
 						<li class="profile-list__item">
 							<p class="profile-list__number">2020年</p>
-							<p class="profile-list__name">Web制作学習開始</p>
+							<p class="profile-list__name">Web制作活動開始</p>
 						</li>
 					</ul>
 				</div>
@@ -160,31 +160,31 @@
 		</div>
 	</div>
 </div>
-<div class="page-aboutus-media media">
-	<div class="page-aboutus-media__inner inner">
-		<div class="page-aboutus-media__heading section-heading">
-			<h3 class="section-heading__title section-heading__title--media">Local Introduction</h3>
-			<h2 class="section-heading__subtitle section-heading__subtitle--media">地元紹介</h2>
+<div class="page-profile__local local-media">
+	<div class="local-media__inner inner">
+		<div class="local-media__heading section-heading">
+			<h3 class="section-heading__title section-heading__title--local-media">Local Introduction</h3>
+			<h2 class="section-heading__subtitle section-heading__subtitle--local-media">地元紹介</h2>
 		</div>
-		<div class="media__container">
+		<div class="local-media__container">
 			<!-- YouTube動画の埋め込み -->
-			<div class="media__video">
+			<div class="local-media__video">
 				<iframe src="https://www.youtube.com/embed/ufkVUZZLIKc?si=VCaZoCwcbh9A1tC5" title="YouTube video player"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				<p class="media__video-text">動画の編集を担当しました</p>
+				<p class="local-media__video-text">動画の編集を担当しました</p>
 			</div>
 
 			<!-- 関連リンク -->
-			<div class=" media__links">
-				<h3 class="media__links-title">天草のおすすめ</h3>
-				<ul class="media__links-list media__links-list--link">
-					<li class="media__links-item">
-						<a href="https://www.t-island.jp/" target="_blank" class="media__link">Amakusa~天草紹介サイト~</a>
+			<div class=" local-media__links">
+				<h3 class="local-media__links-title">天草のおすすめ</h3>
+				<ul class="local-media__links-list local-media__links-list--link">
+					<li class="local-media__links-item">
+						<a href="https://www.t-island.jp/" target="_blank" class="local-media__link">Amakusa~天草紹介サイト~</a>
 					</li>
-					<li class="media__links-item">
-						<a href="https://www.yokadive.com/" target="_blank" class="media__link">天草よかよかダイビング＆シュノーケル</a>
+					<li class="local-media__links-item">
+						<a href="https://www.yokadive.com/" target="_blank" class="local-media__link">天草よかよかダイビング＆シュノーケル</a>
 					</li>
 				</ul>
 			</div>

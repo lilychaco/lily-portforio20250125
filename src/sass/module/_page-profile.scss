@@ -1,32 +1,32 @@
 @use "global"as *;
 
-.page-aboutus {
+.page-profile {
   margin-inline: auto;
   width: 100%;
 }
 
-.page-aboutus__container {
+.page-profile__container {
   width: 100%;
   position: relative;
 
   @include mq(md) {}
 }
 
-.page-aboutus__sp-image {
+.page-profile__sp-image {
   margin-top: rem(28);
   display: block;
   width: 100%;
   position: relative;
 }
 
-.page-aboutus__sp-image img {
+.page-profile__sp-image img {
   width: 100%;
   height: auto;
   object-fit: cover;
   aspect-ratio: 345/228;
 }
 
-.page-aboutus__title {
+.page-profile__title {
   font-size: rem(40);
   font-family: $third-font-family;
   font-weight: $regular;
@@ -41,11 +41,11 @@
   }
 }
 
-.page-aboutus__title span {
+.page-profile__title span {
   text-transform: uppercase;
 }
 
-.page-aboutus__title--sp {
+.page-profile__title--sp {
   position: absolute;
 	bottom:rem(10);
   left: rem(24);
@@ -54,7 +54,7 @@
 
 }
 
-.page-aboutus__pc-image {
+.page-profile__pc-image {
   display: none;
 
   @include mq(md) {
@@ -65,7 +65,7 @@
   }
 }
 
-.page-aboutus__pc-image img:first-of-type {
+.page-profile__pc-image img:first-of-type {
   @include mq(md) {
     display: block;
     max-width: rem(400);
@@ -78,7 +78,7 @@
   }
 }
 
-.page-aboutus__pc-image img:nth-of-type(2) {
+.page-profile__pc-image img:nth-of-type(2) {
   @include mq(md) {
     display: block;
     object-fit: cover;
@@ -91,7 +91,7 @@
   }
 }
 
-.page-aboutus__main-wrapper {
+.page-profile__main-wrapper {
   @include mq(md) {
     position: absolute;
     top: rem(200);
@@ -101,7 +101,7 @@
   }
 }
 
-.page-aboutus__main {
+.page-profile__main {
   margin-top: rem(20);
 
   @include mq(md) {
@@ -112,16 +112,15 @@
   }
 }
 
-.page-aboutus__body {
+.page-profile__body {
   margin-top: rem(16);
 
   @include mq(md) {
     margin-top: rem(26);
-    // padding-left: rem(6);
   }
 }
 
-.page-aboutus__text {
+.page-profile__text {
   font-size: rem(16);
   font-family: $base-font-family;
   font-weight: $regular;
@@ -135,7 +134,7 @@
   }
 }
 
-.page-aboutus-profile {
+.page-profile__profile {
 	margin-inline:auto;
 	width:100%;
   background-color: $greenpale;
@@ -149,7 +148,7 @@
     padding-bottom: rem(102);
   }
 }
-.page-aboutus-media {
+.page-profile__local {
 	margin-inline:auto;
 	width:100%;
   padding-top: rem(80);
@@ -160,7 +159,7 @@
   }
 }
 
-.page-aboutus-media::before {
+.page-profile__local::before {
 		@include mq(md) {
 		content:"";
 		position: absolute; /* 絶対位置指定 */
@@ -172,9 +171,4 @@
     background-position: center; /* 画像を中央に配置 */
 		z-index: -1; /* z-indexで重ねる順序を指定 */
 	}
-}
-
-.page-aboutus-media__inner {
-	position: relative; /* 相対位置指定 */
-	z-index:2;
 }

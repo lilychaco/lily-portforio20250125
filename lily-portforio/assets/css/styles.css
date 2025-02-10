@@ -672,70 +672,6 @@ time {
 	color: #fff;
 }
 
-.button-02 {
-	background-color: #fff;
-	border: 1px solid transparent; /* ホバー前のボーダーを透明に設定 */
-	box-sizing: border-box; /* ボックスサイジングを追加 */
-	color: #000074;
-	cursor: pointer;
-	display: inline-block;
-	font-family: "Gotu", serif;
-	font-size: 0.875rem;
-	font-weight: 400;
-	letter-spacing: 0;
-	line-height: 1.57;
-	padding: 1rem 0 0.875rem 2.375rem;
-	position: relative;
-	text-align: left;
-	transition: ease 0.2s;
-	vertical-align: bottom;
-	width: 12.625rem;
-}
-
-.button-02::before {
-	background-color: transparent;
-	border: 1px solid #fff;
-	content: "";
-	height: 100%;
-	left: 4px;
-	position: absolute;
-	top: 4px;
-	width: 100%;
-	z-index: -1;
-}
-
-.button-02 span {
-	text-transform: uppercase;
-}
-
-.button-02::after {
-	border-bottom: 1px solid #000074;
-	border-right: 1px solid #000074;
-	content: "";
-	height: 6px;
-	margin-left: 0.875rem;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%) skew(45deg);
-	width: 40px;
-	z-index: 1000;
-}
-
-.button-02:hover {
-	background-color: #000074;
-	border: 1px solid #fff;
-	color: #fff;
-}
-
-.button-02:hover::after {
-	border-bottom: 1px solid #fff;
-	border-right: 1px solid #fff;
-}
-
-.button-02::first-letter {
-	text-transform: uppercase;
-}
-
 .button-send-container { /* ボタンと画像を重ねるために relative を使用 */
 	display: inline-block;
 	position: relative; /* ボタンをインラインブロックにすることで幅と高さを指定 */
@@ -859,47 +795,6 @@ time {
 
 .button--send {
 	padding: 1.125rem 0 0.875rem 3.25rem;
-}
-
-.button2 {
-	background-color: #000074;
-	box-sizing: border-box;
-	color: #fff;
-	cursor: pointer;
-	font-family: "Gotu", serif;
-	font-size: 0.875rem;
-	font-weight: 400;
-	letter-spacing: 0;
-	line-height: 1.57;
-	padding: 1.125rem 0 0.875rem 2.375rem;
-	position: relative;
-	text-align: left;
-	transition: ease 0.2s;
-	vertical-align: bottom;
-	width: 12.625rem;
-}
-
-.button2__text {
-	margin-right: 10px;
-}
-
-.button2__icon {
-	height: auto;
-	width: 20px;
-}
-
-.button2__border {
-	left: 10px;
-	position: absolute;
-	top: 10px;
-	width: 12.625rem;
-	z-index: -1; /* ボタンの下に枠線を配置 */
-}
-
-.button2__border img {
-	display: block;
-	height: auto;
-	width: 12.625rem;
 }
 
 .category-list {
@@ -2202,12 +2097,14 @@ span.wpcf7-spinner {
 
 /* セクションのスタイル */
 
-.media {
+.local-media {
 	margin: 0 auto;
+	position: relative; /* 相対位置指定 */
 	width: 100%;
+	z-index: 2;
 }
 
-.media__container {
+.local-media__container {
 	align-items: center;
 	display: flex;
 	flex-direction: column; /* スマホでは縦並び */
@@ -2217,7 +2114,7 @@ span.wpcf7-spinner {
 
 /* YouTube動画をレスポンシブ対応させる */
 
-.media__video {
+.local-media__video {
 	aspect-ratio: 16/9; /* 比率を固定してレスポンシブ対応 */
 	background-color: #D6E6F5;
 	display: flex;
@@ -2226,25 +2123,25 @@ span.wpcf7-spinner {
 	width: 100%;
 }
 
-.media__video iframe {
+.local-media__video iframe {
 	height: 100%;
 	width: 100%;
 }
 
-.media__video-text {
+.local-media__video-text {
 	font-size: 0.625rem;
 }
 
 /* 関連リンクのスタイル */
 
-.media__links {
+.local-media__links {
 	background-color: #D6E6F5;
 	margin-top: 0.75rem;
 	padding: 0.625rem;
 	width: 100%;
 }
 
-.media__links-title {
+.local-media__links-title {
 	border-bottom: 1px solid #000074;
 	color: #000074;
 	font-size: 1.2rem;
@@ -2252,7 +2149,7 @@ span.wpcf7-spinner {
 	text-align: center;
 }
 
-.media__links-list {
+.local-media__links-list {
 	display: flex;
 	flex-direction: column;
 	gap: 0.75rem;
@@ -2261,21 +2158,21 @@ span.wpcf7-spinner {
 	padding-left: 0.375rem;
 }
 
-.media__links-list--link {
+.local-media__links-list--link {
 	padding-bottom: 1rem;
 }
 
-.media__links-item {
+.local-media__links-item {
 	display: inline-block;
 }
 
-.media__link {
+.local-media__link {
 	-webkit-text-decoration: none;
 	text-decoration: none;
 	transition: color 0.3s;
 }
 
-.media__link:hover {
+.local-media__link:hover {
 	color: #99ff00;
 	cursor: pointer;
 }
@@ -2487,96 +2384,6 @@ span.wpcf7-spinner {
 
 .page-404__button {
 	margin-top: 2.375rem;
-}
-
-.page-aboutus {
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-}
-
-.page-aboutus__container {
-	position: relative;
-	width: 100%;
-}
-
-.page-aboutus__sp-image {
-	display: block;
-	margin-top: 1.75rem;
-	position: relative;
-	width: 100%;
-}
-
-.page-aboutus__sp-image img {
-	-o-object-fit: cover;
-	aspect-ratio: 345/228;
-	height: auto;
-	object-fit: cover;
-	width: 100%;
-}
-
-.page-aboutus__title {
-	color: #000074;
-	font-family: "Gotu", serif;
-	font-size: 2.5rem;
-	font-weight: 400;
-	letter-spacing: 0;
-	line-height: 1;
-}
-
-.page-aboutus__title span {
-	text-transform: uppercase;
-}
-
-.page-aboutus__title--sp {
-	bottom: 0.625rem;
-	color: #fff;
-	left: 1.5rem;
-	position: absolute;
-}
-
-.page-aboutus__pc-image {
-	display: none;
-}
-
-.page-aboutus__main {
-	margin-top: 1.25rem;
-}
-
-.page-aboutus__body {
-	margin-top: 1rem;
-}
-
-.page-aboutus__text {
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 1rem;
-	font-weight: 400;
-	letter-spacing: 0;
-	line-height: 1.5;
-}
-
-.page-aboutus-profile {
-	background-color: #D6E6F5;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 6.25rem;
-	padding-bottom: 5.125rem;
-	padding-top: 5rem;
-	width: 100%;
-	z-index: -100;
-}
-
-.page-aboutus-media {
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 5rem;
-	position: relative;
-	width: 100%;
-}
-
-.page-aboutus-media__inner {
-	position: relative; /* 相対位置指定 */
-	z-index: 2;
 }
 
 .page-contact {
@@ -2874,6 +2681,91 @@ span.wpcf7-spinner {
 
 .page-privacy__contact {
 	margin-top: 6.6875rem;
+}
+
+.page-profile {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.page-profile__container {
+	position: relative;
+	width: 100%;
+}
+
+.page-profile__sp-image {
+	display: block;
+	margin-top: 1.75rem;
+	position: relative;
+	width: 100%;
+}
+
+.page-profile__sp-image img {
+	-o-object-fit: cover;
+	aspect-ratio: 345/228;
+	height: auto;
+	object-fit: cover;
+	width: 100%;
+}
+
+.page-profile__title {
+	color: #000074;
+	font-family: "Gotu", serif;
+	font-size: 2.5rem;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 1;
+}
+
+.page-profile__title span {
+	text-transform: uppercase;
+}
+
+.page-profile__title--sp {
+	bottom: 0.625rem;
+	color: #fff;
+	left: 1.5rem;
+	position: absolute;
+}
+
+.page-profile__pc-image {
+	display: none;
+}
+
+.page-profile__main {
+	margin-top: 1.25rem;
+}
+
+.page-profile__body {
+	margin-top: 1rem;
+}
+
+.page-profile__text {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 1.5;
+}
+
+.page-profile__profile {
+	background-color: #D6E6F5;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6.25rem;
+	padding-bottom: 5.125rem;
+	padding-top: 5rem;
+	width: 100%;
+	z-index: -100;
+}
+
+.page-profile__local {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5rem;
+	position: relative;
+	width: 100%;
 }
 
 .page-service {
@@ -3181,8 +3073,8 @@ span.wpcf7-spinner {
 	margin-top: -0.25rem;
 }
 
-.section-heading__title.section-heading__title--media,
-.section-heading__subtitle.section-heading__subtitle--media {
+.section-heading__title.section-heading__title--local-media,
+.section-heading__subtitle.section-heading__subtitle--local-media {
 	color: #000074;
 }
 
@@ -4424,10 +4316,6 @@ span.wpcf7-spinner {
 	margin-top: 3.25rem;
 }
 
-.page-aboutus-layout {
-	margin-top: 3.25rem;
-}
-
 .page-contact-layout {
 	margin-top: 3.5rem;
 }
@@ -4450,6 +4338,10 @@ span.wpcf7-spinner {
 
 .page-privacy-layout {
 	margin-top: 3.75rem;
+}
+
+.page-profile-layout {
+	margin-top: 3.25rem;
 }
 
 .page-service-layout {
@@ -4682,6 +4574,49 @@ html {
 
 .breadcrumb-wrapper--404 {
 	margin-top: 5.625rem;
+}
+
+.button.button--02 {
+	background-color: #fff;
+	color: #000074;
+}
+
+.button.button--02::before {
+	background-color: transparent;
+	border: 1px solid #fff;
+	content: "";
+	height: 100%;
+	left: 4px;
+	position: absolute;
+	top: 4px;
+	width: 100%;
+	z-index: -1;
+}
+
+.button.button--02::after {
+	border-bottom: 1px solid #000074;
+	border-right: 1px solid #000074;
+	content: "";
+	height: 6px;
+	margin-left: 0.875rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) skew(45deg);
+	width: 40px;
+	z-index: 1000;
+}
+
+.button.button--02:hover {
+	background-color: #000074;
+	border: 1px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	z-index: index 1000;
+}
+
+.button.button--02:hover::after {
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
 }
 
 .category-list {
@@ -4983,16 +4918,16 @@ html {
 	padding-right: 25px;
 }
 
-.media__container {
+.local-media__container {
 	align-items: stretch;
 	flex-direction: row;
 }
 
-.media__video {
+.local-media__video {
 	flex: 2; /* 動画を広めに */
 }
 
-.media__links {
+.local-media__links {
 	flex: 1; /* 関連リンクを小さめに */
 	margin-top: 0;
 }
@@ -5070,88 +5005,6 @@ html {
 
 .page-404__button {
 	margin-top: 5rem;
-}
-
-.page-aboutus__title {
-	color: #fff;
-	font-size: 5rem;
-	line-height: 1.25;
-}
-
-.page-aboutus__pc-image {
-	display: block;
-	height: 41.3125rem;
-	position: relative;
-	width: 100%;
-}
-
-.page-aboutus__pc-image img:first-of-type {
-	-o-object-fit: cover;
-	aspect-ratio: 400/606;
-	display: block;
-	height: auto;
-	left: 0;
-	max-width: 25rem;
-	object-fit: cover;
-	position: absolute;
-	top: 0;
-}
-
-.page-aboutus__pc-image img:nth-of-type(2) {
-	-o-object-fit: cover;
-	aspect-ratio: 880/581;
-	display: block;
-	max-width: 55rem;
-	object-fit: cover;
-	position: absolute;
-	right: 0;
-	top: 5rem;
-	z-index: -1;
-}
-
-.page-aboutus__main-wrapper {
-	max-width: 35rem;
-	position: absolute;
-	right: 3.75rem;
-	top: 12.5rem;
-	z-index: 10;
-}
-
-.page-aboutus__main {
-	margin-top: 0;
-	max-width: 52.5625rem;
-	width: 100%;
-}
-
-.page-aboutus__body {
-	margin-top: 1.625rem;
-}
-
-.page-aboutus__text {
-	color: #fff;
-	max-height: 21.875rem;
-	overflow: auto;
-}
-
-.page-aboutus-profile {
-	padding-bottom: 6.375rem;
-	padding-top: 6.25rem;
-}
-
-.page-aboutus-media {
-	padding-top: 6.25rem;
-}
-
-.page-aboutus-media::before {
-	background-image: url("../images/hondo-sea-view-pc.jpg"); /* 画像のパスを指定 */
-	background-position: center; /* 画像を中央に配置 */
-	background-size: cover; /* 背景画像を要素のサイズに合わせる */
-	content: "";
-	height: 25rem; /* 高さを500ピクセルに設定 */
-	position: absolute; /* 絶対位置指定 */
-	top: 0; /* 上端から0pxの位置に配置 */
-	width: 100vw; /* 横幅をブラウザのビューポート幅に設定 */
-	z-index: -1; /* z-indexで重ねる順序を指定 */
 }
 
 .page-contact__inner {
@@ -5234,6 +5087,88 @@ html {
 
 .page-privacy__contact {
 	margin-top: 10rem;
+}
+
+.page-profile__title {
+	color: #fff;
+	font-size: 5rem;
+	line-height: 1.25;
+}
+
+.page-profile__pc-image {
+	display: block;
+	height: 41.3125rem;
+	position: relative;
+	width: 100%;
+}
+
+.page-profile__pc-image img:first-of-type {
+	-o-object-fit: cover;
+	aspect-ratio: 400/606;
+	display: block;
+	height: auto;
+	left: 0;
+	max-width: 25rem;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+}
+
+.page-profile__pc-image img:nth-of-type(2) {
+	-o-object-fit: cover;
+	aspect-ratio: 880/581;
+	display: block;
+	max-width: 55rem;
+	object-fit: cover;
+	position: absolute;
+	right: 0;
+	top: 5rem;
+	z-index: -1;
+}
+
+.page-profile__main-wrapper {
+	max-width: 35rem;
+	position: absolute;
+	right: 3.75rem;
+	top: 12.5rem;
+	z-index: 10;
+}
+
+.page-profile__main {
+	margin-top: 0;
+	max-width: 52.5625rem;
+	width: 100%;
+}
+
+.page-profile__body {
+	margin-top: 1.625rem;
+}
+
+.page-profile__text {
+	color: #fff;
+	max-height: 21.875rem;
+	overflow: auto;
+}
+
+.page-profile__profile {
+	padding-bottom: 6.375rem;
+	padding-top: 6.25rem;
+}
+
+.page-profile__local {
+	padding-top: 6.25rem;
+}
+
+.page-profile__local::before {
+	background-image: url("../images/hondo-sea-view-pc.jpg"); /* 画像のパスを指定 */
+	background-position: center; /* 画像を中央に配置 */
+	background-size: cover; /* 背景画像を要素のサイズに合わせる */
+	content: "";
+	height: 25rem; /* 高さを500ピクセルに設定 */
+	position: absolute; /* 絶対位置指定 */
+	top: 0; /* 上端から0pxの位置に配置 */
+	width: 100vw; /* 横幅をブラウザのビューポート幅に設定 */
+	z-index: -1; /* z-indexで重ねる順序を指定 */
 }
 
 .page-service__title {
@@ -5335,8 +5270,8 @@ html {
 	margin-top: -0.375rem;
 }
 
-.section-heading__title.section-heading__title--media,
-.section-heading__subtitle.section-heading__subtitle--media {
+.section-heading__title.section-heading__title--local-media,
+.section-heading__subtitle.section-heading__subtitle--local-media {
 	color: #fff;
 }
 
@@ -5890,10 +5825,6 @@ html {
 	margin-top: 9.375rem;
 }
 
-.page-aboutus-layout {
-	margin-top: 9.375rem;
-}
-
 .page-contact-layout {
 	margin-top: 9.375rem;
 }
@@ -5916,6 +5847,10 @@ html {
 
 .page-privacy-layout {
 	margin-top: 10rem;
+}
+
+.page-profile-layout {
+	margin-top: 9.375rem;
 }
 
 .page-service-layout {
