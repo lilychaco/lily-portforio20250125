@@ -4726,19 +4726,19 @@ html {
 }
 
 .footer__top {
-	background-color: lightgreen;
+	align-items: center;
 	display: flex;
 	flex-direction: row;
 	gap: 2.5rem;
 }
 
 .footer__logo {
-	background-color: orange;
 	width: 12.5rem;
 }
 
 .footer__sns {
 	align-items: flex-end;
+	margin-top: 0.25rem;
 	padding-left: 0;
 }
 

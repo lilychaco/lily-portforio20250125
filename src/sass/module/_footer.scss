@@ -20,8 +20,8 @@
 	@include mq(md) {
 			display: flex;
 			flex-direction: row;
+			align-items: center;
 			gap:rem(40);
-			background-color: lightgreen;
 	}
 }
 .footer__logo {
@@ -29,7 +29,6 @@
 	width: rem(160);
 	@include mq(md) {
 		width: rem(200);
-		background-color: orange;
 	}
 }
 
@@ -46,6 +45,7 @@
 	padding-left: rem(22);
 	@include mq(md) {
 		align-items: flex-end;
+		margin-top:rem(4);
 		padding-left:0;
 
 	}
