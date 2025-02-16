@@ -93,7 +93,7 @@
    			</div>
    		</div>
    		<div class="footer__copyright">
-   			©&nbsp;2025&nbsp;GranLily&nbsp;LLC.
+   			&copy;&nbsp;2025&nbsp;GranLily&nbsp;LLC.
    		</div>
    	</div>
 
